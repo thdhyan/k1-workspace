@@ -1,0 +1,533 @@
+{
+ "edges": [
+  {
+   "from": "rl_mj",
+   "to": "common",
+   "n": 17
+  },
+  {
+   "from": "rl_mj",
+   "to": "runtime",
+   "n": 14
+  },
+  {
+   "from": "deploy_laptop",
+   "to": "runtime",
+   "n": 4
+  },
+  {
+   "from": "teleop",
+   "to": "runtime",
+   "n": 3
+  },
+  {
+   "from": "rl_isaac",
+   "to": "runtime",
+   "n": 2
+  },
+  {
+   "from": "rl_isaac",
+   "to": "utils",
+   "n": 1
+  },
+  {
+   "from": "teleop",
+   "to": "utils",
+   "n": 1
+  },
+  {
+   "from": "vla",
+   "to": "utils",
+   "n": 1
+  },
+  {
+   "from": "deploy_robot",
+   "to": "runtime",
+   "n": 1
+  }
+ ],
+ "files": {
+  "common": 12,
+  "description": 9,
+  "utils": 8,
+  "runtime": 7,
+  "rl_isaac": 213,
+  "rl_mj": 75,
+  "mimic": 19,
+  "teleop": 10,
+  "perception": 23,
+  "vla": 71,
+  "data": 10,
+  "deploy_robot": 14,
+  "deploy_laptop": 56,
+  "web_console": 8,
+  "ops": 68
+ },
+ "loc": {
+  "common": 719,
+  "description": 141,
+  "utils": 1030,
+  "runtime": 1352,
+  "rl_isaac": 30838,
+  "rl_mj": 7576,
+  "mimic": 3722,
+  "teleop": 2292,
+  "perception": 1272,
+  "vla": 5976,
+  "data": 877,
+  "deploy_robot": 1415,
+  "deploy_laptop": 5520,
+  "web_console": 554,
+  "ops": 2479
+ },
+ "libs": {
+  "common": {
+   "repo": "k1-common",
+   "layer": "L0",
+   "may": [],
+   "purpose": "Robot contract: joints, gains, obs/action layout, wiring, motion-clip schema."
+  },
+  "description": {
+   "repo": "k1-description",
+   "layer": "L0",
+   "may": [],
+   "purpose": "K1 URDF / MJCF / USD description (ROS 2 package); meshes come from the booster_assets submodule."
+  },
+  "utils": {
+   "repo": "k1-utils",
+   "layer": "L1",
+   "may": [
+    "common"
+   ],
+   "purpose": "Eval gates, checkpoint inspect/migrate, parity checks, Isaac ROS env helper."
+  },
+  "runtime": {
+   "repo": "k1-runtime",
+   "layer": "L1",
+   "may": [
+    "common"
+   ],
+   "purpose": "Torch/numpy-only policy runtime: WBC, push-IK core, arm IK, DS4 pad, gamepad core."
+  },
+  "rl_isaac": {
+   "repo": "k1-rl-isaac",
+   "layer": "L2",
+   "may": [
+    "common",
+    "utils",
+    "runtime"
+   ],
+   "purpose": "Isaac Lab tasks (velocity, push, kick, COMPASS) and Isaac sim nodes."
+  },
+  "rl_mj": {
+   "repo": "k1-rl-mj",
+   "layer": "L2",
+   "may": [
+    "common",
+    "utils",
+    "runtime"
+   ],
+   "purpose": "mjlab (MuJoCo Warp) tasks, probes and train/play CLI."
+  },
+  "mimic": {
+   "repo": "k1-mimic",
+   "layer": "L2",
+   "may": [
+    "common",
+    "utils"
+   ],
+   "purpose": "Video/text to K1 motion retargeting (GVHMR, GMR, SOMA, Kimodo) with a Gradio UI."
+  },
+  "teleop": {
+   "repo": "k1-teleop",
+   "layer": "L2",
+   "may": [
+    "common",
+    "utils",
+    "runtime"
+   ],
+   "purpose": "XR / PhaseSpace teleop nodes, HMD poser, mapping."
+  },
+  "perception": {
+   "repo": "k1-perception",
+   "layer": "L2",
+   "may": [
+    "common",
+    "data"
+   ],
+   "purpose": "SLAM chain: cuVSLAM, TCP relay, nvblox stream, grid map."
+  },
+  "vla": {
+   "repo": "k1-vla",
+   "layer": "L2",
+   "may": [
+    "common",
+    "utils",
+    "runtime"
+   ],
+   "purpose": "k1_chat voice/VLM agent, tools and YOLO node."
+  },
+  "data": {
+   "repo": "k1-data",
+   "layer": "L2",
+   "may": [
+    "common"
+   ],
+   "purpose": "Rosbag, stereo/walk tooling, real-robot converters."
+  },
+  "deploy_robot": {
+   "repo": "k1-deploy-robot",
+   "layer": "L3",
+   "may": [
+    "common",
+    "runtime",
+    "perception",
+    "data"
+   ],
+   "purpose": "Runs on the K1 CPU: policy runner, TF service, watchdog, recorders."
+  },
+  "deploy_laptop": {
+   "repo": "k1-deploy-laptop",
+   "layer": "L3",
+   "may": [
+    "common",
+    "runtime",
+    "teleop",
+    "perception"
+   ],
+   "purpose": "ROS 2 jazzy workspace, push-IK web/sim, pad sender, sim-to-sim."
+  },
+  "web_console": {
+   "repo": "k1-web-console",
+   "layer": "L3",
+   "may": [],
+   "purpose": "Fleet dashboard and camera tools; one web shell, plugin pages over HTTP/WS."
+  },
+  "ops": {
+   "repo": "k1-ops",
+   "layer": "L3",
+   "may": [],
+   "purpose": "Host launchers, containers, CI, job chains."
+  }
+ },
+ "seams": {
+  "common": 1,
+  "utils": 1,
+  "runtime": 3,
+  "rl_isaac": 5,
+  "mimic": 1,
+  "perception": 5,
+  "vla": 4,
+  "deploy_robot": 2,
+  "deploy_laptop": 1,
+  "ops": 11,
+  "description": 0,
+  "rl_mj": 0,
+  "teleop": 0,
+  "data": 0,
+  "web_console": 0
+ },
+ "deps": {
+  "common": {
+   "pip": [
+    "mujoco",
+    "numpy",
+    "pytest"
+   ],
+   "env": [
+    "mjlab",
+    "pxr"
+   ],
+   "pkgs": [
+    "k1_common"
+   ]
+  },
+  "description": {
+   "pip": [],
+   "env": [
+    "ament_index_python",
+    "launch",
+    "launch_ros"
+   ],
+   "pkgs": []
+  },
+  "utils": {
+   "pip": [
+    "mujoco",
+    "numpy",
+    "onnx",
+    "onnxruntime",
+    "pytest",
+    "torch"
+   ],
+   "env": [
+    "height_gate",
+    "mujoco_eval",
+    "rsl_rl"
+   ],
+   "pkgs": [
+    "k1_utils"
+   ]
+  },
+  "runtime": {
+   "pip": [
+    "evdev",
+    "mujoco",
+    "numpy",
+    "torch"
+   ],
+   "env": [
+    "booster_interface",
+    "rclpy"
+   ],
+   "pkgs": [
+    "k1_runtime"
+   ]
+  },
+  "rl_isaac": {
+   "pip": [
+    "gymnasium",
+    "imageio",
+    "numpy",
+    "opencv-python",
+    "pillow",
+    "pytest",
+    "pyyaml",
+    "torch"
+   ],
+   "env": [
+    "Xlib",
+    "booster_assets",
+    "booster_train",
+    "carb",
+    "cli_args",
+    "geometry_msgs",
+    "imageio_ffmpeg",
+    "isaaclab",
+    "isaaclab_newton",
+    "isaaclab_physx",
+    "isaaclab_rl",
+    "isaaclab_tasks",
+    "isaaclab_visualizers",
+    "isaacsim",
+    "keyboard_cmd",
+    "launch",
+    "launch_ros",
+    "mobility_es",
+    "omni",
+    "panel_video",
+    "ppo_guard",
+    "pxr",
+    "rclpy",
+    "rsl_rl",
+    "sensor_msgs",
+    "skrl",
+    "tensordict",
+    "ultralytics"
+   ],
+   "pkgs": [
+    "compass_k1",
+    "k1_velocity"
+   ]
+  },
+  "rl_mj": {
+   "pip": [
+    "imageio",
+    "matplotlib",
+    "mujoco",
+    "numpy",
+    "pillow",
+    "torch"
+   ],
+   "env": [
+    "mjlab",
+    "rsl_rl",
+    "tensordict",
+    "ultralytics"
+   ],
+   "pkgs": [
+    "mjlab_k1"
+   ]
+  },
+  "mimic": {
+   "pip": [
+    "fastapi",
+    "gradio",
+    "imageio",
+    "mujoco",
+    "numpy",
+    "pillow",
+    "scipy",
+    "torch"
+   ],
+   "env": [
+    "general_motion_retargeting",
+    "newton",
+    "rclpy",
+    "sensor_msgs",
+    "smplx",
+    "soma",
+    "soma_retargeter",
+    "std_msgs",
+    "warp"
+   ],
+   "pkgs": [
+    "k1m"
+   ]
+  },
+  "teleop": {
+   "pip": [
+    "imageio",
+    "numpy",
+    "opencv-python",
+    "torch"
+   ],
+   "env": [
+    "booster_assets",
+    "cupy",
+    "geometry_msgs",
+    "isaaclab",
+    "isaacteleop",
+    "omni",
+    "push_ik_phasespace",
+    "pxr",
+    "rclpy",
+    "sensor_msgs",
+    "std_msgs",
+    "tf2_msgs"
+   ],
+   "pkgs": [
+    "k1_teleop"
+   ]
+  },
+  "perception": {
+   "pip": [
+    "matplotlib",
+    "numpy",
+    "opencv-python",
+    "scipy"
+   ],
+   "env": [
+    "builtin_interfaces",
+    "cuvslam",
+    "geometry_msgs",
+    "nav_msgs",
+    "rclpy",
+    "rosidl_runtime_py",
+    "sensor_msgs",
+    "std_msgs",
+    "tf2_msgs",
+    "tf2_ros",
+    "visualization_msgs"
+   ],
+   "pkgs": []
+  },
+  "vla": {
+   "pip": [
+    "httpx",
+    "numpy",
+    "onnxruntime",
+    "opencv-python",
+    "pytest",
+    "websockets"
+   ],
+   "env": [
+    "dotenv",
+    "faster_whisper",
+    "geometry_msgs",
+    "kokoro_onnx",
+    "rclpy",
+    "respx",
+    "rosidl_runtime_py",
+    "sensor_msgs",
+    "std_msgs",
+    "ultralytics"
+   ],
+   "pkgs": [
+    "k1_chat"
+   ]
+  },
+  "data": {
+   "pip": [
+    "numpy",
+    "opencv-python",
+    "pyyaml"
+   ],
+   "env": [
+    "booster_robotics_sdk_python",
+    "rclpy",
+    "rosbag2_py",
+    "rosidl_runtime_py",
+    "sensor_msgs"
+   ],
+   "pkgs": []
+  },
+  "deploy_robot": {
+   "pip": [
+    "numpy",
+    "torch"
+   ],
+   "env": [
+    "booster_interface",
+    "geometry_msgs",
+    "k1_gamepad_deploy",
+    "nav_msgs",
+    "rclpy",
+    "sensor_msgs",
+    "tf2_ros"
+   ],
+   "pkgs": []
+  },
+  "deploy_laptop": {
+   "pip": [
+    "evdev",
+    "imageio",
+    "mujoco",
+    "numpy",
+    "opencv-python",
+    "pytest",
+    "torch"
+   ],
+   "env": [
+    "ament_index_python",
+    "geometry_msgs",
+    "launch",
+    "launch_ros",
+    "nav_msgs",
+    "push_ik_phasespace",
+    "push_ik_sim",
+    "rclpy",
+    "sensor_msgs",
+    "setuptools",
+    "std_msgs",
+    "tf2_msgs"
+   ],
+   "pkgs": [
+    "k1_bringup",
+    "k1_control",
+    "k1_fleet_rviz",
+    "k1_locomotion",
+    "k1_wbc"
+   ]
+  },
+  "web_console": {
+   "pip": [
+    "numpy",
+    "opencv-python",
+    "requests",
+    "websockets"
+   ],
+   "env": [
+    "rclpy",
+    "sensor_msgs",
+    "streamlit"
+   ],
+   "pkgs": []
+  },
+  "ops": {
+   "pip": [],
+   "env": [],
+   "pkgs": []
+  }
+ }
+}

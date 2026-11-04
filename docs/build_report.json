@@ -1,0 +1,16 @@
+{
+ "rewritten_files": {
+  "common": 1,
+  "utils": 1,
+  "runtime": 3,
+  "rl_isaac": 17,
+  "rl_mj": 29,
+  "teleop": 4,
+  "vla": 1,
+  "deploy_robot": 1,
+  "deploy_laptop": 3,
+  "umbrella": 1
+ },
+ "sys_path_removed": 28,
+ "skipped_companions": []
+}
