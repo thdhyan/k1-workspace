@@ -1,0 +1,45 @@
+[submodule "libs/k1-common"]
+	path = libs/k1-common
+	url = git@github.com:thdhyan/k1-common.git
+[submodule "libs/k1-data"]
+	path = libs/k1-data
+	url = git@github.com:thdhyan/k1-data.git
+[submodule "libs/k1-deploy-laptop"]
+	path = libs/k1-deploy-laptop
+	url = git@github.com:thdhyan/k1-deploy-laptop.git
+[submodule "libs/k1-deploy-robot"]
+	path = libs/k1-deploy-robot
+	url = git@github.com:thdhyan/k1-deploy-robot.git
+[submodule "libs/k1-description"]
+	path = libs/k1-description
+	url = git@github.com:thdhyan/k1-description.git
+[submodule "libs/k1-mimic"]
+	path = libs/k1-mimic
+	url = git@github.com:thdhyan/k1-mimic.git
+[submodule "libs/k1-ops"]
+	path = libs/k1-ops
+	url = git@github.com:thdhyan/k1-ops.git
+[submodule "libs/k1-perception"]
+	path = libs/k1-perception
+	url = git@github.com:thdhyan/k1-perception.git
+[submodule "libs/k1-rl-isaac"]
+	path = libs/k1-rl-isaac
+	url = git@github.com:thdhyan/k1-rl-isaac.git
+[submodule "libs/k1-rl-mj"]
+	path = libs/k1-rl-mj
+	url = git@github.com:thdhyan/k1-rl-mj.git
+[submodule "libs/k1-runtime"]
+	path = libs/k1-runtime
+	url = git@github.com:thdhyan/k1-runtime.git
+[submodule "libs/k1-teleop"]
+	path = libs/k1-teleop
+	url = git@github.com:thdhyan/k1-teleop.git
+[submodule "libs/k1-utils"]
+	path = libs/k1-utils
+	url = git@github.com:thdhyan/k1-utils.git
+[submodule "libs/k1-vla"]
+	path = libs/k1-vla
+	url = git@github.com:thdhyan/k1-vla.git
+[submodule "libs/k1-web-console"]
+	path = libs/k1-web-console
+	url = git@github.com:thdhyan/k1-web-console.git
