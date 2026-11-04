@@ -59,6 +59,8 @@ Last green (2026-11-03, before the plugin finding): common 7/1s, deploy-laptop 1
 - [ ] Remote: Isaac Lab task init + single-env play with video (GPU host)
 - [ ] Remote: mjlab train smoke + eval with video (GPU host, x86 and aarch64)
 - [ ] Remote: mimic retargeting pipeline (GPU host)
+- [x] `libs/k1-ops/scripts/remote_train.sh`: host-neutral launcher (pick idle GPU, rsync, venv, tmux, status, fetch, stop). `pick` verified on real servers; `up` only dry-run so far
+- [ ] `remote_train.sh up` real smoke (50 iterations) on a university CUDA server; one of the five has no home directory (key login impossible): CSE-IT ticket. Host details in `docs/HOSTS.local.md`
 - [ ] Hardware (user-assisted): deploy-robot runner, watchdog, gamepad, perception cameras
 
 ## Phase 3: redesign (decoupling)
@@ -81,3 +83,4 @@ Design doc first (`docs/REDESIGN.md`), reviewed before large moves. Re-run Phase
 - 2026-11-03: slice 2 pushed (common 27efc78 paths, runtime ea4ba03, teleop 8a322de, rl-mj cb2ed30, deploy-laptop bb5536e). Contract suite: 107 pass / 6 fail (all = open F5-F8, F10, NUL file). Teleop ROS e2e `test_push_ik_node.py` with push_ik_v8: NODE TEST OK.
 - 2026-11-03: Phase 1 done (see list above). Next: Phase 2 local colcon build + launch smoke, then remote.
 - 2026-11-04: READMEs regenerated and pushed (refactor/decouple in all 15 libs; k1-data and k1-web-console got the branch). Contracts 87/5s.
+- 2026-11-04: history rewritten to drop password, MACs, serials and server IPs (k1-workspace, k1-vla, k1-ops); remote_train.sh added.

@@ -166,3 +166,5 @@ Training and sim run on any GPU host you have SSH access to; no host is assumed 
 | SLAM container (`k1-perception/real_robot/slam_dl`) | NVIDIA GPU, Docker, on the robot LAN |
 
 Keep your own host list (alias, address, user, GPUs) in `~/.ssh/config`, outside this repo.
+
+Launch, watch, fetch and stop a run with `libs/k1-ops/scripts/remote_train.sh` (see the k1-ops README). Small 16 GB GPUs suit mjlab smoke runs and evals, not big Isaac Lab or mimic jobs.
