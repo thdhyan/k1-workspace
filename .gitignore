@@ -3,3 +3,5 @@ __pycache__/
 .venv/
 graphify-out/cache/
 graphify-out/.graphify_*
+libs/graphify-out/
+libs/.graphifyignore
