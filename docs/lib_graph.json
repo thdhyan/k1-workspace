@@ -47,21 +47,21 @@
   }
  ],
  "files": {
-  "common": 12,
-  "description": 9,
+  "common": 11,
+  "description": 8,
   "utils": 8,
   "runtime": 7,
   "rl_isaac": 213,
   "rl_mj": 75,
   "mimic": 19,
   "teleop": 10,
-  "perception": 23,
-  "vla": 71,
+  "perception": 20,
+  "vla": 69,
   "data": 10,
   "deploy_robot": 14,
-  "deploy_laptop": 56,
+  "deploy_laptop": 55,
   "web_console": 8,
-  "ops": 68
+  "ops": 67
  },
  "loc": {
   "common": 719,

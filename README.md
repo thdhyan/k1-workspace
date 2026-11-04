@@ -22,8 +22,17 @@ Umbrella for the Booster K1 code base, split from the monolithic `booster_ws` in
 
 ## Visualisations
 
-- [`docs/architecture.html`](docs/architecture.html): layered repo graph from measured imports.
-- `graphify-out/graph.html` + `GRAPH_REPORT.md`: code-level knowledge graph (6k nodes, 400 communities).
+### Layer map (measured imports)
+
+Imports only point down. Line width = number of importing files. Interactive version: [`docs/architecture.html`](docs/architecture.html) (open locally).
+
+![Layer map](docs/img/architecture.png)
+
+### Code knowledge graph (graphify)
+
+6,067 nodes / 13,044 edges from the AST of all 15 repos. The interactive viewer shows the 400 community-level nodes (one per cluster); open `graphify-out/graph.html` locally. Details: [`graphify-out/GRAPH_REPORT.md`](graphify-out/GRAPH_REPORT.md).
+
+![Graphify communities](docs/img/graphify.png)
 
 ## Docs
 

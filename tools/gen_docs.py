@@ -106,7 +106,7 @@ edges = Counter()
 nfiles, nloc = {}, {}
 for lib, (repo, pkg, layer, may, purpose) in R.items():
     root = LIBS / repo
-    files = [p for p in root.rglob("*") if p.is_file() and not (set(p.relative_to(root).parts) & SKIPDIRS)]
+    files = [p for p in root.rglob("*") if p.is_file() and p.name not in ("README.md", "pyproject.toml", ".gitignore") and not (set(p.relative_to(root).parts) & SKIPDIRS)]
     nfiles[lib] = len(files)
     nloc[lib] = sum(p.read_text(errors="replace").count("\n") for p in files if p.suffix in (".py", ".sh", ".cpp"))
     imps = Counter()
@@ -232,6 +232,15 @@ for lib, (repo, pkg, layer, may, purpose) in R.items():
     if lib == "deploy_robot":
         extra = ("\n## Seam\n\n`sdk_bridge/` holds the on-robot half of the former `k1_control` ROS package; the laptop half is in k1-deploy-laptop. "
                  "Its `setup.py` entry points still need splitting.\n")
+    used_by = [R[o][0] for o in R if lib in R[o][3]]
+    mer = ["```mermaid", "flowchart TB"]
+    mer += [f"  {R[o][0].replace('-', '_')}[{R[o][0]}]" for o in R if o in may or o in R and lib in R[o][3]]
+    mer += [f"  {repo.replace('-', '_')}(({repo}))", f"  style {repo.replace('-', '_')} fill:#e8833a,color:#000"]
+    mer += [f"  {R[o][0].replace('-', '_')} --> {repo.replace('-', '_')}" for o in R if lib in R[o][3]]
+    mer += [f"  {repo.replace('-', '_')} --> {R[m][0].replace('-', '_')}" for m in may]
+    mer.append("```")
+    sits = ("\n".join(mer) + f"\n\nUsed by: {', '.join(used_by) or 'nothing (top layer)'}.\n\n"
+            f"![k1-workspace layers](https://raw.githubusercontent.com/{OWNER}/k1-workspace/main/docs/img/architecture.png)\n")
     body = f"""# {repo}
 
 {purpose}
@@ -243,6 +252,9 @@ for lib, (repo, pkg, layer, may, purpose) in R.items():
 | Files / LOC | {nfiles[lib]} files · {nloc[lib]:,} lines (py, sh, cpp) |
 | Part of | [k1-workspace](https://github.com/{OWNER}/k1-workspace) (architecture and layering rules live there) |
 
+## Where it sits
+
+{sits}
 ## Install
 
 {install}
