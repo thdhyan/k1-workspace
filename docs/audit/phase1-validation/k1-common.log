@@ -1,0 +1,7 @@
+COMMAND: ['/tmp/k1-audit-system-venv/bin/python', '-m', 'pytest', 'tests', '-q', '--tb=short', '-rs', '-m', 'not isaac and not robot and not net and not onprem', '-p', 'no:cacheprovider', '--basetemp=/tmp/k1-phase1-k1-common', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-common.xml']
+CWD: /home/thakk100/Projects/booster_proj/libs/k1-common
+.......s                                                                 [100%]
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-common.xml -
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_k1_wiring.py:104: could not import 'pxr': No module named 'pxr'
+7 passed, 1 skipped in 0.02s

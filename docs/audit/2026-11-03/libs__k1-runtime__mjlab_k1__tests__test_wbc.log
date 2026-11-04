@@ -1,0 +1,18 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-runtime/mjlab_k1/tests/test_wbc.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-runtime__mjlab_k1__tests__test_wbc.xml']
+
+==================================== ERRORS ====================================
+_________ ERROR collecting libs/k1-runtime/mjlab_k1/tests/test_wbc.py __________
+libs/k1-runtime/mjlab_k1/tests/test_wbc.py:9: in <module>
+    _spec.loader.exec_module(wbc)
+<frozen importlib._bootstrap_external>:991: in exec_module
+    ???
+<frozen importlib._bootstrap_external>:1128: in get_code
+    ???
+<frozen importlib._bootstrap_external>:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-runtime/mjlab_k1/src/mjlab_k1/wbc.py'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-runtime__mjlab_k1__tests__test_wbc.xml -
+=========================== short test summary info ============================
+ERROR libs/k1-runtime/mjlab_k1/tests/test_wbc.py - FileNotFoundError: [Errno ...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 1.19s

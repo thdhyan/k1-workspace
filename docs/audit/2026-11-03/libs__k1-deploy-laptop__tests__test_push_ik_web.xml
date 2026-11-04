@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="21.326" timestamp="2026-11-03T19:15:29.817566" hostname="dhyan-LOQ"><testcase classname="" name="libs.k1-deploy-laptop.tests.test_push_ik_web" time="0.000"><error message="collection failure">libs/k1-deploy-laptop/tests/test_push_ik_web.py:86: in &lt;module&gt;
+    assert s["blockers"] == ["no finished preview of this scene"], s["blockers"]
+E   NameError: name 's' is not defined</error></testcase></testsuite></testsuites>

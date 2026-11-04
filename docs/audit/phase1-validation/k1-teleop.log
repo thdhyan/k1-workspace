@@ -1,0 +1,21 @@
+COMMAND: ['/tmp/k1-audit-system-venv/bin/python', '-m', 'pytest', 'tests', '-q', '--tb=short', '-rs', '-m', 'not isaac and not robot and not net and not onprem', '-p', 'no:cacheprovider', '--basetemp=/tmp/k1-phase1-k1-teleop', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-teleop.xml']
+CWD: /home/thakk100/Projects/booster_proj/libs/k1-teleop
+F                                                                        [100%]
+=================================== FAILURES ===================================
+____________________________ test_push_ik_node_e2e _____________________________
+tests/test_push_ik_node.py:20: in test_push_ik_node_e2e
+    assert r.returncode == 0 and "NODE TEST OK" in r.stdout, (r.stdout + r.stderr)[-3000:]
+E   AssertionError: gamepad: laptop pad over udp :9870 (+ K1 remote B = stop)
+E     Traceback (most recent call last):
+E       File "/home/thakk100/Projects/booster_proj/libs/k1-teleop/tests/e2e_push_ik_node.py", line 29, in <module>
+E         rclpy.init()
+E       File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 88, in init
+E         context.init(args, domain_id=domain_id)
+E       File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/context.py", line 106, in init
+E         _rclpy.rclpy_logging_configure(self.__context)
+E     RuntimeError: Failed opening file /home/thakk100/.ros/log/python_302_1793764046572.log for writing: Read-only file system
+E     
+E   assert (1 == 0)
+E    +  where 1 = CompletedProcess(args=['/tmp/k1-audit-system-venv/bin/python', '/home/thakk100/Projects/booster_proj/libs/k1-teleop/te...eError: Failed opening file /home/thakk100/.ros/log/python_302_1793764046572.log for writing: Read-only file system\n').returncode
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-teleop.xml -
+1 failed in 1.82s

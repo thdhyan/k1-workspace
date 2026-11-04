@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Generate pyproject.toml, .gitignore, README.md (repo + per directory) for every libs/k1-* repo,
-move the umbrella files to the workspace root, and write docs/lib_graph.json (measured import edges).
+"""Generate README.md (repo + per directory) for every libs/k1-* repo and write docs/lib_graph.json
+(measured import edges). pyproject.toml files are maintained by hand: the sibling libraries a repo may
+import are read from its [project].dependencies. Hand-written usage text comes from tools/usage/<repo>.md;
+robots, IPs and control procedures live in docs/ROBOTS.md.
 
-Run after tools/build_workspace.py.  python3 tools/gen_docs.py
+python3 tools/gen_docs.py   (needs Python >= 3.11 for tomllib)
 """
 import ast
 import json
@@ -10,6 +12,7 @@ import os
 import re
 import shutil
 import sys
+import tomllib
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -17,29 +20,31 @@ HERE = Path(__file__).resolve().parent.parent
 LIBS = HERE / "libs"
 sys.path.insert(0, str(HERE / "tools"))
 OWNER = "thdhyan"
+USAGE = HERE / "tools" / "usage"
+ROBOTS = f"https://github.com/{OWNER}/k1-workspace/blob/main/docs/ROBOTS.md"
 
-# lib key -> (repo, main package, layer, may-import (lib keys), purpose)
+# lib key -> (repo, main package, layer, may-import (filled from pyproject.toml below), purpose)
 R = {
-    "common": ("k1-common", "k1_common", "L0", [], "Robot contract: joints, gains, obs/action layout, wiring, motion-clip schema."),
-    "description": ("k1-description", "k1_description", "L0", [], "K1 URDF / MJCF / USD description (ROS 2 package); meshes come from the booster_assets submodule."),
-    "utils": ("k1-utils", "k1_utils", "L1", ["common"], "Eval gates, checkpoint inspect/migrate, parity checks, Isaac ROS env helper."),
-    "runtime": ("k1-runtime", "k1_runtime", "L1", ["common"], "Torch/numpy-only policy runtime: WBC, push-IK core, arm IK, DS4 pad, gamepad core."),
-    "rl_isaac": ("k1-rl-isaac", "k1_velocity", "L2", ["common", "utils", "runtime"], "Isaac Lab tasks (velocity, push, kick, COMPASS) and Isaac sim nodes."),
-    "rl_mj": ("k1-rl-mj", "mjlab_k1", "L2", ["common", "utils", "runtime"], "mjlab (MuJoCo Warp) tasks, probes and train/play CLI."),
-    "mimic": ("k1-mimic", "k1m", "L2", ["common", "utils"], "Video/text to K1 motion retargeting (GVHMR, GMR, SOMA, Kimodo) with a Gradio UI."),
-    "teleop": ("k1-teleop", "k1_teleop", "L2", ["common", "utils", "runtime"], "XR / PhaseSpace teleop nodes, HMD poser, mapping."),
-    "perception": ("k1-perception", "k1_perception", "L2", ["common", "data"], "SLAM chain: cuVSLAM, TCP relay, nvblox stream, grid map."),
-    "vla": ("k1-vla", "k1_chat", "L2", ["common", "utils", "runtime"], "k1_chat voice/VLM agent, tools and YOLO node."),
-    "data": ("k1-data", "k1_data", "L2", ["common"], "Rosbag, stereo/walk tooling, real-robot converters."),
-    "deploy_robot": ("k1-deploy-robot", "k1_deploy_robot", "L3", ["common", "runtime", "perception", "data"], "Runs on the K1 CPU: policy runner, TF service, watchdog, recorders."),
-    "deploy_laptop": ("k1-deploy-laptop", "k1_deploy_laptop", "L3", ["common", "runtime", "teleop", "perception"], "ROS 2 jazzy workspace, push-IK web/sim, pad sender, sim-to-sim."),
-    "web_console": ("k1-web-console", "k1_web_console", "L3", [], "Fleet dashboard and camera tools; one web shell, plugin pages over HTTP/WS."),
-    "ops": ("k1-ops", "k1_ops", "L3", [], "Host launchers, containers, CI, job chains."),
+    "common": ("k1-common", "k1_common", "L0", None, "Robot contract: joints, gains, obs/action layout, wiring, motion-clip schema."),
+    "description": ("k1-description", "k1_description", "L0", None, "K1 URDF / MJCF / USD description (ROS 2 package); meshes come from the booster_assets submodule."),
+    "utils": ("k1-utils", "k1_utils", "L1", None, "Eval gates, checkpoint inspect/migrate, parity checks, Isaac ROS env helper."),
+    "runtime": ("k1-runtime", "k1_runtime", "L1", None, "Torch/numpy-only policy runtime: WBC, push-IK core, arm IK, DS4 pad, gamepad core."),
+    "rl_isaac": ("k1-rl-isaac", "k1_velocity", "L2", None, "Isaac Lab tasks (velocity, push, kick, COMPASS) and Isaac sim nodes."),
+    "rl_mj": ("k1-rl-mj", "mjlab_k1", "L2", None, "mjlab (MuJoCo Warp) tasks, probes and train/play CLI."),
+    "mimic": ("k1-mimic", "k1m", "L2", None, "Video/text to K1 motion retargeting (GVHMR, GMR, SOMA, Kimodo) with a Gradio UI."),
+    "teleop": ("k1-teleop", "k1_teleop", "L2", None, "XR / PhaseSpace teleop nodes, HMD poser, mapping."),
+    "perception": ("k1-perception", "k1_perception", "L2", None, "SLAM chain: cuVSLAM, TCP relay, nvblox stream, grid map."),
+    "vla": ("k1-vla", "k1_chat", "L2", None, "k1_chat voice/VLM agent, tools and YOLO node."),
+    "data": ("k1-data", "k1_data", "L2", None, "Rosbag, stereo/walk tooling, real-robot converters."),
+    "deploy_robot": ("k1-deploy-robot", "k1_deploy_robot", "L3", None, "Runs on the K1 CPU: policy runner, TF service, watchdog, recorders."),
+    "deploy_laptop": ("k1-deploy-laptop", "k1_deploy_laptop", "L3", None, "ROS 2 jazzy workspace, push-IK web/sim, pad sender, sim-to-sim."),
+    "web_console": ("k1-web-console", "k1_web_console", "L3", None, "Fleet dashboard and camera tools; one web shell, plugin pages over HTTP/WS."),
+    "ops": ("k1-ops", "k1_ops", "L3", None, "Host launchers, containers, CI, job chains."),
 }
 BY_REPO = {v[0]: k for k, v in R.items()}
 REPO = {k: v[0] for k, v in R.items()}
 LAYER_NAME = {"L0": "Contract (no heavy deps)", "L1": "Core (torch / numpy only)", "L2": "Domain (no cross-imports)", "L3": "Apps (processes you start)"}
-LIB_FOR_PKG = {"k1_common": "common", "k1_utils": "utils", "k1_runtime": "runtime", "k1_velocity": "rl_isaac",
+LIB_FOR_PKG = {"k1_description": "description", "k1_common": "common", "k1_utils": "utils", "k1_runtime": "runtime", "k1_velocity": "rl_isaac",
                "k1_kicking": "rl_isaac", "compass_k1": "rl_isaac", "mjlab_k1": "rl_mj", "k1m": "mimic",
                "k1_teleop": "teleop", "k1_chat": "vla"}
 
@@ -51,7 +56,7 @@ PIP = {"numpy": "numpy", "scipy": "scipy", "torch": "torch", "mujoco": "mujoco",
        "pytest": "pytest", "pandas": "pandas", "paramiko": "paramiko", "httpx": "httpx", "pydantic": "pydantic",
        "tyro": "tyro", "wandb": "wandb", "mink": "mink", "pinocchio": "pin", "jax": "jax", "einops": "einops"}
 STDLIB = set(sys.stdlib_module_names)
-SKIPDIRS = {".git", "__pycache__", "build", "vendor", "node_modules", ".venv"}
+SKIPDIRS = {".git", "__pycache__", "build", "vendor", "node_modules", ".venv", "third_party"}
 
 
 def py_files(root):
@@ -101,6 +106,14 @@ for repo in LIBS.glob("k1-*"):
     for d in (repo / "ros").glob("*") if (repo / "ros").exists() else []:
         local_pkgs.add(d.name)
 
+# ---------------------------------------------------------------- pyproject.toml (read only)
+pyproj = {}
+for lib, (repo, *_r) in R.items():
+    f = LIBS / repo / "pyproject.toml"
+    pyproj[lib] = tomllib.loads(f.read_text()) if f.exists() else {}
+    deps = [re.split(r"[ <>=\[;]", d)[0] for d in pyproj[lib].get("project", {}).get("dependencies", [])]
+    R[lib] = R[lib][:3] + ([BY_REPO[d] for d in deps if d in BY_REPO],) + R[lib][4:]
+
 report = {}
 edges = Counter()
 nfiles, nloc = {}, {}
@@ -122,32 +135,12 @@ for lib, (repo, pkg, layer, may, purpose) in R.items():
     # packages w/o __init__ but with .py (namespace-style)
     if (root / "src").exists():
         pkgs = sorted({d.name for d in (root / "src").glob("*") if d.is_dir() and any(d.glob("*.py"))})
-    report[lib] = dict(pip=pip, env=env, pkgs=pkgs)
+    envvars = set()
+    for f in root.rglob("*"):
+        if f.is_file() and f.suffix in (".py", ".sh", ".launch") and not (set(f.relative_to(root).parts) & SKIPDIRS):
+            envvars |= set(re.findall(r"\b(K1_[A-Z0-9_]+)\b", f.read_text(errors="replace")))
+    report[lib] = dict(pip=pip, env=env, pkgs=pkgs, envvars=sorted(envvars))
 
-    # ------------------------------------------------------------ pyproject
-    sib = [R[m][0] for m in may]
-    deps = pip + sib
-    scripts = ""
-    lines = ["[project]", f'name = "{repo}"', 'version = "0.1.0"', f'description = "{purpose}"',
-             'requires-python = ">=3.10"', "dependencies = ["]
-    lines += [f'  "{d}",' for d in deps]
-    lines += ["]"]
-    if lib == "rl_mj":
-        lines[-1:] = ['  "mjlab",', "]"]
-        lines += ["", "[project.scripts]", 'k1-train = "mjlab_k1.cli:train"', 'k1-play = "mjlab_k1.cli:play"']
-    if sib:
-        lines += ["", "[tool.uv.sources]"] + [f'{d} = {{ git = "https://github.com/{OWNER}/{d}" }}' for d in sib]
-    if pkgs:
-        lines += ["", "[build-system]", 'requires = ["hatchling"]', 'build-backend = "hatchling.build"', "",
-                  "[tool.hatch.build.targets.wheel]", "packages = [" + ", ".join(f'"src/{p}"' for p in pkgs) + "]"]
-    else:
-        lines += ["", "[tool.uv]", "package = false  # scripts / ROS packages, not an importable library"]
-    if env:
-        lines += ["", "# Provided by the environment (ROS 2, Isaac Sim/Lab, mjlab, robot SDK) or not on PyPI under this name:",
-                  "# " + ", ".join(env)]
-    (root / "pyproject.toml").write_text("\n".join(lines) + "\n")
-    (root / ".gitignore").write_text("__pycache__/\n*.pyc\n*.egg-info/\n.venv/\n.ruff_cache/\n.pytest_cache/\nbuild/\ninstall/\nlog/\n"
-                                     "outputs/\nwandb/\n*.pt\n*.onnx\n*.npz\n*.mp4\n.env\n")
 
 # ---------------------------------------------------------------- per-directory READMEs
 def tree(root, depth=2):
@@ -183,21 +176,27 @@ for lib, (repo, *_r) in R.items():
         if len(d.relative_to(root).parts) > 3:
             continue
         rows = table(d)
-        if len(rows) >= 3 and not (d / "README.md").exists():
-            rel = d.relative_to(root)
+        rel = d.relative_to(root)
+        old = (d / "README.md").read_text() if (d / "README.md").exists() else None
+        generated = old is None or old.startswith(f"# {rel}\n\nPart of [{repo}]")
+        if len(rows) >= 3 and generated:
             (d / "README.md").write_text(f"# {rel}\n\nPart of [{repo}](https://github.com/{OWNER}/{repo}).\n\n| File | What it does |\n|---|---|\n" + "\n".join(rows) + "\n")
             dir_readmes += 1
 
 # ---------------------------------------------------------------- path refs into other repos (known seams)
 OWN_PREFIX = {"isaac_tasks/": "rl_isaac", "mjlab_k1/deploy/": "deploy_laptop", "mjlab_k1/": "rl_mj", "k1_teleop/": "teleop",
               "real_robot/": "data", "k1m/": "mimic", "tools/": "web_console", "compass_k1": "rl_isaac"}
+LEGACY = re.compile(r"booster_ws|isaac_tasks/|booster_train_ref")
 seams = defaultdict(list)
+legacy = defaultdict(list)
 for lib, (repo, *_r) in R.items():
     root = LIBS / repo
     for p in root.rglob("*"):
         if not p.is_file() or p.suffix not in (".py", ".sh", ".yaml", ".yml", ".md") or set(p.relative_to(root).parts) & SKIPDIRS:
             continue
         txt = p.read_text(errors="replace")
+        if p.name != "README.md" and "legacy" not in p.relative_to(root).parts and LEGACY.search(txt):
+            legacy[lib].append(str(p.relative_to(root)))
         for pref, owner in OWN_PREFIX.items():
             if owner == lib:
                 continue
@@ -220,18 +219,21 @@ for lib, (repo, pkg, layer, may, purpose) in R.items():
     seam_txt = ("None.\n" if not sm else "These files still name paths that now live in another repo (hard-coded path strings, not imports). "
                 "Pass them as arguments / config when you touch the file:\n\n| File | Refers to | Owner |\n|---|---|---|\n" +
                 "\n".join(f"| `{f}` | `{pref}` | {R[o][0]} |" for f, pref, o in sm[:40]) + ("\n\n…and %d more." % (len(sm) - 40) if len(sm) > 40 else "") + "\n")
-    extra = ""
-    if lib == "runtime":
-        extra = ("\n## `gamepad_core`\n\n`k1_gamepad_deploy.py` was split in three: this repo keeps the shared half (gains, `Walker`, `Body`, `ArmJog`, `Gamepad`), "
-                 "[k1-deploy-robot](https://github.com/thdhyan/k1-deploy-robot) keeps `run_robot`, and "
-                 "[k1-deploy-laptop](https://github.com/thdhyan/k1-deploy-laptop) keeps the MuJoCo sim-to-sim (`gamepad_sim.py`). "
-                 "`CAP` (command limits) is a module global: set `gamepad_core.CAP` before building a `Gamepad`.\n")
-    if lib == "description":
-        extra = ("\n## Assets\n\nMeshes and MJCF live in a separate repo. Add them once:\n```bash\n"
-                 f"git submodule add git@github.com:{OWNER}/booster_assets.git assets\n```\n")
-    if lib == "deploy_robot":
-        extra = ("\n## Seam\n\n`sdk_bridge/` holds the on-robot half of the former `k1_control` ROS package; the laptop half is in k1-deploy-laptop. "
-                 "Its `setup.py` entry points still need splitting.\n")
+    usage_f = USAGE / f"{repo}.md"
+    usage = usage_f.read_text().strip() + "\n" if usage_f.exists() else "Not written yet: add `tools/usage/%s.md` in k1-workspace.\n" % repo
+    tests = ""
+    if (root / "tests").is_dir():
+        ini = pyproj[lib].get("tool", {}).get("pytest", {}).get("ini_options", {})
+        marks = "".join(f"\n- marker `{m.split(':')[0]}`: {m.split(':', 1)[1].strip()}" for m in ini.get("markers", []))
+        tests = (f"From a k1-workspace checkout (see its README, \"Run the tests\"):\n```bash\ncd libs/{repo} && python -m pytest -q tests\n```\n"
+                 + (f"\nDefault options: `{ini['addopts']}`.\n" if ini.get("addopts") else "") + marks.lstrip("\n") + ("\n" if marks else ""))
+    else:
+        tests = "No tests yet.\n"
+    envs = ", ".join(f"`{e}`" for e in rep["envvars"]) or "none"
+    lg = sorted(set(legacy[lib]))
+    legacy_txt = ("" if not lg else "\n## Old `booster_ws` layout still referenced\n\nThese files still name `booster_ws`, `isaac_tasks/` or `booster_train_ref` paths "
+                  "(container scripts not ported yet, or docstrings):\n\n" + "\n".join(f"- `{f}`" for f in lg[:30])
+                  + ("\n- …and %d more" % (len(lg) - 30) if len(lg) > 30 else "") + "\n")
     used_by = [R[o][0] for o in R if lib in R[o][3]]
     mer = ["```mermaid", "flowchart TB"]
     mer += [f"  {R[o][0].replace('-', '_')}[{R[o][0]}]" for o in R if o in may or o in R and lib in R[o][3]]
@@ -259,6 +261,20 @@ for lib, (repo, pkg, layer, may, purpose) in R.items():
 
 {install}
 
+## Usage
+
+{usage}
+## Tests
+
+{tests}
+## Robots and hosts
+
+Robot IPs, SSH aliases, network, safety and how to control each robot: [docs/ROBOTS.md]({ROBOTS}) in k1-workspace.
+
+## Environment variables read
+
+{envs}
+
 ## Layout
 
 ```
@@ -270,10 +286,10 @@ for lib, (repo, pkg, layer, may, purpose) in R.items():
 - Declared sibling libraries: {", ".join(R[m][0] for m in may) or "none"} (see `pyproject.toml`, `[tool.uv.sources]`).
 - PyPI: {", ".join(rep["pip"]) or "none detected"}.
 - Provided by the environment (ROS 2, Isaac, mjlab, robot SDK) or unresolved: {", ".join(f"`{e}`" for e in rep["env"]) or "none"}.
-{extra}
+
 ## Hard-coded paths into other repos
 
-{seam_txt}
+{seam_txt}{legacy_txt}
 ## Origin
 
 Extracted from `booster_ws` (branch `dev/push-training-wip`, working tree of 2026-11-03{"; k1_chat from `wt-k1-tools`" if lib == "vla" else ""}) by

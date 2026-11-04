@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="5" time="0.090" timestamp="2026-11-03T19:15:29.497122" hostname="dhyan-LOQ"><testcase classname="tests.test_locomotion_node_layout" name="test_input_width_follows_input_mode_not_a_hardcoded_obs_dim" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/src/k1_locomotion/k1_locomotion/locomotion_node.py'">tests/test_locomotion_node_layout.py:42: in test_input_width_follows_input_mode_not_a_hardcoded_obs_dim
+    tree = ast.parse(_src())
+tests/test_locomotion_node_layout.py:30: in _src
+    return NODE.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/src/k1_locomotion/k1_locomotion/locomotion_node.py'</failure></testcase><testcase classname="tests.test_locomotion_node_layout" name="test_expected_width_is_history_times_obs_dim_when_stacked" time="0.000" /><testcase classname="tests.test_locomotion_node_layout" name="test_inference_feed_matches_the_probed_width" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/src/k1_locomotion/k1_locomotion/locomotion_node.py'">tests/test_locomotion_node_layout.py:70: in test_inference_feed_matches_the_probed_width
+    src = _src()
+tests/test_locomotion_node_layout.py:30: in _src
+    return NODE.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/src/k1_locomotion/k1_locomotion/locomotion_node.py'</failure></testcase><testcase classname="tests.test_locomotion_node_layout" name="test_error_message_names_both_real_widths_not_the_old_48_dim_boogeyman" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/src/k1_locomotion/k1_locomotion/locomotion_node.py'">tests/test_locomotion_node_layout.py:88: in test_error_message_names_both_real_widths_not_the_old_48_dim_boogeyman
+    tree = ast.parse(_src())
+tests/test_locomotion_node_layout.py:30: in _src
+    return NODE.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/src/k1_locomotion/k1_locomotion/locomotion_node.py'</failure></testcase><testcase classname="tests.test_locomotion_node_layout" name="test_node_obs_dim_matches_the_phase_clock_layout" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/src/k1_locomotion/k1_locomotion/locomotion_node.py'">tests/test_locomotion_node_layout.py:106: in test_node_obs_dim_matches_the_phase_clock_layout
+    tree = ast.parse(_src())
+tests/test_locomotion_node_layout.py:30: in _src
+    return NODE.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/src/k1_locomotion/k1_locomotion/locomotion_node.py'</failure></testcase></testsuite></testsuites>

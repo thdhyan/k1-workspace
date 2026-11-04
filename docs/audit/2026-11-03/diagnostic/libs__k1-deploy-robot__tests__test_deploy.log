@@ -1,0 +1,45 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', '/tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py', '-q', '--tb=short', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/diagnostic/libs__k1-deploy-robot__tests__test_deploy.xml']
+.FFFFFFF                                                                 [100%]
+=================================== FAILURES ===================================
+____________________ test_stick_mapping_signs_deadzone_cap _____________________
+/tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py:27: in test_stick_mapping_signs_deadzone_cap
+    np.testing.assert_allclose(k.stick_to_cmd(0.0, -1.0, 0.0), [k.CAP[0], 0, 0])
+E   AttributeError: module 'k1_gamepad_deploy' has no attribute 'stick_to_cmd'
+________________________ test_gains_match_exported_mjcf ________________________
+/tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py:36: in test_gains_match_exported_mjcf
+    xml = (Path(__file__).resolve().parents[2] / "src/k1_description/assets/robots/K1/K1_22dof_mjlab.xml").read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/src/k1_description/assets/robots/K1/K1_22dof_mjlab.xml'
+___________________ test_getup_fsm_walk_damp_getup_ramp_walk ___________________
+/tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py:60: in test_getup_fsm_walk_damp_getup_ramp_walk
+    pad, up, down, z = k.Still(), np.array([0, 0, -1.0]), np.array([1.0, 0, 0]), np.zeros(22)
+E   AttributeError: module 'k1_gamepad_deploy' has no attribute 'Still'
+________________ test_getup_fsm_without_policy_gives_up_on_fall ________________
+/tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py:80: in test_getup_fsm_without_policy_gives_up_on_fall
+    assert body(np.zeros(3), np.array([1.0, 0, 0]), k.HOME, np.zeros(22), k.Still()) is None
+E   AttributeError: module 'k1_gamepad_deploy' has no attribute 'Still'
+_________________ test_hand_jacobian_matches_finite_difference _________________
+/tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py:87: in test_hand_jacobian_matches_finite_difference
+    j = k.hand_fk(q, side)[1]
+E   AttributeError: module 'k1_gamepad_deploy' has no attribute 'hand_fk'
+________________ test_arm_jog_moves_held_hand_only_and_mirrors _________________
+/tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py:93: in test_arm_jog_moves_held_hand_only_and_mirrors
+    jog = k.ArmJog()
+E   AttributeError: module 'k1_gamepad_deploy' has no attribute 'ArmJog'
+_____________ test_arm_jog_stays_in_limits_and_keep_out_then_homes _____________
+/tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py:109: in test_arm_jog_stays_in_limits_and_keep_out_then_homes
+    jog = k.ArmJog()
+E   AttributeError: module 'k1_gamepad_deploy' has no attribute 'ArmJog'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/diagnostic/libs__k1-deploy-robot__tests__test_deploy.xml -
+=========================== short test summary info ============================
+FAILED ../../../../tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py::test_stick_mapping_signs_deadzone_cap
+FAILED ../../../../tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py::test_gains_match_exported_mjcf
+FAILED ../../../../tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py::test_getup_fsm_walk_damp_getup_ramp_walk
+FAILED ../../../../tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py::test_getup_fsm_without_policy_gives_up_on_fall
+FAILED ../../../../tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py::test_hand_jacobian_matches_finite_difference
+FAILED ../../../../tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py::test_arm_jog_moves_held_hand_only_and_mirrors
+FAILED ../../../../tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py::test_arm_jog_stays_in_limits_and_keep_out_then_homes
+7 failed, 1 passed in 1.22s

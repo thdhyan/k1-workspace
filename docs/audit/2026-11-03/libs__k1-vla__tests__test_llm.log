@@ -1,0 +1,17 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-vla/tests/test_llm.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-vla__tests__test_llm.xml']
+
+==================================== ERRORS ====================================
+________________ ERROR collecting libs/k1-vla/tests/test_llm.py ________________
+ImportError while importing test module '/home/thakk100/Projects/booster_proj/libs/k1-vla/tests/test_llm.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+libs/k1-vla/tests/test_llm.py:1: in <module>
+    import httpx, pytest, respx
+E   ModuleNotFoundError: No module named 'respx'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-vla__tests__test_llm.xml -
+=========================== short test summary info ============================
+ERROR libs/k1-vla/tests/test_llm.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.14s

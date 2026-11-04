@@ -1,0 +1,4 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-vla/tests/test_tools.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-vla__tests__test_tools.xml']
+......                                                                   [100%]
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-vla__tests__test_tools.xml -
+6 passed in 0.02s

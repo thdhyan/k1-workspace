@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="20" skipped="0" tests="20" time="0.398" timestamp="2026-11-03T19:15:35.050217" hostname="dhyan-LOQ"><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_phase_locked_stride_is_wired_as_a_penalty" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:86: in test_phase_locked_stride_is_wired_as_a_penalty
+    assigns = _assigns(_cls(CFG, "RewardsCfg"))
+libs/k1-rl-isaac/tests/test_phase_locked_stride.py:33: in _cls
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_stride_term_reads_both_feet_in_a_fixed_order" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:99: in test_stride_term_reads_both_feet_in_a_fixed_order
+    assigns = _assigns(_cls(CFG, "RewardsCfg"))
+libs/k1-rl-isaac/tests/test_phase_locked_stride.py:33: in _cls
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_stride_term_takes_a_reference_amplitude" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:108: in test_stride_term_takes_a_reference_amplitude
+    assigns = _assigns(_cls(CFG, "RewardsCfg"))
+libs/k1-rl-isaac/tests/test_phase_locked_stride.py:33: in _cls
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_reference_amplitude_is_a_length_and_grows_with_speed" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:137: in test_reference_amplitude_is_a_length_and_grows_with_speed
+    src = GAIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_stride_term_function_is_defined" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:173: in test_stride_term_function_is_defined
+    src = GAIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_stride_is_position_based_not_a_rate_penalty" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:187: in test_stride_is_position_based_not_a_rate_penalty
+    src = GAIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_stride_forward_axis_is_three_dimensional" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:204: in test_stride_forward_axis_is_three_dimensional
+    body = GAIT.read_text().split("def phase_locked_stride", 1)[1].split("\ndef ", 1)[0]
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_stride_reference_antiphases_the_two_feet" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:217: in test_stride_reference_antiphases_the_two_feet
+    body = GAIT.read_text().split("def phase_locked_stride", 1)[1].split("\ndef ", 1)[0]
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_stride_amplitude_falls_with_cadence" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:229: in test_stride_amplitude_falls_with_cadence
+    body = GAIT.read_text().split("def phase_locked_stride", 1)[1].split("\ndef ", 1)[0]
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_frequency_defaults_to_following_the_command" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:236: in test_frequency_defaults_to_following_the_command
+    tree = ast.parse(CLOCK.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_clock_exposes_a_frequency_helper" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:250: in test_clock_exposes_a_frequency_helper
+    src = CLOCK.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_frequency_is_clamped_into_the_gate_band" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:260: in test_frequency_is_clamped_into_the_gate_band
+    src = CLOCK.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_frequency_never_reaches_zero" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:279: in test_frequency_never_reaches_zero
+    src = CLOCK.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_command_resample_is_smoothed" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:288: in test_command_resample_is_smoothed
+    body = CLOCK.read_text().split("def get_frequency", 1)[1].split("\ndef ", 1)[0]
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_clock_is_still_idempotent_within_a_control_step" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:298: in test_clock_is_still_idempotent_within_a_control_step
+    body = CLOCK.read_text().split("def get_phase", 1)[1].split("\ndef ", 1)[0]
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_ramp_gate_is_not_the_unreachable_080" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:310: in test_ramp_gate_is_not_the_unreachable_080
+    for node in _assigns(_cls(CFG, "CurriculumCfg")).values():
+libs/k1-rl-isaac/tests/test_phase_locked_stride.py:33: in _cls
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_video_recorder_is_opt_in" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/scripts/train.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:327: in test_video_recorder_is_opt_in
+    src = TRAIN.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/scripts/train.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_video_interval_default_is_1000" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/scripts/train.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:335: in test_video_interval_default_is_1000
+    src = TRAIN.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/scripts/train.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_render_mode_is_not_set_by_bare_video" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/scripts/train.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:343: in test_render_mode_is_not_set_by_bare_video
+    src = TRAIN.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/scripts/train.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_phase_locked_stride" name="test_policy_observes_the_phase_the_reward_scores_against" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'">libs/k1-rl-isaac/tests/test_phase_locked_stride.py:363: in test_policy_observes_the_phase_the_reward_scores_against
+    assigns = _assigns(_cls(CFG, "PolicyCfg"))
+libs/k1-rl-isaac/tests/test_phase_locked_stride.py:33: in _cls
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'</failure></testcase></testsuite></testsuites>

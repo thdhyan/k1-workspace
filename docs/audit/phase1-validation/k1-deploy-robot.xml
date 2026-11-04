@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="1.405" timestamp="2026-11-03T21:46:55.690568" hostname="dhyan-LOQ"><testcase classname="tests.test_deploy" name="test_runner_uses_shared_core" time="0.001" /></testsuite></testsuites>

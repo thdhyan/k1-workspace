@@ -1,7 +1,7 @@
 # Lab network notes — 2026-10-26
 
 ## Facts
-- Lab SSID is `robotics_5G` (underscore) and 2.4 GHz `robotics`. password <lab password> (`robtoics` fails).
+- Lab SSID is `robotics_5G` (underscore) and 2.4 GHz `robotics`. Password: ask the lab (not kept in git).
 - Robot wifi iface `wlP1p1s0`; robots have passwordless `sudo nmcli`. Joined with
   `nmcli dev wifi rescan; nmcli dev wifi connect robotics_5G password <lab password> name robotics_5G`.
   Run it detached (`nohup ... &`): the SSH session drops when the robot changes network.

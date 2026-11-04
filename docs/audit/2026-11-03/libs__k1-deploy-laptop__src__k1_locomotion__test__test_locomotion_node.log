@@ -1,0 +1,17 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-deploy-laptop/src/k1_locomotion/test/test_locomotion_node.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-deploy-laptop__src__k1_locomotion__test__test_locomotion_node.xml']
+
+==================================== ERRORS ====================================
+________________ ERROR collecting test/test_locomotion_node.py _________________
+ImportError while importing test module '/home/thakk100/Projects/booster_proj/libs/k1-deploy-laptop/src/k1_locomotion/test/test_locomotion_node.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+libs/k1-deploy-laptop/src/k1_locomotion/test/test_locomotion_node.py:31: in <module>
+    from sensor_msgs.msg import JointState  # noqa: E402
+E   ModuleNotFoundError: No module named 'sensor_msgs'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-deploy-laptop__src__k1_locomotion__test__test_locomotion_node.xml -
+=========================== short test summary info ============================
+ERROR libs/k1-deploy-laptop/src/k1_locomotion/test/test_locomotion_node.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 1.22s

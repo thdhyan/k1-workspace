@@ -1,0 +1,51 @@
+........................................................................ [ 37%]
+........................................................................ [ 74%]
+......................................FF..........                       [100%]
+=================================== FAILURES ===================================
+_______________________________ test_file_frames _______________________________
+libs/k1-vla/tests/test_vision.py:51: in test_file_frames
+    assert FileFrames(FIX).grab()[:2] == b"\xff\xd8"
+libs/k1-vla/src/k1_chat/frames.py:80: in grab
+    return self.path.read_bytes()
+/usr/lib/python3.12/pathlib.py:1021: in read_bytes
+    with self.open(mode='rb') as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-vla/tests/fixtures/ball_right.jpg'
+___________ test_look_sends_frame_and_question_and_logs_for_console ____________
+libs/k1-vla/tests/test_vision.py:65: in test_look_sends_frame_and_question_and_logs_for_console
+    assert out == "A red ball on the right."
+E   assert "error: look ...ll_right.jpg'" == 'A red ball on the right.'
+E     - A red ball on the right.
+E     + error: look failed: FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-vla/tests/fixtures/ball_right.jpg'
+=============================== warnings summary ===============================
+libs/k1-vla/tests/test_audio.py:117
+  /home/thakk100/Projects/booster_proj/libs/k1-vla/tests/test_audio.py:117: PytestUnknownMarkWarning: Unknown pytest.mark.robot - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.robot
+
+libs/k1-vla/tests/test_booster_robot.py:27
+  /home/thakk100/Projects/booster_proj/libs/k1-vla/tests/test_booster_robot.py:27: PytestUnknownMarkWarning: Unknown pytest.mark.robot - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.robot
+
+libs/k1-vla/tests/test_llm.py:41
+  /home/thakk100/Projects/booster_proj/libs/k1-vla/tests/test_llm.py:41: PytestUnknownMarkWarning: Unknown pytest.mark.net - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.net
+
+libs/k1-vla/tests/test_llm.py:76
+  /home/thakk100/Projects/booster_proj/libs/k1-vla/tests/test_llm.py:76: PytestUnknownMarkWarning: Unknown pytest.mark.onprem - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.onprem
+
+libs/k1-vla/tests/test_vision.py:80
+  /home/thakk100/Projects/booster_proj/libs/k1-vla/tests/test_vision.py:80: PytestUnknownMarkWarning: Unknown pytest.mark.net - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.net
+
+libs/k1-vla/tests/test_vision.py:90
+  /home/thakk100/Projects/booster_proj/libs/k1-vla/tests/test_vision.py:90: PytestUnknownMarkWarning: Unknown pytest.mark.robot - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.robot
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/vla_with_test_dependencies.xml -
+=========================== short test summary info ============================
+FAILED libs/k1-vla/tests/test_vision.py::test_file_frames - FileNotFoundError...
+FAILED libs/k1-vla/tests/test_vision.py::test_look_sends_frame_and_question_and_logs_for_console
+2 failed, 192 passed, 6 deselected, 6 warnings in 20.90s

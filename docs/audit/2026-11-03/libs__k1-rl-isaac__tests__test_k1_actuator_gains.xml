@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="8" skipped="0" tests="9" time="0.143" timestamp="2026-11-03T19:15:34.521775" hostname="dhyan-LOQ"><testcase classname="libs.k1-rl-isaac.tests.test_k1_actuator_gains" name="test_upstream_ankle_armature_ratio_is_present" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/booster_train_ref/source/booster_train/booster_train/assets/robots/booster.py'">libs/k1-rl-isaac/tests/test_k1_actuator_gains.py:47: in test_upstream_ankle_armature_ratio_is_present
+    src = BOOSTER.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/booster_train_ref/source/booster_train/booster_train/assets/robots/booster.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_k1_actuator_gains" name="test_ankle_wrapper_still_wraps_the_right_motor_and_index" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/booster_train_ref/source/booster_train/booster_train/assets/robots/booster.py'">libs/k1-rl-isaac/tests/test_k1_actuator_gains.py:57: in test_ankle_wrapper_still_wraps_the_right_motor_and_index
+    src = BOOSTER.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/booster_train_ref/source/booster_train/booster_train/assets/robots/booster.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_k1_actuator_gains" name="test_velocity_cfg_overrides_no_actuator_gains" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'">libs/k1-rl-isaac/tests/test_k1_actuator_gains.py:74: in test_velocity_cfg_overrides_no_actuator_gains
+    src = CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_k1_actuator_gains" name="test_the_old_override_constants_are_gone" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'">libs/k1-rl-isaac/tests/test_k1_actuator_gains.py:89: in test_the_old_override_constants_are_gone
+    src = CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_k1_actuator_gains" name="test_articulation_is_a_plain_deepcopy_of_the_published_cfg" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'">libs/k1-rl-isaac/tests/test_k1_actuator_gains.py:104: in test_articulation_is_a_plain_deepcopy_of_the_published_cfg
+    src = CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_k1_actuator_gains" name="test_published_gains_are_the_documented_ones" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/booster_train_ref/source/booster_train/booster_train/assets/robots/actuator.py'">libs/k1-rl-isaac/tests/test_k1_actuator_gains.py:121: in test_published_gains_are_the_documented_ones
+    act = ACTUATOR.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/booster_train_ref/source/booster_train/booster_train/assets/robots/actuator.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_k1_actuator_gains" name="test_the_pinned_submodule_commit_contains_the_fix" time="0.003"><failure message="AssertionError: could not read the pinned submodule commit for isaac_tasks/booster_train_ref: []&#10;assert (0 &gt;= 3)&#10; +  where 0 = len([])">libs/k1-rl-isaac/tests/test_k1_actuator_gains.py:150: in test_the_pinned_submodule_commit_contains_the_fix
+    assert len(pinned) &gt;= 3 and pinned[1] == "commit", (
+E   AssertionError: could not read the pinned submodule commit for isaac_tasks/booster_train_ref: []
+E   assert (0 &gt;= 3)
+E    +  where 0 = len([])</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_k1_actuator_gains" name="test_working_tree_matches_the_pinned_submodule" time="0.002" /><testcase classname="libs.k1-rl-isaac.tests.test_k1_actuator_gains" name="test_the_cause_is_documented_where_the_fix_lives" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/booster_train_ref/source/booster_train/booster_train/assets/robots/booster.py'">libs/k1-rl-isaac/tests/test_k1_actuator_gains.py:190: in test_the_cause_is_documented_where_the_fix_lives
+    src = BOOSTER.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/booster_train_ref/source/booster_train/booster_train/assets/robots/booster.py'</failure></testcase></testsuite></testsuites>

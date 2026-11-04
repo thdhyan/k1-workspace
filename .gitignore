@@ -5,3 +5,5 @@ graphify-out/cache/
 graphify-out/.graphify_*
 libs/graphify-out/
 libs/.graphifyignore
+docs/*.local.md
+MUJOCO_LOG.TXT

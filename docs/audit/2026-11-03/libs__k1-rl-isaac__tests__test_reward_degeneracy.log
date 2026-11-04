@@ -1,0 +1,128 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-rl-isaac/tests/test_reward_degeneracy.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_reward_degeneracy.xml']
+FFFFFFFFFF                                                               [100%]
+=================================== FAILURES ===================================
+_______________ test_head_centre_reward_is_masked_by_visibility ________________
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:105: in test_head_centre_reward_is_masked_by_visibility
+    src = HEAD_MDP.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/head/head_mdp.py'
+_____________________ test_velocity_has_no_air_time_reward _____________________
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:120: in test_velocity_has_no_air_time_reward
+    terms = _reward_terms(VELOCITY_CFG, "RewardsCfg")
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:51: in _reward_terms
+    body = _class_body(path, cls)
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:30: in _class_body
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+____________________ test_velocity_has_dense_upright_reward ____________________
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:131: in test_velocity_has_dense_upright_reward
+    terms = _reward_terms(VELOCITY_CFG, "RewardsCfg")
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:51: in _reward_terms
+    body = _class_body(path, cls)
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:30: in _class_body
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+______________ test_velocity_orientation_weight_is_not_negligible ______________
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:139: in test_velocity_orientation_weight_is_not_negligible
+    terms = _reward_terms(VELOCITY_CFG, "RewardsCfg")
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:51: in _reward_terms
+    body = _class_body(path, cls)
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:30: in _class_body
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+_______________ test_velocity_tracking_dominates_regularisation ________________
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:160: in test_velocity_tracking_dominates_regularisation
+    terms = _reward_terms(VELOCITY_CFG, "RewardsCfg")
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:51: in _reward_terms
+    body = _class_body(path, cls)
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:30: in _class_body
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+_________________ test_joint_pos_limits_cover_every_leg_joint __________________
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:177: in test_joint_pos_limits_cover_every_leg_joint
+    terms = _reward_terms(VELOCITY_CFG, "RewardsCfg")
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:51: in _reward_terms
+    body = _class_body(path, cls)
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:30: in _class_body
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+______________________ test_velocity_has_fall_termination ______________________
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:199: in test_velocity_has_fall_termination
+    body = _class_body(VELOCITY_CFG, "TerminationsCfg")
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:30: in _class_body
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+_____________________ test_head_task_has_fall_termination ______________________
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:211: in test_head_task_has_fall_termination
+    body = _class_body(
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:30: in _class_body
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/head/head_env_cfg.py'
+_______________________ test_no_zero_weight_reward_terms _______________________
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:227: in test_no_zero_weight_reward_terms
+    terms = _reward_terms(VELOCITY_CFG, "RewardsCfg")
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:51: in _reward_terms
+    body = _class_body(path, cls)
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:30: in _class_body
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+_________________ test_every_reward_func_is_importable_by_name _________________
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:235: in test_every_reward_func_is_importable_by_name
+    terms = _reward_terms(VELOCITY_CFG, "RewardsCfg")
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:51: in _reward_terms
+    body = _class_body(path, cls)
+libs/k1-rl-isaac/tests/test_reward_degeneracy.py:30: in _class_body
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_reward_degeneracy.xml -
+=========================== short test summary info ============================
+FAILED libs/k1-rl-isaac/tests/test_reward_degeneracy.py::test_head_centre_reward_is_masked_by_visibility
+FAILED libs/k1-rl-isaac/tests/test_reward_degeneracy.py::test_velocity_has_no_air_time_reward
+FAILED libs/k1-rl-isaac/tests/test_reward_degeneracy.py::test_velocity_has_dense_upright_reward
+FAILED libs/k1-rl-isaac/tests/test_reward_degeneracy.py::test_velocity_orientation_weight_is_not_negligible
+FAILED libs/k1-rl-isaac/tests/test_reward_degeneracy.py::test_velocity_tracking_dominates_regularisation
+FAILED libs/k1-rl-isaac/tests/test_reward_degeneracy.py::test_joint_pos_limits_cover_every_leg_joint
+FAILED libs/k1-rl-isaac/tests/test_reward_degeneracy.py::test_velocity_has_fall_termination
+FAILED libs/k1-rl-isaac/tests/test_reward_degeneracy.py::test_head_task_has_fall_termination
+FAILED libs/k1-rl-isaac/tests/test_reward_degeneracy.py::test_no_zero_weight_reward_terms
+FAILED libs/k1-rl-isaac/tests/test_reward_degeneracy.py::test_every_reward_func_is_importable_by_name
+10 failed in 0.24s

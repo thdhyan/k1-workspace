@@ -1,0 +1,79 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_distill_distribution_cfg.xml']
+FFFFFFF                                                                  [100%]
+=================================== FAILURES ===================================
+_________________ test_distill_models_are_stochastic[student] __________________
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:93: in test_distill_models_are_stochastic
+    cfg = _model_cfgs(DISTILL)
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:56: in _model_cfgs
+    for node in ast.walk(ast.parse(path.read_text())):
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_distill_cfg.py'
+_________________ test_distill_models_are_stochastic[teacher] __________________
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:93: in test_distill_models_are_stochastic
+    cfg = _model_cfgs(DISTILL)
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:56: in _model_cfgs
+    for node in ast.walk(ast.parse(path.read_text())):
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_distill_cfg.py'
+_____ test_teacher_distribution_matches_the_ppo_actor_it_is_distilled_from _____
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:105: in test_teacher_distribution_matches_the_ppo_actor_it_is_distilled_from
+    ppo_actor = _kw(_model_cfgs(PPO, SQUAT_TEACHER_CLS)["actor"], "distribution_cfg")
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:56: in _model_cfgs
+    for node in ast.walk(ast.parse(path.read_text())):
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_ppo_cfg.py'
+______________________ test_critic_is_left_deterministic _______________________
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:121: in test_critic_is_left_deterministic
+    base = _model_cfgs(PPO, "K1VelocityPPORunnerCfg")
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:56: in _model_cfgs
+    for node in ast.walk(ast.parse(path.read_text())):
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_ppo_cfg.py'
+_________________ test_the_two_ppo_actors_deliberately_differ __________________
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:136: in test_the_two_ppo_actors_deliberately_differ
+    blind = _kw(_model_cfgs(PPO, "K1VelocityPPORunnerCfg")["actor"], "distribution_cfg")
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:56: in _model_cfgs
+    for node in ast.walk(ast.parse(path.read_text())):
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_ppo_cfg.py'
+_______________ test_squat_distill_task_is_registered_separately _______________
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:162: in test_squat_distill_task_is_registered_separately
+    reg = (_ROOT / "isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/__init__.py").read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/__init__.py'
+______ test_squat_distill_env_extends_the_squat_env_not_the_velocity_one _______
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:174: in test_squat_distill_env_extends_the_squat_env_not_the_velocity_one
+    "velocity_env_distill.py").read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_distill.py'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_distill_distribution_cfg.xml -
+=========================== short test summary info ============================
+FAILED libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py::test_distill_models_are_stochastic[student]
+FAILED libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py::test_distill_models_are_stochastic[teacher]
+FAILED libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py::test_teacher_distribution_matches_the_ppo_actor_it_is_distilled_from
+FAILED libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py::test_critic_is_left_deterministic
+FAILED libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py::test_the_two_ppo_actors_deliberately_differ
+FAILED libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py::test_squat_distill_task_is_registered_separately
+FAILED libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py::test_squat_distill_env_extends_the_squat_env_not_the_velocity_one
+7 failed in 0.15s

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="1.182" timestamp="2026-11-03T19:15:37.539836" hostname="dhyan-LOQ"><testcase classname="libs.k1-rl-isaac.tests.test_squat_two_stage_curriculum" name="test_stage_a_zero_velocity_then_deeper_on_height_gate" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/squat_mdp.py'">libs/k1-rl-isaac/tests/test_squat_two_stage_curriculum.py:45: in test_stage_a_zero_velocity_then_deeper_on_height_gate
+    m, term = _mod(), _term()
+libs/k1-rl-isaac/tests/test_squat_two_stage_curriculum.py:22: in _mod
+    spec.loader.exec_module(mod)
+&lt;frozen importlib._bootstrap_external&gt;:991: in exec_module
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1128: in get_code
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/squat_mdp.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_squat_two_stage_curriculum" name="test_stage_b_velocity_needs_both_gates_and_reaches_full_range" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/squat_mdp.py'">libs/k1-rl-isaac/tests/test_squat_two_stage_curriculum.py:63: in test_stage_b_velocity_needs_both_gates_and_reaches_full_range
+    m, term = _mod(), _term()
+libs/k1-rl-isaac/tests/test_squat_two_stage_curriculum.py:22: in _mod
+    spec.loader.exec_module(mod)
+&lt;frozen importlib._bootstrap_external&gt;:991: in exec_module
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1128: in get_code
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/squat_mdp.py'</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,13 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', '/tmp/k1-audit-adapted/libs__k1-runtime__mjlab_k1__tests__test_wbc.py', '-q', '--tb=short', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/diagnostic/libs__k1-runtime__mjlab_k1__tests__test_wbc.xml']
+...F..                                                                   [100%]
+=================================== FAILURES ===================================
+_____________________________ test_command_clamps ______________________________
+/tmp/k1-audit-adapted/libs__k1-runtime__mjlab_k1__tests__test_wbc.py:34: in test_command_clamps
+    assert wbc.LocoCmd(big, -big, big).tensor().tolist() == [[1.0, -0.5, 1.0]]
+E   assert [[1.399999976...000476837158]] == [[1.0, -0.5, 1.0]]
+E     At index 0 diff: [1.399999976158142, -0.5, 1.2000000476837158] != [1.0, -0.5, 1.0]
+E     Use -v to get more diff
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/diagnostic/libs__k1-runtime__mjlab_k1__tests__test_wbc.xml -
+=========================== short test summary info ============================
+FAILED ../../../../tmp/k1-audit-adapted/libs__k1-runtime__mjlab_k1__tests__test_wbc.py::test_command_clamps
+1 failed, 5 passed in 1.19s

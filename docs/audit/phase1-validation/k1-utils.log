@@ -1,0 +1,7 @@
+COMMAND: ['/tmp/k1-audit-system-venv/bin/python', '-m', 'pytest', 'tests', '-q', '--tb=short', '-rs', '-m', 'not isaac and not robot and not net and not onprem', '-p', 'no:cacheprovider', '--basetemp=/tmp/k1-phase1-k1-utils', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-utils.xml']
+CWD: /home/thakk100/Projects/booster_proj/libs/k1-utils
+....s.                                                                   [100%]
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-utils.xml -
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_mujoco_eval.py:64: could not import 'onnx': No module named 'onnx'
+5 passed, 1 skipped in 1.01s

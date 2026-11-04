@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="7" skipped="0" tests="7" time="0.150" timestamp="2026-11-03T19:15:33.515428" hostname="dhyan-LOQ"><testcase classname="libs.k1-rl-isaac.tests.test_distill_distribution_cfg" name="test_distill_models_are_stochastic[student]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_distill_cfg.py'">libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:93: in test_distill_models_are_stochastic
+    cfg = _model_cfgs(DISTILL)
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:56: in _model_cfgs
+    for node in ast.walk(ast.parse(path.read_text())):
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_distill_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_distill_distribution_cfg" name="test_distill_models_are_stochastic[teacher]" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_distill_cfg.py'">libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:93: in test_distill_models_are_stochastic
+    cfg = _model_cfgs(DISTILL)
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:56: in _model_cfgs
+    for node in ast.walk(ast.parse(path.read_text())):
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_distill_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_distill_distribution_cfg" name="test_teacher_distribution_matches_the_ppo_actor_it_is_distilled_from" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_ppo_cfg.py'">libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:105: in test_teacher_distribution_matches_the_ppo_actor_it_is_distilled_from
+    ppo_actor = _kw(_model_cfgs(PPO, SQUAT_TEACHER_CLS)["actor"], "distribution_cfg")
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:56: in _model_cfgs
+    for node in ast.walk(ast.parse(path.read_text())):
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_ppo_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_distill_distribution_cfg" name="test_critic_is_left_deterministic" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_ppo_cfg.py'">libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:121: in test_critic_is_left_deterministic
+    base = _model_cfgs(PPO, "K1VelocityPPORunnerCfg")
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:56: in _model_cfgs
+    for node in ast.walk(ast.parse(path.read_text())):
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_ppo_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_distill_distribution_cfg" name="test_the_two_ppo_actors_deliberately_differ" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_ppo_cfg.py'">libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:136: in test_the_two_ppo_actors_deliberately_differ
+    blind = _kw(_model_cfgs(PPO, "K1VelocityPPORunnerCfg")["actor"], "distribution_cfg")
+libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:56: in _model_cfgs
+    for node in ast.walk(ast.parse(path.read_text())):
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/agents/rsl_rl_ppo_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_distill_distribution_cfg" name="test_squat_distill_task_is_registered_separately" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/__init__.py'">libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:162: in test_squat_distill_task_is_registered_separately
+    reg = (_ROOT / "isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/__init__.py").read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/__init__.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_distill_distribution_cfg" name="test_squat_distill_env_extends_the_squat_env_not_the_velocity_one" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_distill.py'">libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py:174: in test_squat_distill_env_extends_the_squat_env_not_the_velocity_one
+    "velocity_env_distill.py").read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_distill.py'</failure></testcase></testsuite></testsuites>

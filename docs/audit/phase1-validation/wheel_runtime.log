@@ -1,0 +1,17 @@
+IMPORT_OK k1_description
+IMPORT_OK k1_common.paths
+IMPORT_OK k1_common.clip_schema
+IMPORT_OK k1_runtime.wbc
+IMPORT_OK k1_runtime.k1_arm_ik
+IMPORT_OK k1_teleop.teleop_mapping
+IMPORT_OK k1m
+IMPORT_OK k1m.gate
+IMPORT_OK k1m.render
+IMPORT_OK k1_utils.gait_gate
+IMPORT_OK k1_chat.fleet
+MODULE_FOUND k1_control.sim_bridge_node
+MODULE_FOUND k1_wbc.wbc_node
+MODULE_FOUND k1_locomotion.locomotion_node
+MODULE_FOUND k1_fleet_rviz.domain_relay
+MODULE_FOUND k1_kicking.tasks.kicking.kicking_env_cfg
+WHEEL_RUNTIME_OK

@@ -1,0 +1,308 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-rl-isaac/tests/test_gait_rewards.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_gait_rewards.xml']
+FFFFFFFFFFFFFFFFFFFF..FFF.....FFFFFFF..F                                 [100%]
+=================================== FAILURES ===================================
+___________ test_gait_term_is_declared_in_rewards_cfg[gait_cadence] ____________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:84: in test_gait_term_is_declared_in_rewards_cfg
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+__________ test_gait_term_is_declared_in_rewards_cfg[feet_clearance] ___________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:84: in test_gait_term_is_declared_in_rewards_cfg
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+_________ test_gait_term_is_declared_in_rewards_cfg[feet_alternation] __________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:84: in test_gait_term_is_declared_in_rewards_cfg
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+___________ test_gait_term_is_declared_in_rewards_cfg[stride_length] ___________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:84: in test_gait_term_is_declared_in_rewards_cfg
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+__________ test_gait_term_is_declared_in_rewards_cfg[action_jerk_l2] ___________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:84: in test_gait_term_is_declared_in_rewards_cfg
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+____________ test_gait_term_is_declared_in_rewards_cfg[phase_swing] ____________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:84: in test_gait_term_is_declared_in_rewards_cfg
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+______________ test_gait_term_has_a_negative_weight[gait_cadence] ______________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:91: in test_gait_term_has_a_negative_weight
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+_____________ test_gait_term_has_a_negative_weight[feet_clearance] _____________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:91: in test_gait_term_has_a_negative_weight
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+____________ test_gait_term_has_a_negative_weight[feet_alternation] ____________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:91: in test_gait_term_has_a_negative_weight
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+_____________ test_gait_term_has_a_negative_weight[stride_length] ______________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:91: in test_gait_term_has_a_negative_weight
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+_____________ test_gait_term_has_a_negative_weight[action_jerk_l2] _____________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:91: in test_gait_term_has_a_negative_weight
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+______________ test_gait_term_has_a_negative_weight[phase_swing] _______________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:91: in test_gait_term_has_a_negative_weight
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+______________________ test_tracking_reward_was_sharpened ______________________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:104: in test_tracking_reward_was_sharpened
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+____ test_action_rate_ramp_is_ordered_and_capped_below_the_anti_lift_level _____
+libs/k1-rl-isaac/tests/test_gait_rewards.py:136: in test_action_rate_ramp_is_ordered_and_capped_below_the_anti_lift_level
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+_________ test_smoothness_budget_is_not_dominant_over_the_lift_budget __________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:168: in test_smoothness_budget_is_not_dominant_over_the_lift_budget
+    tree = _ast.parse(CFG.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+____________________ test_gait_functions_defined_in_module _____________________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:204: in test_gait_functions_defined_in_module
+    src = GAIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'
+_______________ test_no_dead_placeholder_code_left_in_jerk_term ________________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:214: in test_no_dead_placeholder_code_left_in_jerk_term
+    src = GAIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'
+___________________ test_gate_fails_a_high_frequency_shuffle ___________________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:245: in test_gate_fails_a_high_frequency_shuffle
+    assert rc == 1, f"gate passed a shuffle:\n{out}"
+E   AssertionError: gate passed a shuffle:
+E     
+E   assert 2 == 1
+______________________ test_gate_passes_a_human_like_walk ______________________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:254: in test_gate_passes_a_human_like_walk
+    assert rc == 0, f"gate failed a plausible walk:\n{out}"
+E   AssertionError: gate failed a plausible walk:
+E     
+E   assert 2 == 0
+___________________ test_gate_passes_a_slow_deliberate_walk ____________________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:262: in test_gate_passes_a_slow_deliberate_walk
+    assert rc == 0, f"gate failed a slow walk:\n{out}"
+E   AssertionError: gate failed a slow walk:
+E     
+E   assert 2 == 0
+______________ test_gait_phase_buffer_shape_is_requested_exactly _______________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:285: in test_gait_phase_buffer_shape_is_requested_exactly
+    src = GAIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'
+__________ test_gait_rewards_use_the_data_accessor_not_the_raw_object __________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:315: in test_gait_rewards_use_the_data_accessor_not_the_raw_object
+    src = GAIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'
+______________ test_foot_terms_receive_both_sensor_and_asset_cfgs ______________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:339: in test_foot_terms_receive_both_sensor_and_asset_cfgs
+    cfg_src = CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+_________________ test_default_window_matches_the_tested_value _________________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:401: in test_default_window_matches_the_tested_value
+    src = GAIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'
+_________________ test_no_invented_isaac_apis_in_gait_rewards __________________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:416: in test_no_invented_isaac_apis_in_gait_rewards
+    src = GAIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'
+_____________________ test_state_reads_go_through_dot_data _____________________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:428: in test_state_reads_go_through_dot_data
+    src = GAIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'
+___________________ test_cadence_reads_velocity_not_position ___________________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:443: in test_cadence_reads_velocity_not_position
+    src = GAIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'
+_______________________ test_phase_swing_pins_foot_order _______________________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:475: in test_phase_swing_pins_foot_order
+    terms = _terms(_rewards_cfg(CFG))
+libs/k1-rl-isaac/tests/test_gait_rewards.py:38: in _rewards_cfg
+    tree = ast.parse(path.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'
+_________ test_phase_swing_consumes_the_same_clock_as_the_observation __________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:493: in test_phase_swing_consumes_the_same_clock_as_the_observation
+    src = GAIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'
+____________ test_probe_treats_new_gait_terms_as_zero_action_inert _____________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:520: in test_probe_treats_new_gait_terms_as_zero_action_inert
+    src = probe.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/scripts/probe_rewards.py'
+_______________ test_campaign_uses_one_kit_launch_per_container ________________
+libs/k1-rl-isaac/tests/test_gait_rewards.py:583: in test_campaign_uses_one_kit_launch_per_container
+    assert f.is_file(), f"missing {f.name}"
+E   AssertionError: missing spark_p2_gaitfix_preflight_container.sh
+E   assert False
+E    +  where False = <bound method Path.is_file of PosixPath('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/scripts/spark_p2_gaitfix_preflight_container.sh')>()
+E    +    where <bound method Path.is_file of PosixPath('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/scripts/spark_p2_gaitfix_preflight_container.sh')> = PosixPath('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/scripts/spark_p2_gaitfix_preflight_container.sh').is_file
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_gait_rewards.xml -
+=========================== short test summary info ============================
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_term_is_declared_in_rewards_cfg[gait_cadence]
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_term_is_declared_in_rewards_cfg[feet_clearance]
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_term_is_declared_in_rewards_cfg[feet_alternation]
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_term_is_declared_in_rewards_cfg[stride_length]
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_term_is_declared_in_rewards_cfg[action_jerk_l2]
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_term_is_declared_in_rewards_cfg[phase_swing]
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_term_has_a_negative_weight[gait_cadence]
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_term_has_a_negative_weight[feet_clearance]
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_term_has_a_negative_weight[feet_alternation]
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_term_has_a_negative_weight[stride_length]
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_term_has_a_negative_weight[action_jerk_l2]
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_term_has_a_negative_weight[phase_swing]
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_tracking_reward_was_sharpened
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_action_rate_ramp_is_ordered_and_capped_below_the_anti_lift_level
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_smoothness_budget_is_not_dominant_over_the_lift_budget
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_functions_defined_in_module
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_no_dead_placeholder_code_left_in_jerk_term
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gate_fails_a_high_frequency_shuffle
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gate_passes_a_human_like_walk
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gate_passes_a_slow_deliberate_walk
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_phase_buffer_shape_is_requested_exactly
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_gait_rewards_use_the_data_accessor_not_the_raw_object
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_foot_terms_receive_both_sensor_and_asset_cfgs
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_default_window_matches_the_tested_value
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_no_invented_isaac_apis_in_gait_rewards
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_state_reads_go_through_dot_data
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_cadence_reads_velocity_not_position
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_phase_swing_pins_foot_order
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_phase_swing_consumes_the_same_clock_as_the_observation
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_probe_treats_new_gait_terms_as_zero_action_inert
+FAILED libs/k1-rl-isaac/tests/test_gait_rewards.py::test_campaign_uses_one_kit_launch_per_container
+31 failed, 9 passed in 1.10s

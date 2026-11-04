@@ -36,7 +36,7 @@ Imports only point down. Line width = number of importing files. Interactive ver
 
 ## Docs
 
-[Architecture](docs/ARCHITECTURE.md) · [Migration](docs/MIGRATION.md) · [Known issues](docs/KNOWN_ISSUES.md) · [Old docs](docs/legacy/)
+[Robots, IPs and control](docs/ROBOTS.md) · [Architecture](docs/ARCHITECTURE.md) · [Test report](docs/TEST_REPORT.md) · [Plan](docs/Tasks_and_Plans.md) · [Migration](docs/MIGRATION.md) · [Known issues](docs/KNOWN_ISSUES.md) · [Old docs](docs/legacy/)
 
 ## Use
 
@@ -44,3 +44,20 @@ Imports only point down. Line width = number of importing files. Interactive ver
 git clone --recurse-submodules git@github.com:thdhyan/k1-workspace.git
 scripts/dev-install.sh   # editable installs in dependency order
 ```
+
+Each library README has a "Usage" section (source: `tools/usage/<repo>.md`). Regenerate all library READMEs with
+`python3 tools/gen_docs.py` (Python >= 3.11; reads `pyproject.toml`, never writes it).
+
+## Run the tests
+
+```bash
+source /opt/ros/jazzy/setup.bash          # rclpy for the teleop / ROS tests
+source <venv>/bin/activate                # from scripts/dev-install.sh, or any venv with the libs on PYTHONPATH
+export PYTHONPATH=$(ls -d $PWD/libs/*/src | tr '\n' ':'):$PYTHONPATH   # append: keep ROS's path
+export BOOSTER_SDK_ROOT=$PWD/libs/k1-deploy-laptop/sdk/booster_robotics_sdk
+export PYTEST_DISABLE_PLUGIN_AUTOLOAD=1   # ROS launch_testing plugins abort collection after a module-level skip
+python -m pytest -q tests/test_refactor_contracts.py   # cross-library contracts
+cd libs/<repo> && python -m pytest -q tests
+```
+
+Isaac Lab tests in k1-rl-isaac are deselected by default (`-m isaac` on a GPU host). Latest results: [docs/TEST_REPORT.md](docs/TEST_REPORT.md).

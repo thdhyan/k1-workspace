@@ -14,7 +14,7 @@ A2 192.168.50.215, A3 .230, B1 .105, B3 .248, B2 .62 (off) — all static on rob
 ## 0b. Session 2026-10-26 — lab network move (Hello → robotics_5G)
 
 A1, A2 out of commission. A3, B1-B3 powered; laptop and robots were on **Hello**.
-Lab SSID is **`robotics_5G`** (underscore; also 2.4 GHz `robotics`). password <lab password>
+Lab SSID is **`robotics_5G`** (underscore; also 2.4 GHz `robotics`). Password: ask the lab (not kept in git)
 (typed `robtoics` fails: "Secrets were required").
 
 | Robot (identity unconfirmed) | Hello IP (before move) | wlP1p1s0 MAC | Firmware | robotics_5G IP |

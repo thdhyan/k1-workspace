@@ -1,0 +1,4 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-runtime/mjlab_k1/test/test_arm_ik.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-runtime__mjlab_k1__test__test_arm_ik.xml']
+
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-runtime__mjlab_k1__test__test_arm_ik.xml -
+no tests ran in 1.29s

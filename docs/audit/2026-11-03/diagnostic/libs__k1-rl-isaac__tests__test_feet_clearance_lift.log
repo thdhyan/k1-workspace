@@ -1,0 +1,4 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', '/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_feet_clearance_lift.py', '-q', '--tb=short', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/diagnostic/libs__k1-rl-isaac__tests__test_feet_clearance_lift.xml']
+......                                                                   [100%]
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/diagnostic/libs__k1-rl-isaac__tests__test_feet_clearance_lift.xml -
+6 passed in 0.04s

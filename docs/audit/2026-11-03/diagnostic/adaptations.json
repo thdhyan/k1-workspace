@@ -1,0 +1,414 @@
+[
+  {
+    "source": "libs/k1-rl-isaac/tests/test_agile_parity.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_agile_parity.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_carry_decoupled_policy.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_carry_decoupled_policy.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/tasks/carry/decoupled_policy.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/tasks/carry/decoupled_policy.py\""
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_carry_tiers.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_carry_tiers.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_deployability.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_deployability.py",
+    "changes": []
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_distill_distribution_cfg.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_distill_distribution_cfg.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/__init__.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/tasks/velocity/__init__.py\""
+      ],
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_env_cfg_wiring.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_env_cfg_wiring.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_feet_clearance_lift.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_feet_clearance_lift.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_gait_rewards.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_gait_rewards.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/scripts/probe_rewards.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/scripts/probe_rewards.py\""
+      ],
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/"
+      ],
+      [
+        "\"isaac_tasks/k1_velocity/scripts/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/scripts/"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_import_order.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_import_order.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/scripts\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/scripts\""
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_k1_actuator_gains.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_k1_actuator_gains.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/tasks/velocity/velocity_env_cfg.py\""
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_keyboard_cmd.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_keyboard_cmd.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/scripts/play_keyboard_fixed.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/scripts/play_keyboard_fixed.py\""
+      ],
+      [
+        "\"isaac_tasks/k1_velocity/scripts/keyboard_cmd.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/scripts/keyboard_cmd.py\""
+      ],
+      [
+        "\"isaac_tasks/k1_velocity/scripts/play.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/scripts/play.py\""
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_phase_locked_stride.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_phase_locked_stride.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/scripts/train.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/scripts/train.py\""
+      ],
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_physx_gpu_capacity.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_physx_gpu_capacity.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/sim_backend.py\""
+      ],
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_plateau_stop.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_plateau_stop.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/scripts/plateau_stop.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/scripts/plateau_stop.py\""
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_push_base_contract.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_push_base_contract.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/tasks/velocity/gait_clock.py\""
+      ],
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_push_rewards_sg.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_push_rewards_sg.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_push_scene_layout.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_push_scene_layout.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/tasks/push/push_env_cfg.py\""
+      ],
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_mdp.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/tasks/push/push_mdp.py\""
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_push_sg_env_cfg.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/__init__.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/tasks/push/__init__.py\""
+      ],
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_reward_degeneracy.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_reward_degeneracy.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/tasks/velocity/velocity_env_cfg.py\""
+      ],
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/tasks/head/head_mdp.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/tasks/head/head_mdp.py\""
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_reward_weight_ramp.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_reward_weight_ramp.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_squat_two_stage_curriculum.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_squat_two_stage_curriculum.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_velocity_curriculum.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_velocity_curriculum.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_curriculum.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/tasks/velocity/velocity_curriculum.py\""
+      ],
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/tasks/velocity/velocity_env_cfg.py\""
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-rl-isaac/tests/test_warm_start.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_warm_start.py",
+    "changes": [
+      [
+        "\"isaac_tasks/k1_velocity/scripts/train.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/scripts/train.py\""
+      ],
+      [
+        "\"isaac_tasks/k1_velocity/source/k1_velocity/",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src/k1_velocity/"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac')"
+      ]
+    ]
+  },
+  {
+    "source": "tests/test_locomotion_node_layout.py",
+    "copy": "/tmp/k1-audit-adapted/tests__test_locomotion_node_layout.py",
+    "changes": [
+      [
+        "\"src/k1_locomotion/k1_locomotion/locomotion_node.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-deploy-laptop/src/k1_locomotion/k1_locomotion/locomotion_node.py\""
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-utils/tests/test_mujoco_eval.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-utils__tests__test_mujoco_eval.py",
+    "changes": [
+      [
+        "import mujoco_eval as M",
+        "from k1_utils import mujoco_eval as M"
+      ],
+      [
+        "import height_gate",
+        "from k1_utils import height_gate"
+      ],
+      [
+        "Path(__file__).resolve().parents[1]",
+        "Path('/home/thakk100/Projects/booster_proj/libs/k1-utils')"
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-runtime/mjlab_k1/tests/test_wbc.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-runtime__mjlab_k1__tests__test_wbc.py",
+    "changes": [
+      [
+        "\"src/mjlab_k1/wbc.py\"",
+        "\"/home/thakk100/Projects/booster_proj/libs/k1-runtime/src/k1_runtime/wbc.py\""
+      ]
+    ]
+  },
+  {
+    "source": "libs/k1-deploy-robot/tests/test_deploy.py",
+    "copy": "/tmp/k1-audit-adapted/libs__k1-deploy-robot__tests__test_deploy.py",
+    "changes": []
+  }
+]

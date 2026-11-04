@@ -1,0 +1,20 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-rl-isaac/tests/test_reward_weight_ramp.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_reward_weight_ramp.xml']
+
+==================================== ERRORS ====================================
+______ ERROR collecting libs/k1-rl-isaac/tests/test_reward_weight_ramp.py ______
+libs/k1-rl-isaac/tests/test_reward_weight_ramp.py:122: in <module>
+    RewardWeightRamp = _ramp_class()
+libs/k1-rl-isaac/tests/test_reward_weight_ramp.py:118: in _ramp_class
+    spec.loader.exec_module(mod)
+<frozen importlib._bootstrap_external>:991: in exec_module
+    ???
+<frozen importlib._bootstrap_external>:1128: in get_code
+    ???
+<frozen importlib._bootstrap_external>:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/reward_weight_ramp.py'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_reward_weight_ramp.xml -
+=========================== short test summary info ============================
+ERROR libs/k1-rl-isaac/tests/test_reward_weight_ramp.py - FileNotFoundError: ...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.07s

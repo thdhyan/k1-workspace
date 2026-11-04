@@ -1,0 +1,45 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'tests/test_k1_teleop.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/tests__test_k1_teleop.xml']
+....FFF                                                                  [100%]
+=================================== FAILURES ===================================
+_______________________________ test_ik_geometry _______________________________
+tests/test_k1_teleop.py:76: in test_ik_geometry
+    ik = ArmIK()
+libs/k1-runtime/src/k1_runtime/k1_arm_ik.py:68: in __init__
+    self.joints = load_urdf_joints(urdf)
+libs/k1-runtime/src/k1_runtime/k1_arm_ik.py:47: in load_urdf_joints
+    for node in ET.parse(path).getroot().findall("joint"):
+/usr/lib/python3.12/xml/etree/ElementTree.py:1204: in parse
+    tree.parse(source, parser)
+/usr/lib/python3.12/xml/etree/ElementTree.py:558: in parse
+    source = open(source, "rb")
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-runtime/src/k1_runtime/K1_22dof-ZED.urdf'
+________________________________ test_ik_vs_fk _________________________________
+tests/test_k1_teleop.py:91: in test_ik_vs_fk
+    ik, rng = ArmIK(), np.random.default_rng(0)
+libs/k1-runtime/src/k1_runtime/k1_arm_ik.py:68: in __init__
+    self.joints = load_urdf_joints(urdf)
+libs/k1-runtime/src/k1_runtime/k1_arm_ik.py:47: in load_urdf_joints
+    for node in ET.parse(path).getroot().findall("joint"):
+/usr/lib/python3.12/xml/etree/ElementTree.py:1204: in parse
+    tree.parse(source, parser)
+/usr/lib/python3.12/xml/etree/ElementTree.py:558: in parse
+    source = open(source, "rb")
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-runtime/src/k1_runtime/K1_22dof-ZED.urdf'
+__________________________ test_ik_tracks_clutch_path __________________________
+tests/test_k1_teleop.py:111: in test_ik_tracks_clutch_path
+    ik = ArmIK()
+libs/k1-runtime/src/k1_runtime/k1_arm_ik.py:68: in __init__
+    self.joints = load_urdf_joints(urdf)
+libs/k1-runtime/src/k1_runtime/k1_arm_ik.py:47: in load_urdf_joints
+    for node in ET.parse(path).getroot().findall("joint"):
+/usr/lib/python3.12/xml/etree/ElementTree.py:1204: in parse
+    tree.parse(source, parser)
+/usr/lib/python3.12/xml/etree/ElementTree.py:558: in parse
+    source = open(source, "rb")
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-runtime/src/k1_runtime/K1_22dof-ZED.urdf'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/tests__test_k1_teleop.xml -
+=========================== short test summary info ============================
+FAILED tests/test_k1_teleop.py::test_ik_geometry - FileNotFoundError: [Errno ...
+FAILED tests/test_k1_teleop.py::test_ik_vs_fk - FileNotFoundError: [Errno 2] ...
+FAILED tests/test_k1_teleop.py::test_ik_tracks_clutch_path - FileNotFoundErro...
+3 failed, 4 passed in 0.17s

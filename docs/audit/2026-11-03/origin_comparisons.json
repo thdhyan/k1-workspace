@@ -1,0 +1,38 @@
+[
+  {
+    "name": "nul_reward",
+    "original": "/home/thakk100/Projects/booster_ws/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_things_rewards.py",
+    "current": "libs/k1-rl-isaac/src/k1_velocity/tasks/push/push_things_rewards.py",
+    "original_exists": true,
+    "current_exists": true,
+    "identical_bytes": true,
+    "bytes": 13379
+  },
+  {
+    "name": "invalid_xacro",
+    "original": "/home/thakk100/Projects/booster_ws/src/k1_description/urdf/k1.urdf.xacro",
+    "current": "libs/k1-description/urdf/k1.urdf.xacro",
+    "original_exists": true,
+    "current_exists": true,
+    "identical_bytes": true,
+    "bytes": 1263
+  },
+  {
+    "name": "gait_wrapper",
+    "original": "/home/thakk100/Projects/booster_ws/scripts/gait_gate.py",
+    "current": "libs/k1-rl-isaac/scripts/gait_gate.py",
+    "original_exists": true,
+    "current_exists": true,
+    "identical_bytes": true,
+    "bytes": 1572
+  },
+  {
+    "name": "mimic_subprocess_paths",
+    "original": "/home/thakk100/Projects/booster_ws/k1m/local_stages.py",
+    "current": "libs/k1-mimic/src/k1m/local_stages.py",
+    "original_exists": true,
+    "current_exists": true,
+    "identical_bytes": true,
+    "bytes": 4457
+  }
+]

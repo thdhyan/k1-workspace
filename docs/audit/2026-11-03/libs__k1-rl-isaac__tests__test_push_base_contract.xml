@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="6" skipped="0" tests="9" time="0.124" timestamp="2026-11-03T19:15:35.757498" hostname="dhyan-LOQ"><testcase classname="libs.k1-rl-isaac.tests.test_push_base_contract" name="test_the_arithmetic_is_what_we_think_it_is" time="0.000" /><testcase classname="libs.k1-rl-isaac.tests.test_push_base_contract" name="test_squat_obs_appends_the_phase_clock" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_mdp.py'">libs/k1-rl-isaac/tests/test_push_base_contract.py:72: in test_squat_obs_appends_the_phase_clock
+    body = _squat_method_src()
+libs/k1-rl-isaac/tests/test_push_base_contract.py:63: in _squat_method_src
+    tree = ast.parse(PUSH_MDP.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_mdp.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_base_contract" name="test_the_clock_is_driven_by_the_action_not_the_command_manager" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_mdp.py'">libs/k1-rl-isaac/tests/test_push_base_contract.py:83: in test_the_clock_is_driven_by_the_action_not_the_command_manager
+    body = _squat_method_src()
+libs/k1-rl-isaac/tests/test_push_base_contract.py:63: in _squat_method_src
+    tree = ast.parse(PUSH_MDP.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_mdp.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_base_contract" name="test_gait_clock_exposes_the_magnitude_driven_path" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'">libs/k1-rl-isaac/tests/test_push_base_contract.py:93: in test_gait_clock_exposes_the_magnitude_driven_path
+    tree = ast.parse(CLOCK.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_base_contract" name="test_the_ema_and_clamp_exist_in_exactly_one_place" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'">libs/k1-rl-isaac/tests/test_push_base_contract.py:102: in test_the_ema_and_clamp_exist_in_exactly_one_place
+    tree = ast.parse(CLOCK.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_base_contract" name="test_get_phase_accepts_a_per_env_frequency_tensor" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'">libs/k1-rl-isaac/tests/test_push_base_contract.py:118: in test_get_phase_accepts_a_per_env_frequency_tensor
+    tree = ast.parse(CLOCK.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_clock.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_base_contract" name="test_push_mdp_does_not_reimplement_the_frequency_math" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_mdp.py'">libs/k1-rl-isaac/tests/test_push_base_contract.py:129: in test_push_mdp_does_not_reimplement_the_frequency_math
+    body = _squat_method_src()
+libs/k1-rl-isaac/tests/test_push_base_contract.py:63: in _squat_method_src
+    tree = ast.parse(PUSH_MDP.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_mdp.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_base_contract" name="test_both_layouts_are_distinguishable[236]" time="0.000" /><testcase classname="libs.k1-rl-isaac.tests.test_push_base_contract" name="test_both_layouts_are_distinguishable[238]" time="0.000" /></testsuite></testsuites>

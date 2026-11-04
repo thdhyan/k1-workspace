@@ -1,0 +1,4 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', '/tmp/k1-audit-adapted/libs__k1-rl-isaac__tests__test_squat_two_stage_curriculum.py', '-q', '--tb=short', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/diagnostic/libs__k1-rl-isaac__tests__test_squat_two_stage_curriculum.xml']
+..                                                                       [100%]
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/diagnostic/libs__k1-rl-isaac__tests__test_squat_two_stage_curriculum.xml -
+2 passed in 1.20s

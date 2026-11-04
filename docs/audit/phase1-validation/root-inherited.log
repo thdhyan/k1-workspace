@@ -1,0 +1,19 @@
+COMMAND: ['/tmp/k1-audit-system-venv/bin/python', '-m', 'pytest', 'tests/test_carry_geometry.py', 'tests/test_k1_teleop.py', 'tests/test_locomotion_node_layout.py', '-q', '--tb=short', '-rs', '-m', 'not isaac and not robot and not net and not onprem', '-p', 'no:cacheprovider', '--basetemp=/tmp/k1-phase1-root-inherited', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/root-inherited.xml']
+CWD: /home/thakk100/Projects/booster_proj
+
+==================================== ERRORS ====================================
+________________ ERROR collecting tests/test_carry_geometry.py _________________
+tests/test_carry_geometry.py:31: in <module>
+    cm = _load_mdp()
+tests/test_carry_geometry.py:27: in _load_mdp
+    spec.loader.exec_module(mod)
+<frozen importlib._bootstrap_external>:991: in exec_module
+    ???
+<frozen importlib._bootstrap_external>:1128: in get_code
+    ???
+<frozen importlib._bootstrap_external>:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/isaac_tasks/k1_velocity/source/k1_velocity/tasks/carry/carry_mdp.py'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/root-inherited.xml -
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.08s

@@ -1,0 +1,46 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-common/tests/test_k1_wiring.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-common__tests__test_k1_wiring.xml']
+.FFFF..s                                                                 [100%]
+=================================== FAILURES ===================================
+__________________ test_urdf_order_limits_axes[K1_22dof.urdf] __________________
+libs/k1-common/tests/test_k1_wiring.py:44: in test_urdf_order_limits_axes
+    joints = [j for j in _urdf(fn).findall("joint") if j.get("type") == "revolute"]
+libs/k1-common/tests/test_k1_wiring.py:24: in _urdf
+    return ET.parse(K1 / name).getroot()
+/usr/lib/python3.12/xml/etree/ElementTree.py:1204: in parse
+    tree.parse(source, parser)
+/usr/lib/python3.12/xml/etree/ElementTree.py:558: in parse
+    source = open(source, "rb")
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-common/src/k1_description/assets/robots/K1/K1_22dof.urdf'
+________________ test_urdf_order_limits_axes[K1_22dof-ZED.urdf] ________________
+libs/k1-common/tests/test_k1_wiring.py:44: in test_urdf_order_limits_axes
+    joints = [j for j in _urdf(fn).findall("joint") if j.get("type") == "revolute"]
+libs/k1-common/tests/test_k1_wiring.py:24: in _urdf
+    return ET.parse(K1 / name).getroot()
+/usr/lib/python3.12/xml/etree/ElementTree.py:1204: in parse
+    tree.parse(source, parser)
+/usr/lib/python3.12/xml/etree/ElementTree.py:558: in parse
+    source = open(source, "rb")
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-common/src/k1_description/assets/robots/K1/K1_22dof-ZED.urdf'
+_____________________ test_mjcf_joints_actuators_armature ______________________
+libs/k1-common/tests/test_k1_wiring.py:55: in test_mjcf_joints_actuators_armature
+    root = ET.parse(MJCF).getroot()
+/usr/lib/python3.12/xml/etree/ElementTree.py:1204: in parse
+    tree.parse(source, parser)
+/usr/lib/python3.12/xml/etree/ElementTree.py:558: in parse
+    source = open(source, "rb")
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-common/src/k1_description/assets/robots/K1/K1_22dof.xml'
+_____________________________ test_sdk_header_enum _____________________________
+libs/k1-common/tests/test_k1_wiring.py:73: in test_sdk_header_enum
+    txt = SDK_HDR.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-common/sdk/booster_robotics_sdk/include/booster/robot/b1/b1_api_const.hpp'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-common__tests__test_k1_wiring.xml -
+=========================== short test summary info ============================
+FAILED libs/k1-common/tests/test_k1_wiring.py::test_urdf_order_limits_axes[K1_22dof.urdf]
+FAILED libs/k1-common/tests/test_k1_wiring.py::test_urdf_order_limits_axes[K1_22dof-ZED.urdf]
+FAILED libs/k1-common/tests/test_k1_wiring.py::test_mjcf_joints_actuators_armature
+FAILED libs/k1-common/tests/test_k1_wiring.py::test_sdk_header_enum - FileNot...
+4 failed, 3 passed, 1 skipped in 0.14s

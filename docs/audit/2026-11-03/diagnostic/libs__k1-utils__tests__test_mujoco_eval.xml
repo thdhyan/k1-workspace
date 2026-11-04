@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="1" tests="4" time="0.246" timestamp="2026-11-03T19:12:07.461736" hostname="dhyan-LOQ"><testcase classname="libs__k1-utils__tests__test_mujoco_eval" name="test_zero_policy_harness_runs" time="0.003"><failure message="ValueError: ParseXML: Error opening file '/home/thakk100/Projects/booster_proj/libs/k1-utils/src/src/k1_description/assets/robots/K1/K1_22dof.xml'">/tmp/k1-audit-adapted/libs__k1-utils__tests__test_mujoco_eval.py:43: in test_zero_policy_harness_runs
+    rc = M.main(["--walk", "zero", "--stand", "zero", "--meta", str(meta_path), "--grid", "smoke", "--seconds", "3",
+libs/k1-utils/src/k1_utils/mujoco_eval.py:546: in main
+    rep = evaluate(args)
+libs/k1-utils/src/k1_utils/mujoco_eval.py:484: in evaluate
+    sim = K1Sim(meta, args.mjcf, seed=args.seed)
+libs/k1-utils/src/k1_utils/mujoco_eval.py:142: in __init__
+    m = self.model = mujoco.MjModel.from_xml_path(str(mjcf))
+E   ValueError: ParseXML: Error opening file '/home/thakk100/Projects/booster_proj/libs/k1-utils/src/src/k1_description/assets/robots/K1/K1_22dof.xml'</failure></testcase><testcase classname="libs__k1-utils__tests__test_mujoco_eval" name="test_history_and_term_major_stacking" time="0.000" /><testcase classname="libs__k1-utils__tests__test_mujoco_eval" name="test_onnx_policy_obs_dim" time="0.001"><skipped type="pytest.skip" message="could not import 'onnx': No module named 'onnx'">/tmp/k1-audit-adapted/libs__k1-utils__tests__test_mujoco_eval.py:67: could not import 'onnx': No module named 'onnx'</skipped></testcase><testcase classname="libs__k1-utils__tests__test_mujoco_eval" name="test_height_gate_on_synthetic_trace" time="0.010" /></testsuite></testsuites>

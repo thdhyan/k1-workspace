@@ -1,0 +1,32 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-rl-isaac/tests/test_squat_two_stage_curriculum.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_squat_two_stage_curriculum.xml']
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+____________ test_stage_a_zero_velocity_then_deeper_on_height_gate _____________
+libs/k1-rl-isaac/tests/test_squat_two_stage_curriculum.py:45: in test_stage_a_zero_velocity_then_deeper_on_height_gate
+    m, term = _mod(), _term()
+libs/k1-rl-isaac/tests/test_squat_two_stage_curriculum.py:22: in _mod
+    spec.loader.exec_module(mod)
+<frozen importlib._bootstrap_external>:991: in exec_module
+    ???
+<frozen importlib._bootstrap_external>:1128: in get_code
+    ???
+<frozen importlib._bootstrap_external>:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/squat_mdp.py'
+________ test_stage_b_velocity_needs_both_gates_and_reaches_full_range _________
+libs/k1-rl-isaac/tests/test_squat_two_stage_curriculum.py:63: in test_stage_b_velocity_needs_both_gates_and_reaches_full_range
+    m, term = _mod(), _term()
+libs/k1-rl-isaac/tests/test_squat_two_stage_curriculum.py:22: in _mod
+    spec.loader.exec_module(mod)
+<frozen importlib._bootstrap_external>:991: in exec_module
+    ???
+<frozen importlib._bootstrap_external>:1128: in get_code
+    ???
+<frozen importlib._bootstrap_external>:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/squat_mdp.py'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_squat_two_stage_curriculum.xml -
+=========================== short test summary info ============================
+FAILED libs/k1-rl-isaac/tests/test_squat_two_stage_curriculum.py::test_stage_a_zero_velocity_then_deeper_on_height_gate
+FAILED libs/k1-rl-isaac/tests/test_squat_two_stage_curriculum.py::test_stage_b_velocity_needs_both_gates_and_reaches_full_range
+2 failed in 1.18s

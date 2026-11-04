@@ -1,0 +1,19 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-deploy-laptop/tests/test_push_ik_web.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-deploy-laptop__tests__test_push_ik_web.xml']
+
+==================================== ERRORS ====================================
+_______ ERROR collecting libs/k1-deploy-laptop/tests/test_push_ik_web.py _______
+libs/k1-deploy-laptop/tests/test_push_ik_web.py:86: in <module>
+    assert s["blockers"] == ["no finished preview of this scene"], s["blockers"]
+E   NameError: name 's' is not defined
+------------------------------- Captured stdout --------------------------------
+gamepad: laptop pad over udp :9870 (+ K1 remote B = stop)
+------------------------------- Captured stderr --------------------------------
+Traceback (most recent call last):
+  File "/home/thakk100/Projects/booster_proj/libs/k1-deploy-laptop/deploy/push_ik_web.py", line 39, in <module>
+    from push_ik_phasespace import ARENA_R, DT, MOCAP_STOP_S, MOCAP_ZERO_S, SETTLE_S, Link, object_pose, quat_rot
+ModuleNotFoundError: No module named 'push_ik_phasespace'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-deploy-laptop__tests__test_push_ik_web.xml -
+=========================== short test summary info ============================
+ERROR libs/k1-deploy-laptop/tests/test_push_ik_web.py - NameError: name 's' i...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 21.32s

@@ -1,0 +1,239 @@
+{
+  "results": [
+    {
+      "name": "k1-description",
+      "returncode": 0,
+      "seconds": 0.87,
+      "command": [
+        "/tmp/k1-audit-system-venv/bin/python",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--tb=short",
+        "-rs",
+        "-m",
+        "not isaac and not robot and not net and not onprem",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=/tmp/k1-phase1-k1-description",
+        "--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-description.xml"
+      ],
+      "cwd": "/home/thakk100/Projects/booster_proj/libs/k1-description"
+    },
+    {
+      "name": "k1-common",
+      "returncode": 0,
+      "seconds": 0.21,
+      "command": [
+        "/tmp/k1-audit-system-venv/bin/python",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--tb=short",
+        "-rs",
+        "-m",
+        "not isaac and not robot and not net and not onprem",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=/tmp/k1-phase1-k1-common",
+        "--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-common.xml"
+      ],
+      "cwd": "/home/thakk100/Projects/booster_proj/libs/k1-common"
+    },
+    {
+      "name": "k1-utils",
+      "returncode": 0,
+      "seconds": 1.32,
+      "command": [
+        "/tmp/k1-audit-system-venv/bin/python",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--tb=short",
+        "-rs",
+        "-m",
+        "not isaac and not robot and not net and not onprem",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=/tmp/k1-phase1-k1-utils",
+        "--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-utils.xml"
+      ],
+      "cwd": "/home/thakk100/Projects/booster_proj/libs/k1-utils"
+    },
+    {
+      "name": "k1-runtime",
+      "returncode": 0,
+      "seconds": 7.23,
+      "command": [
+        "/tmp/k1-audit-system-venv/bin/python",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--tb=short",
+        "-rs",
+        "-m",
+        "not isaac and not robot and not net and not onprem",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=/tmp/k1-phase1-k1-runtime",
+        "--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-runtime.xml"
+      ],
+      "cwd": "/home/thakk100/Projects/booster_proj/libs/k1-runtime"
+    },
+    {
+      "name": "k1-mimic",
+      "returncode": 0,
+      "seconds": 36.17,
+      "command": [
+        "/tmp/k1-audit-system-venv/bin/python",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--tb=short",
+        "-rs",
+        "-m",
+        "not isaac and not robot and not net and not onprem",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=/tmp/k1-phase1-k1-mimic",
+        "--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-mimic.xml"
+      ],
+      "cwd": "/home/thakk100/Projects/booster_proj/libs/k1-mimic"
+    },
+    {
+      "name": "k1-rl-isaac",
+      "returncode": 0,
+      "seconds": 3.97,
+      "command": [
+        "/tmp/k1-audit-system-venv/bin/python",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--tb=short",
+        "-rs",
+        "-m",
+        "not isaac and not robot and not net and not onprem",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=/tmp/k1-phase1-k1-rl-isaac",
+        "--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-rl-isaac.xml"
+      ],
+      "cwd": "/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac"
+    },
+    {
+      "name": "k1-vla",
+      "returncode": 0,
+      "seconds": 21.1,
+      "command": [
+        "/tmp/k1-audit-system-venv/bin/python",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--tb=short",
+        "-rs",
+        "-m",
+        "not isaac and not robot and not net and not onprem",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=/tmp/k1-phase1-k1-vla",
+        "--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-vla.xml"
+      ],
+      "cwd": "/home/thakk100/Projects/booster_proj/libs/k1-vla"
+    },
+    {
+      "name": "k1-deploy-robot",
+      "returncode": 0,
+      "seconds": 2.03,
+      "command": [
+        "/tmp/k1-audit-system-venv/bin/python",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--tb=short",
+        "-rs",
+        "-m",
+        "not isaac and not robot and not net and not onprem",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=/tmp/k1-phase1-k1-deploy-robot",
+        "--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-deploy-robot.xml"
+      ],
+      "cwd": "/home/thakk100/Projects/booster_proj/libs/k1-deploy-robot"
+    },
+    {
+      "name": "k1-teleop",
+      "returncode": 1,
+      "seconds": 2.02,
+      "command": [
+        "/tmp/k1-audit-system-venv/bin/python",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--tb=short",
+        "-rs",
+        "-m",
+        "not isaac and not robot and not net and not onprem",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=/tmp/k1-phase1-k1-teleop",
+        "--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-teleop.xml"
+      ],
+      "cwd": "/home/thakk100/Projects/booster_proj/libs/k1-teleop"
+    },
+    {
+      "name": "k1-deploy-laptop",
+      "returncode": 0,
+      "seconds": 60.34,
+      "command": [
+        "/tmp/k1-audit-system-venv/bin/python",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--tb=short",
+        "-rs",
+        "-m",
+        "not isaac and not robot and not net and not onprem",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=/tmp/k1-phase1-k1-deploy-laptop",
+        "--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-deploy-laptop.xml"
+      ],
+      "cwd": "/home/thakk100/Projects/booster_proj/libs/k1-deploy-laptop"
+    },
+    {
+      "name": "root-inherited",
+      "returncode": 2,
+      "seconds": 0.26,
+      "command": [
+        "/tmp/k1-audit-system-venv/bin/python",
+        "-m",
+        "pytest",
+        "tests/test_carry_geometry.py",
+        "tests/test_k1_teleop.py",
+        "tests/test_locomotion_node_layout.py",
+        "-q",
+        "--tb=short",
+        "-rs",
+        "-m",
+        "not isaac and not robot and not net and not onprem",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=/tmp/k1-phase1-root-inherited",
+        "--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/root-inherited.xml"
+      ],
+      "cwd": "/home/thakk100/Projects/booster_proj"
+    }
+  ],
+  "python": "/tmp/k1-audit-system-venv/bin/python",
+  "pythonpath": "/home/thakk100/Projects/booster_proj/libs/k1-common/src:/home/thakk100/Projects/booster_proj/libs/k1-deploy-laptop/src:/home/thakk100/Projects/booster_proj/libs/k1-description/src:/home/thakk100/Projects/booster_proj/libs/k1-mimic/src:/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/src:/home/thakk100/Projects/booster_proj/libs/k1-rl-mj/src:/home/thakk100/Projects/booster_proj/libs/k1-runtime/src:/home/thakk100/Projects/booster_proj/libs/k1-teleop/src:/home/thakk100/Projects/booster_proj/libs/k1-utils/src:/home/thakk100/Projects/booster_proj/libs/k1-vla/src:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages"
+}

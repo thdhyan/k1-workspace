@@ -1,0 +1,74 @@
+{
+  "totals": {
+    "tests": 379,
+    "failures": 155,
+    "errors": 15,
+    "skipped": 5,
+    "passed": 204
+  },
+  "modules": {
+    "workspace": {
+      "tests": 13,
+      "failures": 7,
+      "errors": 1,
+      "skipped": 0,
+      "passed": 5
+    },
+    "k1-common": {
+      "tests": 8,
+      "failures": 4,
+      "errors": 0,
+      "skipped": 1,
+      "passed": 3
+    },
+    "k1-deploy-laptop": {
+      "tests": 2,
+      "failures": 0,
+      "errors": 2,
+      "skipped": 0,
+      "passed": 0
+    },
+    "k1-deploy-robot": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 1,
+      "skipped": 0,
+      "passed": 0
+    },
+    "k1-rl-isaac": {
+      "tests": 168,
+      "failures": 142,
+      "errors": 6,
+      "skipped": 4,
+      "passed": 16
+    },
+    "k1-runtime": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 1,
+      "skipped": 0,
+      "passed": 0
+    },
+    "k1-teleop": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 1,
+      "skipped": 0,
+      "passed": 0
+    },
+    "k1-utils": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 1,
+      "skipped": 0,
+      "passed": 0
+    },
+    "k1-vla": {
+      "tests": 184,
+      "failures": 2,
+      "errors": 2,
+      "skipped": 0,
+      "passed": 180
+    }
+  }
+}

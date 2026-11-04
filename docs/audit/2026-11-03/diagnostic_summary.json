@@ -1,0 +1,46 @@
+{
+  "totals": {
+    "tests": 395,
+    "failures": 25,
+    "errors": 0,
+    "skipped": 9,
+    "passed": 361
+  },
+  "modules": {
+    "k1-deploy-robot": {
+      "tests": 8,
+      "failures": 7,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 1
+    },
+    "k1-rl-isaac": {
+      "tests": 372,
+      "failures": 16,
+      "errors": 0,
+      "skipped": 8,
+      "passed": 348
+    },
+    "k1-runtime": {
+      "tests": 6,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 5
+    },
+    "k1-utils": {
+      "tests": 4,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 1,
+      "passed": 2
+    },
+    "workspace": {
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 5
+    }
+  }
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="10" skipped="0" tests="11" time="0.232" timestamp="2026-11-03T19:15:36.026981" hostname="dhyan-LOQ"><testcase classname="libs.k1-rl-isaac.tests.test_push_scene_layout" name="test_the_spacing_arithmetic_is_what_we_think" time="0.000" /><testcase classname="libs.k1-rl-isaac.tests.test_push_scene_layout" name="test_env_spacing_clears_the_worst_case_boxes" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'">libs/k1-rl-isaac/tests/test_push_scene_layout.py:70: in test_env_spacing_clears_the_worst_case_boxes
+    src = _post_init_src()
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:52: in _post_init_src
+    tree = ast.parse(_cfg_src())
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:41: in _cfg_src
+    return CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_scene_layout" name="test_the_patch_is_sized_to_the_cell" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'">libs/k1-rl-isaac/tests/test_push_scene_layout.py:80: in test_the_patch_is_sized_to_the_cell
+    src = _post_init_src()
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:52: in _post_init_src
+    tree = ast.parse(_cfg_src())
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:41: in _cfg_src
+    return CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_scene_layout" name="test_scene_has_a_per_env_ground_patch" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'">libs/k1-rl-isaac/tests/test_push_scene_layout.py:91: in test_scene_has_a_per_env_ground_patch
+    cls = _scene_class()
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:45: in _scene_class
+    for node in ast.walk(ast.parse(_cfg_src())):
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:41: in _cfg_src
+    return CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_scene_layout" name="test_patch_top_face_is_the_trained_standing_height" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'">libs/k1-rl-isaac/tests/test_push_scene_layout.py:113: in test_patch_top_face_is_the_trained_standing_height
+    body = ast.unparse(_scene_assign("K1PushSceneCfg", "ground_patch"))
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:131: in _scene_assign
+    for node in ast.walk(ast.parse(_cfg_src())):
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:41: in _cfg_src
+    return CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_scene_layout" name="test_the_world_ground_is_dropped_so_the_patch_is_the_contact_surface" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'">libs/k1-rl-isaac/tests/test_push_scene_layout.py:122: in test_the_world_ground_is_dropped_so_the_patch_is_the_contact_surface
+    g = ast.unparse(_scene_assign("K1PushSceneCfg", "ground"))
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:131: in _scene_assign
+    for node in ast.walk(ast.parse(_cfg_src())):
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:41: in _cfg_src
+    return CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_scene_layout" name="test_height_scanner_compensates_for_the_backstop" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'">libs/k1-rl-isaac/tests/test_push_scene_layout.py:163: in test_height_scanner_compensates_for_the_backstop
+    call = _scene_assign("K1PushSceneCfg", "height_scanner")
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:131: in _scene_assign
+    for node in ast.walk(ast.parse(_cfg_src())):
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:41: in _cfg_src
+    return CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_scene_layout" name="test_ground_friction_is_randomised_per_env" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'">libs/k1-rl-isaac/tests/test_push_scene_layout.py:195: in test_ground_friction_is_randomised_per_env
+    call = _event_term("randomize_ground_friction")
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:177: in _event_term
+    for node in ast.walk(ast.parse(_cfg_src())):
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:41: in _cfg_src
+    return CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_scene_layout" name="test_ground_friction_lower_bound_respects_the_frozen_base" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'">libs/k1-rl-isaac/tests/test_push_scene_layout.py:219: in test_ground_friction_lower_bound_respects_the_frozen_base
+    params = _kwargs(_event_term("randomize_ground_friction"))["params"]
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:177: in _event_term
+    for node in ast.walk(ast.parse(_cfg_src())):
+libs/k1-rl-isaac/tests/test_push_scene_layout.py:41: in _cfg_src
+    return CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_scene_layout" name="test_box_annulus_matches_what_the_spacing_assumes" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_mdp.py'">libs/k1-rl-isaac/tests/test_push_scene_layout.py:240: in test_box_annulus_matches_what_the_spacing_assumes
+    body = MDP.read_text().split("def reset_box", 1)[1].split("\ndef ", 1)[0]
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_mdp.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_push_scene_layout" name="test_ground_friction_resolves_patch_prims_from_the_stage" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_mdp.py'">libs/k1-rl-isaac/tests/test_push_scene_layout.py:269: in test_ground_friction_resolves_patch_prims_from_the_stage
+    fn = next(n for n in ast.walk(ast.parse(MDP.read_text()))
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_mdp.py'</failure></testcase></testsuite></testsuites>

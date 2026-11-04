@@ -1,0 +1,10 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-vla/tests/test_audio.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-vla__tests__test_audio.xml']
+.....................                                                    [100%]
+=============================== warnings summary ===============================
+libs/k1-vla/tests/test_audio.py:117
+  /home/thakk100/Projects/booster_proj/libs/k1-vla/tests/test_audio.py:117: PytestUnknownMarkWarning: Unknown pytest.mark.robot - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.robot
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-vla__tests__test_audio.xml -
+21 passed, 1 deselected, 1 warning in 0.04s

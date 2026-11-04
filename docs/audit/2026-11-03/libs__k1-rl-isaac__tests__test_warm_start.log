@@ -1,0 +1,48 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-rl-isaac/tests/test_warm_start.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_warm_start.xml']
+FFFF                                                                     [100%]
+=================================== FAILURES ===================================
+_________________________ test_warm_start_flag_exists __________________________
+libs/k1-rl-isaac/tests/test_warm_start.py:38: in test_warm_start_flag_exists
+    assert '"--warm_start"' in _src(), (
+libs/k1-rl-isaac/tests/test_warm_start.py:34: in _src
+    return TRAIN.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/scripts/train.py'
+_________________ test_warm_start_selectively_loads_and_resets _________________
+libs/k1-rl-isaac/tests/test_warm_start.py:45: in test_warm_start_selectively_loads_and_resets
+    src = _src()
+libs/k1-rl-isaac/tests/test_warm_start.py:34: in _src
+    return TRAIN.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/scripts/train.py'
+_____________________ test_plain_resume_path_still_exists ______________________
+libs/k1-rl-isaac/tests/test_warm_start.py:62: in test_plain_resume_path_still_exists
+    src = _src()
+libs/k1-rl-isaac/tests/test_warm_start.py:34: in _src
+    return TRAIN.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/scripts/train.py'
+_________________ test_clearance_fix_is_in_place_for_this_run __________________
+libs/k1-rl-isaac/tests/test_warm_start.py:70: in test_clearance_fix_is_in_place_for_this_run
+    gait = GAIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_warm_start.xml -
+=========================== short test summary info ============================
+FAILED libs/k1-rl-isaac/tests/test_warm_start.py::test_warm_start_flag_exists
+FAILED libs/k1-rl-isaac/tests/test_warm_start.py::test_warm_start_selectively_loads_and_resets
+FAILED libs/k1-rl-isaac/tests/test_warm_start.py::test_plain_resume_path_still_exists
+FAILED libs/k1-rl-isaac/tests/test_warm_start.py::test_clearance_fix_is_in_place_for_this_run
+4 failed in 0.08s

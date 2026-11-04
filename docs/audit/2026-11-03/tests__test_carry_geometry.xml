@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.090" timestamp="2026-11-03T19:15:29.493913" hostname="dhyan-LOQ"><testcase classname="" name="tests.test_carry_geometry" time="0.000"><error message="collection failure">tests/test_carry_geometry.py:31: in &lt;module&gt;
+    cm = _load_mdp()
+tests/test_carry_geometry.py:27: in _load_mdp
+    spec.loader.exec_module(mod)
+&lt;frozen importlib._bootstrap_external&gt;:991: in exec_module
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1128: in get_code
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/isaac_tasks/k1_velocity/source/k1_velocity/tasks/carry/carry_mdp.py'</error></testcase></testsuite></testsuites>

@@ -1,0 +1,17 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-rl-isaac/tests/test_deployability.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_deployability.xml']
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_________________________ test_deployability_invariant _________________________
+libs/k1-rl-isaac/tests/test_deployability.py:141: in test_deployability_invariant
+    assert main() == 0
+libs/k1-rl-isaac/tests/test_deployability.py:97: in main
+    register_tasks()
+libs/k1-rl-isaac/src/k1_velocity/register_tasks.py:23: in register_tasks
+    import k1_velocity.tasks.velocity  # noqa: F401 — registers velocity task family
+libs/k1-rl-isaac/src/k1_velocity/tasks/__init__.py:2: in <module>
+    import gymnasium as gym
+E   ModuleNotFoundError: No module named 'gymnasium'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_deployability.xml -
+=========================== short test summary info ============================
+FAILED libs/k1-rl-isaac/tests/test_deployability.py::test_deployability_invariant
+1 failed in 0.02s

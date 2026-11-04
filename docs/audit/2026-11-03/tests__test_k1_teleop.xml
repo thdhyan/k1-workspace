@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="7" time="0.168" timestamp="2026-11-03T19:15:29.494108" hostname="dhyan-LOQ"><testcase classname="tests.test_k1_teleop" name="test_frames" time="0.001" /><testcase classname="tests.test_k1_teleop" name="test_sticks_and_buttons" time="0.000" /><testcase classname="tests.test_k1_teleop" name="test_head" time="0.000" /><testcase classname="tests.test_k1_teleop" name="test_clutch" time="0.001" /><testcase classname="tests.test_k1_teleop" name="test_ik_geometry" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-runtime/src/k1_runtime/K1_22dof-ZED.urdf'">tests/test_k1_teleop.py:76: in test_ik_geometry
+    ik = ArmIK()
+libs/k1-runtime/src/k1_runtime/k1_arm_ik.py:68: in __init__
+    self.joints = load_urdf_joints(urdf)
+libs/k1-runtime/src/k1_runtime/k1_arm_ik.py:47: in load_urdf_joints
+    for node in ET.parse(path).getroot().findall("joint"):
+/usr/lib/python3.12/xml/etree/ElementTree.py:1204: in parse
+    tree.parse(source, parser)
+/usr/lib/python3.12/xml/etree/ElementTree.py:558: in parse
+    source = open(source, "rb")
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-runtime/src/k1_runtime/K1_22dof-ZED.urdf'</failure></testcase><testcase classname="tests.test_k1_teleop" name="test_ik_vs_fk" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-runtime/src/k1_runtime/K1_22dof-ZED.urdf'">tests/test_k1_teleop.py:91: in test_ik_vs_fk
+    ik, rng = ArmIK(), np.random.default_rng(0)
+libs/k1-runtime/src/k1_runtime/k1_arm_ik.py:68: in __init__
+    self.joints = load_urdf_joints(urdf)
+libs/k1-runtime/src/k1_runtime/k1_arm_ik.py:47: in load_urdf_joints
+    for node in ET.parse(path).getroot().findall("joint"):
+/usr/lib/python3.12/xml/etree/ElementTree.py:1204: in parse
+    tree.parse(source, parser)
+/usr/lib/python3.12/xml/etree/ElementTree.py:558: in parse
+    source = open(source, "rb")
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-runtime/src/k1_runtime/K1_22dof-ZED.urdf'</failure></testcase><testcase classname="tests.test_k1_teleop" name="test_ik_tracks_clutch_path" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-runtime/src/k1_runtime/K1_22dof-ZED.urdf'">tests/test_k1_teleop.py:111: in test_ik_tracks_clutch_path
+    ik = ArmIK()
+libs/k1-runtime/src/k1_runtime/k1_arm_ik.py:68: in __init__
+    self.joints = load_urdf_joints(urdf)
+libs/k1-runtime/src/k1_runtime/k1_arm_ik.py:47: in load_urdf_joints
+    for node in ET.parse(path).getroot().findall("joint"):
+/usr/lib/python3.12/xml/etree/ElementTree.py:1204: in parse
+    tree.parse(source, parser)
+/usr/lib/python3.12/xml/etree/ElementTree.py:558: in parse
+    source = open(source, "rb")
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-runtime/src/k1_runtime/K1_22dof-ZED.urdf'</failure></testcase></testsuite></testsuites>

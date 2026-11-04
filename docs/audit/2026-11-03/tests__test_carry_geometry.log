@@ -1,0 +1,20 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'tests/test_carry_geometry.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/tests__test_carry_geometry.xml']
+
+==================================== ERRORS ====================================
+________________ ERROR collecting tests/test_carry_geometry.py _________________
+tests/test_carry_geometry.py:31: in <module>
+    cm = _load_mdp()
+tests/test_carry_geometry.py:27: in _load_mdp
+    spec.loader.exec_module(mod)
+<frozen importlib._bootstrap_external>:991: in exec_module
+    ???
+<frozen importlib._bootstrap_external>:1128: in get_code
+    ???
+<frozen importlib._bootstrap_external>:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/isaac_tasks/k1_velocity/source/k1_velocity/tasks/carry/carry_mdp.py'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/tests__test_carry_geometry.xml -
+=========================== short test summary info ============================
+ERROR tests/test_carry_geometry.py - FileNotFoundError: [Errno 2] No such fil...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.09s

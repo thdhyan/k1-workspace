@@ -1,0 +1,5 @@
+COMMAND: ['/tmp/k1-audit-system-venv/bin/python', '-m', 'pytest', 'tests', '-q', '--tb=short', '-rs', '-m', 'not isaac and not robot and not net and not onprem', '-p', 'no:cacheprovider', '--basetemp=/tmp/k1-phase1-k1-deploy-laptop', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-deploy-laptop.xml']
+CWD: /home/thakk100/Projects/booster_proj/libs/k1-deploy-laptop
+.                                                                        [100%]
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-deploy-laptop.xml -
+1 passed in 60.17s (0:01:00)

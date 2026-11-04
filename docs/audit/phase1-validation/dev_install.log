@@ -1,0 +1,70 @@
+Using Python 3.12.3 environment at: /tmp/k1-phase1-install-venv
+Resolved 1 package in 1ms
+   Building k1-description @ file:///home/thakk100/Projects/booster_proj/libs/k1-description
+      Built k1-description @ file:///home/thakk100/Projects/booster_proj/libs/k1-description
+Prepared 1 package in 1.37s
+Installed 1 package in 2ms
+ + k1-description==0.2.0 (from file:///home/thakk100/Projects/booster_proj/libs/k1-description)
+Using Python 3.12.3 environment at: /tmp/k1-phase1-install-venv
+Resolved 1 package in 1ms
+   Building k1-common @ file:///home/thakk100/Projects/booster_proj/libs/k1-common
+      Built k1-common @ file:///home/thakk100/Projects/booster_proj/libs/k1-common
+Prepared 1 package in 231ms
+Installed 1 package in 0.61ms
+ + k1-common==0.1.0 (from file:///home/thakk100/Projects/booster_proj/libs/k1-common)
+Using Python 3.12.3 environment at: /tmp/k1-phase1-install-venv
+Resolved 1 package in 1ms
+   Building k1-utils @ file:///home/thakk100/Projects/booster_proj/libs/k1-utils
+      Built k1-utils @ file:///home/thakk100/Projects/booster_proj/libs/k1-utils
+Prepared 1 package in 240ms
+Installed 1 package in 0.60ms
+ + k1-utils==0.1.0 (from file:///home/thakk100/Projects/booster_proj/libs/k1-utils)
+Using Python 3.12.3 environment at: /tmp/k1-phase1-install-venv
+Resolved 1 package in 1ms
+   Building k1-runtime @ file:///home/thakk100/Projects/booster_proj/libs/k1-runtime
+      Built k1-runtime @ file:///home/thakk100/Projects/booster_proj/libs/k1-runtime
+Prepared 1 package in 224ms
+Installed 1 package in 0.78ms
+ + k1-runtime==0.1.0 (from file:///home/thakk100/Projects/booster_proj/libs/k1-runtime)
+Using Python 3.12.3 environment at: /tmp/k1-phase1-install-venv
+Resolved 1 package in 1ms
+   Building k1-rl-mj @ file:///home/thakk100/Projects/booster_proj/libs/k1-rl-mj
+      Built k1-rl-mj @ file:///home/thakk100/Projects/booster_proj/libs/k1-rl-mj
+Prepared 1 package in 236ms
+Installed 1 package in 0.86ms
+ + k1-rl-mj==0.1.0 (from file:///home/thakk100/Projects/booster_proj/libs/k1-rl-mj)
+Using Python 3.12.3 environment at: /tmp/k1-phase1-install-venv
+Resolved 1 package in 1ms
+   Building k1-rl-isaac @ file:///home/thakk100/Projects/booster_proj/libs/k1-rl-isaac
+      Built k1-rl-isaac @ file:///home/thakk100/Projects/booster_proj/libs/k1-rl-isaac
+Prepared 1 package in 230ms
+Installed 1 package in 0.60ms
+ + k1-rl-isaac==0.1.0 (from file:///home/thakk100/Projects/booster_proj/libs/k1-rl-isaac)
+Using Python 3.12.3 environment at: /tmp/k1-phase1-install-venv
+Resolved 1 package in 1ms
+   Building k1-mimic @ file:///home/thakk100/Projects/booster_proj/libs/k1-mimic
+      Built k1-mimic @ file:///home/thakk100/Projects/booster_proj/libs/k1-mimic
+Prepared 1 package in 225ms
+Installed 1 package in 0.57ms
+ + k1-mimic==0.1.0 (from file:///home/thakk100/Projects/booster_proj/libs/k1-mimic)
+Using Python 3.12.3 environment at: /tmp/k1-phase1-install-venv
+Resolved 1 package in 1ms
+   Building k1-teleop @ file:///home/thakk100/Projects/booster_proj/libs/k1-teleop
+      Built k1-teleop @ file:///home/thakk100/Projects/booster_proj/libs/k1-teleop
+Prepared 1 package in 220ms
+Installed 1 package in 0.58ms
+ + k1-teleop==0.1.0 (from file:///home/thakk100/Projects/booster_proj/libs/k1-teleop)
+Using Python 3.12.3 environment at: /tmp/k1-phase1-install-venv
+Resolved 1 package in 1ms
+   Building k1-vla @ file:///home/thakk100/Projects/booster_proj/libs/k1-vla
+      Built k1-vla @ file:///home/thakk100/Projects/booster_proj/libs/k1-vla
+Prepared 1 package in 240ms
+Installed 1 package in 0.59ms
+ + k1-vla==0.1.0 (from file:///home/thakk100/Projects/booster_proj/libs/k1-vla)
+Using Python 3.12.3 environment at: /tmp/k1-phase1-install-venv
+Resolved 1 package in 1ms
+   Building k1-deploy-laptop @ file:///home/thakk100/Projects/booster_proj/libs/k1-deploy-laptop
+      Built k1-deploy-laptop @ file:///home/thakk100/Projects/booster_proj/libs/k1-deploy-laptop
+Prepared 1 package in 226ms
+Installed 1 package in 0.60ms
+ + k1-deploy-laptop==0.1.0 (from file:///home/thakk100/Projects/booster_proj/libs/k1-deploy-laptop)

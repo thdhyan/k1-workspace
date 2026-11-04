@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="6" time="0.124" timestamp="2026-11-03T19:15:34.045321" hostname="dhyan-LOQ"><testcase classname="libs.k1-rl-isaac.tests.test_feet_clearance_lift" name="test_old_target_sat_at_or_below_the_foot_resting_height" time="0.000" /><testcase classname="libs.k1-rl-isaac.tests.test_feet_clearance_lift" name="test_clearance_measures_lift_against_the_other_foot" time="0.001"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'">libs/k1-rl-isaac/tests/test_feet_clearance_lift.py:112: in test_clearance_measures_lift_against_the_other_foot
+    body = _code_only(_fn("feet_clearance"))
+libs/k1-rl-isaac/tests/test_feet_clearance_lift.py:34: in _fn
+    tree = ast.parse(GAIT.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_feet_clearance_lift" name="test_clearance_is_wired_with_a_target_lift_and_pinned_foot_order" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'">libs/k1-rl-isaac/tests/test_feet_clearance_lift.py:128: in test_clearance_is_wired_with_a_target_lift_and_pinned_foot_order
+    params = _term_params("feet_clearance")
+libs/k1-rl-isaac/tests/test_feet_clearance_lift.py:74: in _term_params
+    cls = _cls("RewardsCfg")
+libs/k1-rl-isaac/tests/test_feet_clearance_lift.py:57: in _cls
+    tree = ast.parse(CFG.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_feet_clearance_lift" name="test_penalty_is_linear_not_squared_in_the_shortfall" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'">libs/k1-rl-isaac/tests/test_feet_clearance_lift.py:160: in test_penalty_is_linear_not_squared_in_the_shortfall
+    body = _code_only(_fn("feet_clearance"))
+libs/k1-rl-isaac/tests/test_feet_clearance_lift.py:34: in _fn
+    tree = ast.parse(GAIT.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_feet_clearance_lift" name="test_clearance_is_ramped_to_a_competitive_terminal_weight" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'">libs/k1-rl-isaac/tests/test_feet_clearance_lift.py:192: in test_clearance_is_ramped_to_a_competitive_terminal_weight
+    params = _term_params("feet_clearance")
+libs/k1-rl-isaac/tests/test_feet_clearance_lift.py:74: in _term_params
+    cls = _cls("RewardsCfg")
+libs/k1-rl-isaac/tests/test_feet_clearance_lift.py:57: in _cls
+    tree = ast.parse(CFG.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/velocity_env_cfg.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_feet_clearance_lift" name="test_clearance_still_skips_envs_with_no_swing_foot" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'">libs/k1-rl-isaac/tests/test_feet_clearance_lift.py:247: in test_clearance_still_skips_envs_with_no_swing_foot
+    body = _code_only(_fn("feet_clearance"))
+libs/k1-rl-isaac/tests/test_feet_clearance_lift.py:34: in _fn
+    tree = ast.parse(GAIT.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/velocity/gait_rewards.py'</failure></testcase></testsuite></testsuites>

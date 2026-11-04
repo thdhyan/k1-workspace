@@ -1,0 +1,19 @@
+COMMAND: ['/tmp/k1-audit-system-venv/bin/python', '-m', 'pytest', 'tests', '-q', '--tb=short', '-rs', '-m', 'not isaac and not robot and not net and not onprem', '-p', 'no:cacheprovider', '--basetemp=/tmp/k1-phase1-k1-rl-isaac', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-rl-isaac.xml']
+CWD: /home/thakk100/Projects/booster_proj/libs/k1-rl-isaac
+........................................................................ [ 19%]
+............................................ss.ss.........s.....s...s... [ 39%]
+........................................................................ [ 58%]
+........................................................................ [ 78%]
+........................................................................ [ 97%]
+.........                                                                [100%]
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/k1-rl-isaac.xml -
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_carry_decoupled_policy.py:16: could not import 'tensordict': No module named 'tensordict'
+SKIPPED [1] tests/test_import_order.py:69: gait_gate.py does not construct an AppLauncher
+SKIPPED [1] tests/test_import_order.py:69: keyboard_cmd.py does not construct an AppLauncher
+SKIPPED [1] tests/test_import_order.py:69: panel_video.py does not construct an AppLauncher
+SKIPPED [1] tests/test_import_order.py:69: plateau_stop.py does not construct an AppLauncher
+SKIPPED [1] tests/test_import_order.py:69: ppo_guard.py does not construct an AppLauncher
+SKIPPED [1] tests/test_import_order.py:69: replay_kick_rtx.py does not construct an AppLauncher
+SKIPPED [1] tests/test_import_order.py:69: task_docs.py does not construct an AppLauncher
+362 passed, 8 skipped, 2 deselected in 3.34s

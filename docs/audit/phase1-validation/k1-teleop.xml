@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="1.821" timestamp="2026-11-03T21:47:25.277256" hostname="dhyan-LOQ"><testcase classname="tests.test_push_ik_node" name="test_push_ik_node_e2e" time="1.802"><failure message="AssertionError: gamepad: laptop pad over udp :9870 (+ K1 remote B = stop)&#10;  Traceback (most recent call last):&#10;    File &quot;/home/thakk100/Projects/booster_proj/libs/k1-teleop/tests/e2e_push_ik_node.py&quot;, line 29, in &lt;module&gt;&#10;      rclpy.init()&#10;    File &quot;/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py&quot;, line 88, in init&#10;      context.init(args, domain_id=domain_id)&#10;    File &quot;/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/context.py&quot;, line 106, in init&#10;      _rclpy.rclpy_logging_configure(self.__context)&#10;  RuntimeError: Failed opening file /home/thakk100/.ros/log/python_302_1793764046572.log for writing: Read-only file system&#10;  &#10;assert (1 == 0)&#10; +  where 1 = CompletedProcess(args=['/tmp/k1-audit-system-venv/bin/python', '/home/thakk100/Projects/booster_proj/libs/k1-teleop/te...eError: Failed opening file /home/thakk100/.ros/log/python_302_1793764046572.log for writing: Read-only file system\n').returncode">tests/test_push_ik_node.py:20: in test_push_ik_node_e2e
+    assert r.returncode == 0 and "NODE TEST OK" in r.stdout, (r.stdout + r.stderr)[-3000:]
+E   AssertionError: gamepad: laptop pad over udp :9870 (+ K1 remote B = stop)
+E     Traceback (most recent call last):
+E       File "/home/thakk100/Projects/booster_proj/libs/k1-teleop/tests/e2e_push_ik_node.py", line 29, in &lt;module&gt;
+E         rclpy.init()
+E       File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 88, in init
+E         context.init(args, domain_id=domain_id)
+E       File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/context.py", line 106, in init
+E         _rclpy.rclpy_logging_configure(self.__context)
+E     RuntimeError: Failed opening file /home/thakk100/.ros/log/python_302_1793764046572.log for writing: Read-only file system
+E     
+E   assert (1 == 0)
+E    +  where 1 = CompletedProcess(args=['/tmp/k1-audit-system-venv/bin/python', '/home/thakk100/Projects/booster_proj/libs/k1-teleop/te...eError: Failed opening file /home/thakk100/.ros/log/python_302_1793764046572.log for writing: Read-only file system\n').returncode</failure></testcase></testsuite></testsuites>

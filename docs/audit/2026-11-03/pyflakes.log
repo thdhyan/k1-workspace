@@ -1,0 +1,305 @@
+libs/k1-mimic/service/k1m_service.py:77:5: 'k1m.remote_stages' imported but unused
+libs/k1-mimic/scripts/soma_csv_to_k1_csv.py:197:5: local variable 'nq' is assigned to but never used
+libs/k1-mimic/scripts/record_k1_motion.py:289:12: local variable 'out_h' is assigned to but never used
+libs/k1-mimic/scripts/record_k1_motion.py:303:5: local variable 'dt' is assigned to but never used
+libs/k1-mimic/scripts/mk_soma_k1_target.py:7:1: 'os' imported but unused
+libs/k1-mimic/scripts/mk_soma_k1_target.py:7:1: 'shutil' imported but unused
+libs/k1-mimic/scripts/mk_soma_k1_target.py:7:1: 'sys' imported but unused
+libs/k1-mimic/scripts/motion_feasibility_gate.py:298:1: redefinition of unused 'joint_masses' from line 165
+libs/k1-mimic/scripts/motion_feasibility_gate.py:446:5: local variable 'worst' is assigned to but never used
+libs/k1-mimic/scripts/motion_feasibility_gate.py:560:15: f-string is missing placeholders
+libs/k1-mimic/src/k1m/cli.py:19:1: '.local_stages' imported but unused
+libs/k1-mimic/src/k1m/local_stages.py:26:9: 'mujoco' imported but unused
+libs/k1-mimic/src/k1m/pipeline.py:19:1: 'tempfile' imported but unused
+libs/k1-description/launch/view_robot.launch.py:29:5: local variable 'urdf_file' is assigned to but never used
+libs/k1-rl-isaac/scripts/probe_scene_resolver.py:38:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/probe_scene_resolver.py:39:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/probe_scene_resolver.py:42:1: 'k1_velocity.tasks.carry' imported but unused
+libs/k1-rl-isaac/scripts/play_push_ik.py:191:22: local variable 'hands' is assigned to but never used
+libs/k1-rl-isaac/scripts/play_keyboard_fixed.py:31:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/play_keyboard_fixed.py:32:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/play_keyboard_fixed.py:33:1: 'k1_velocity.tasks.velocity' imported but unused
+libs/k1-rl-isaac/scripts/play_record.py:99:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/play_record.py:100:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/play_record.py:108:1: 'k1_velocity.tasks.skills' imported but unused
+libs/k1-rl-isaac/scripts/train.py:119:1: 'omni' imported but unused
+libs/k1-rl-isaac/scripts/train.py:132:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/train.py:136:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/train.py:145:1: 'k1_velocity.tasks.skills' imported but unused
+libs/k1-rl-isaac/scripts/play_keyboard.py:43:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/play_keyboard.py:44:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/play_keyboard.py:45:1: 'k1_velocity.tasks.velocity' imported but unused
+libs/k1-rl-isaac/scripts/smoke_task.py:27:1: 'k1_velocity.tasks.skills' imported but unused
+libs/k1-rl-isaac/scripts/plateau_stop.py:33:1: 'signal' imported but unused
+libs/k1-rl-isaac/scripts/flatten_k1_usd.py:37:1: 'pxr.Sdf' imported but unused
+libs/k1-rl-isaac/scripts/flatten_k1_usd.py:103:11: f-string is missing placeholders
+libs/k1-rl-isaac/scripts/zero_step_check.py:31:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/zero_step_check.py:32:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/zero_step_check.py:33:1: 'k1_velocity.tasks' imported but unused
+libs/k1-rl-isaac/scripts/train_kick.py:71:1: 'omni' imported but unused
+libs/k1-rl-isaac/scripts/train_kick.py:83:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/train_kick.py:87:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/train_kick.py:91:1: 'k1_velocity.tasks.kick' imported but unused
+libs/k1-rl-isaac/scripts/make_zero_actor.py:72:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/make_zero_actor.py:73:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/make_zero_actor.py:76:1: 'k1_velocity.tasks.carry' imported but unused
+libs/k1-rl-isaac/scripts/play_keyboard_teacher.py:93:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/play_keyboard_teacher.py:94:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/play_keyboard_teacher.py:95:1: 'k1_velocity.tasks.velocity' imported but unused
+libs/k1-rl-isaac/scripts/play_contact_visualize.py:49:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/play_contact_visualize.py:50:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/play_contact_visualize.py:51:1: 'k1_velocity.tasks.velocity' imported but unused
+libs/k1-rl-isaac/scripts/sweep_standing_gains.py:16:1: 'os' imported but unused
+libs/k1-rl-isaac/scripts/sweep_standing_gains.py:36:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/sweep_standing_gains.py:37:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/sweep_standing_gains.py:38:1: 'k1_velocity.tasks.velocity' imported but unused
+libs/k1-rl-isaac/scripts/probe_rewards.py:13:1: 'math' imported but unused
+libs/k1-rl-isaac/scripts/probe_rewards.py:14:1: 'os' imported but unused
+libs/k1-rl-isaac/scripts/probe_rewards.py:53:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/probe_rewards.py:54:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/probe_rewards.py:55:1: 'k1_velocity.tasks.velocity' imported but unused
+libs/k1-rl-isaac/scripts/probe_rewards.py:76:9: local variable 'obs' is assigned to but never used
+libs/k1-rl-isaac/scripts/probe_k1_bodies.py:10:1: 're' imported but unused
+libs/k1-rl-isaac/scripts/probe_k1_bodies.py:21:1: 'isaaclab.assets.Articulation' imported but unused
+libs/k1-rl-isaac/scripts/probe_k1_bodies.py:23:1: 'isaaclab.sensors.ContactSensor' imported but unused
+libs/k1-rl-isaac/scripts/probe_k1_bodies.py:31:12: undefined name 'ArticulationCfg'
+libs/k1-rl-isaac/scripts/train_student.py:104:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/train_student.py:105:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/train_student.py:106:1: 'k1_velocity.tasks.velocity' imported but unused
+libs/k1-rl-isaac/scripts/keyboard_cmd.py:80:13: 'Xlib.XK' imported but unused
+libs/k1-rl-isaac/scripts/play_student.py:41:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/play_student.py:42:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/play_student.py:43:1: 'k1_velocity.tasks.velocity' imported but unused
+libs/k1-rl-isaac/scripts/eval_push_check.py:60:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/eval_push_check.py:61:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/eval_push_check.py:63:1: 'k1_velocity.tasks.push' imported but unused
+libs/k1-rl-isaac/scripts/eval_push_check.py:93:11: f-string is missing placeholders
+libs/k1-rl-isaac/scripts/probe_lowerbody_yaw.py:18:1: 'os' imported but unused
+libs/k1-rl-isaac/scripts/probe_lowerbody_yaw.py:39:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/probe_lowerbody_yaw.py:40:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/probe_lowerbody_yaw.py:41:1: 'k1_velocity.tasks.velocity' imported but unused
+libs/k1-rl-isaac/scripts/play.py:46:1: 'isaaclab.envs.ManagerBasedEnv' imported but unused
+libs/k1-rl-isaac/scripts/play.py:46:1: 'isaaclab.envs.ManagerBasedRLEnv' imported but unused
+libs/k1-rl-isaac/scripts/play.py:51:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/play.py:52:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/play.py:54:1: 'k1_velocity.tasks.partial' imported but unused
+libs/k1-rl-isaac/scripts/train_kick_student.py:62:1: 'isaaclab.utils.dict.print_dict' imported but unused
+libs/k1-rl-isaac/scripts/train_kick_student.py:67:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/train_kick_student.py:68:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/train_kick_student.py:70:1: 'k1_velocity.tasks.kick' imported but unused
+libs/k1-rl-isaac/scripts/train_mappo.py:63:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/train_mappo.py:67:1: 'k1_velocity.tasks.push' imported but unused
+libs/k1-rl-isaac/scripts/play_mjlab_policy.py:35:1: 'k1_velocity.tasks.velocity' imported but unused
+libs/k1-rl-isaac/scripts/reward_probe_check.py:33:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/reward_probe_check.py:34:1: 'booster_train.tasks' imported but unused
+libs/k1-rl-isaac/scripts/reward_probe_check.py:36:1: 'k1_velocity.tasks.partial' imported but unused
+libs/k1-rl-isaac/scripts/probe_arm_ik.py:29:1: 'isaaclab_tasks' imported but unused
+libs/k1-rl-isaac/scripts/probe_arm_ik.py:30:1: 'k1_velocity.tasks.push' imported but unused
+libs/k1-rl-isaac/scripts/task_docs.py:16:1: 'os' imported but unused
+libs/k1-rl-isaac/ros/k1_sim_isaac/launch/sim_isaac.launch.py:22:5: local variable 'headless' is assigned to but never used
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/k1_teleop_sim.py:35:1: 'sys' imported but unused
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/isaac_fleet_vis.py:161:1: 'isaaclab.assets.Articulation' imported but unused
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/isaac_fleet_vis.py:302:9: local variable 'graph' is assigned to but never used
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/isaac_fleet_vis.py:374:5: local variable 'sensor_qos' is assigned to but never used
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/isaac_fleet_vis.py:464:5: local variable 'rate' is assigned to but never used
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/k1_soccer_compose.py:27:1: 'sys' imported but unused
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/k1_soccer_compose.py:28:1: 'time' imported but unused
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/k1_soccer_compose.py:256:5: local variable 'composer' is assigned to but never used
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/fleet_sim.py:78:1: 'isaaclab.assets.Articulation' imported but unused
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/fleet_sim.py:177:5: local variable 'rate' is assigned to but never used
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/soccer_sim.py:32:1: 'torch' imported but unused
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/soccer_sim.py:217:5: 'cv2' imported but unused
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/stereo_cam_test.py:29:1: 'torch' imported but unused
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/stereo_cam_test.py:34:1: 'isaaclab.sensors.Camera' imported but unused
+libs/k1-rl-isaac/ros/k1_sim_isaac/scripts/stereo_cam_test.py:132:5: local variable 'art' is assigned to but never used
+libs/k1-rl-isaac/src/k1_velocity/sim_backend.py:38:1: 'isaaclab.sim.SimulationCfg' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/register_tasks.py:30:5: 'k1_velocity.tasks.skills' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/__init__.py:2:1: 'gymnasium as gym' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/__init__.py:3:1: '.velocity' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/__init__.py:4:1: '.basic' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/__init__.py:5:1: '.kick' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/__init__.py:6:1: '.head' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/__init__.py:7:1: '.push' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.JointPositionActionCfg' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.UniformVelocityCommandCfg' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.base_lin_vel' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.base_ang_vel' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.projected_gravity' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.generated_commands' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.joint_pos_rel' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.joint_vel_rel' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.last_action' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.height_scan' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.track_lin_vel_xy_yaw_frame_exp' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.track_ang_vel_z_world_exp' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.is_terminated' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.lin_vel_z_l2' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.flat_orientation_l2' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.action_rate_l2' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.joint_acc_l2' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.joint_torques_l2' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.joint_pos_limits' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.joint_deviation_l1' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.time_out' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.root_height_below_minimum' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.bad_orientation' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.reset_scene_to_default' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.reset_joints_by_scale' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.push_by_setting_velocity' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.randomize_rigid_body_mass' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:60:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.terrain_levels_vel' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:93:5: 'isaaclab.managers.SceneEntityCfg' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/mdp.py:297:5: local variable 'mask_ready' is assigned to but never used
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/kick_env_cfg.py:19:1: 'math' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/kick_env_cfg.py:20:1: 'torch' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/kick/kick_env_cfg.py:25:1: 'isaaclab.managers.CurriculumTermCfg as CurrTerm' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/push/push_mdp.py:336:5: 'pxr.Usd' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/push/push_mdp.py:336:5: 'pxr.UsdGeom' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/push/push_mdp.py:375:5: 'pxr.Usd' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/push/push_mdp.py:375:5: 'pxr.UsdGeom' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/push/push_rewards_sg.py:48:1: '.push_mdp.wrist_positions_base' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/skills/skills_mdp.py:19:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.is_alive' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/skills/skills_mdp.py:19:5: 'isaaclab_tasks.manager_based.locomotion.velocity.mdp.reset_root_state_uniform' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/skills/skills_mdp.py:20:1: 'k1_velocity.tasks.kick.mdp.ball_lin_vel_in_robot_frame' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/skills/skills_mdp.py:20:1: 'k1_velocity.tasks.kick.mdp.goal_pos_in_robot_frame' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/skills/skills_mdp.py:20:1: 'k1_velocity.tasks.kick.mdp.track_ball_head_exp' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/partial/partial_env_cfg.py:29:1: 'isaaclab.envs.ManagerBasedRLEnvCfg' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/head/head_mdp.py:25:1: '..kick.mdp.bad_orientation' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/head/head_mdp.py:25:1: '..kick.mdp.root_height_below_minimum' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/head/head_mdp.py:234:5: local variable 'st' is assigned to but never used
+libs/k1-rl-isaac/src/k1_velocity/tasks/carry/agents/__init__.py:2:1: '.rsl_rl_ppo_cfg' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/push/agents/__init__.py:2:1: '.rsl_rl_ppo_cfg' imported but unused
+libs/k1-rl-isaac/src/k1_velocity/tasks/head/agents/__init__.py:2:1: '.rsl_rl_ppo_cfg' imported but unused
+libs/k1-rl-isaac/src/k1_kicking/tasks/kicking/kicking_env_cfg.py:298:17: undefined name 'CurriculumCfg'
+libs/k1-teleop/src/k1_teleop/multi_k1_sim.py:17:1: 'sys' imported but unused
+libs/k1-teleop/src/k1_teleop/multi_k1_sim.py:44:1: 'isaaclab._deprioritize_prebundle_paths' imported but unused
+libs/k1-teleop/src/k1_teleop/multi_k1_sim.py:335:26: f-string is missing placeholders
+libs/k1-teleop/src/k1_teleop/multi_k1_sim.py:354:5: local variable 'goal_mk' is assigned to but never used
+libs/k1-teleop/src/k1_teleop/multi_k1_sim.py:357:5: local variable 'tip_mk' is assigned to but never used
+libs/k1-teleop/src/k1_teleop/multi_k1_sim.py:387:19: local variable 'all_goals' is assigned to but never used
+libs/k1-teleop/src/k1_teleop/multi_k1_sim.py:406:13: local variable 'R' is assigned to but never used
+libs/k1-teleop/src/k1_teleop/multi_k1_sim.py:458:17: local variable 'rows' is assigned to but never used
+libs/k1-teleop/src/k1_teleop/multi_k1_sim.py:497:13: local variable 'wall_log' is assigned to but never used
+libs/k1-teleop/src/k1_teleop/multi_k1_view.py:102:9: 'cv2' imported but unused
+libs/k1-teleop/src/k1_teleop/multi_k1_view.py:224:17: local variable 't_prev' is assigned to but never used
+libs/k1-teleop/src/k1_teleop/hmd_poser/network.py:3:1: 'torch.nn.functional.relu' imported but unused
+libs/k1-teleop/src/k1_teleop/hmd_poser/network.py:4:1: 'os' imported but unused
+libs/k1-teleop/src/k1_teleop/hmd_poser/network.py:7:1: 'torch.nn.functional as F' imported but unused
+libs/k1-runtime/src/k1_runtime/gamepad_core.py:8:1: 'argparse' imported but unused
+libs/k1-runtime/src/k1_runtime/gamepad_core.py:13:1: 'pathlib.Path' imported but unused
+libs/k1-runtime/src/k1_runtime/push_ik_core.py:9:1: 'sys' imported but unused
+libs/k1-runtime/src/k1_runtime/push_ik_core.py:10:1: 'pathlib.Path' imported but unused
+libs/k1-utils/src/k1_utils/push_export_parity.py:159:15: f-string is missing placeholders
+libs/k1-deploy-laptop/deploy/gamepad_sim.py:9:1: 'math' imported but unused
+libs/k1-deploy-laptop/deploy/gamepad_sim.py:11:1: 'threading' imported but unused
+libs/k1-deploy-laptop/deploy/gamepad_sim.py:16:1: 'torch' imported but unused
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:4:1: 'sys' imported but unused
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:85:5: local variable 'COLS' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:88:13: local variable 'col' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:89:13: local variable 'row' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:156:22: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:158:22: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:162:26: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:163:26: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:165:26: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:167:26: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:168:26: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:169:26: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:170:26: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:171:26: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:185:22: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:186:22: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:188:22: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:189:22: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:190:22: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:191:22: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:192:22: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:194:22: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:195:22: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:196:22: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:197:22: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:198:22: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/config/generate_rviz_config.py:249:11: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_fleet_rviz/k1_fleet_rviz/domain_relay.py:14:1: 'sys' imported but unused
+libs/k1-deploy-laptop/src/k1_fleet_rviz/k1_fleet_rviz/domain_relay.py:15:1: 'struct' imported but unused
+libs/k1-deploy-laptop/src/k1_fleet_rviz/k1_fleet_rviz/domain_relay.py:17:1: 'signal' imported but unused
+libs/k1-deploy-laptop/src/k1_fleet_rviz/k1_fleet_rviz/domain_relay.py:27:1: 'sensor_msgs.msg.CameraInfo' imported but unused
+libs/k1-deploy-laptop/src/k1_fleet_rviz/k1_fleet_rviz/domain_relay.py:63:5: local variable 'e' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_bringup/launch/sim_validate.launch.py:49:1: 'launch.conditions.IfCondition' imported but unused
+libs/k1-deploy-laptop/src/k1_bringup/launch/sim_validate.launch.py:49:1: 'launch.conditions.UnlessCondition' imported but unused
+libs/k1-deploy-laptop/src/k1_bringup/launch/sim_validate.launch.py:180:32: f-string is missing placeholders
+libs/k1-deploy-laptop/src/k1_bringup/launch/sim_gazebo.launch.py:20:5: local variable 'policy_path' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_bringup/launch/fleet.launch.py:14:5: local variable 'sim' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_bringup/launch/sim_isaac.launch.py:20:5: local variable 'policy_path' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_locomotion/launch/locomotion.launch.py:1:1: 'os' imported but unused
+libs/k1-deploy-laptop/src/k1_sim_gazebo/launch/sim_gazebo.launch.py:12:1: 'os' imported but unused
+libs/k1-deploy-laptop/src/k1_sim_gazebo/launch/sim_gazebo.launch.py:16:5: local variable 'world' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_sim_gazebo/launch/sim_gazebo.launch.py:17:5: local variable 'headless' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_sim_gazebo/launch/spawn_robot.launch.py:4:1: 'launch.actions.ExecuteProcess' imported but unused
+libs/k1-deploy-laptop/src/k1_sim_gazebo/launch/spawn_robot.launch.py:5:1: 'launch.substitutions.FindExecutable' imported but unused
+libs/k1-deploy-laptop/src/k1_sim_gazebo/scripts/mujoco_fleet_video.py:14:1: 'sys' imported but unused
+libs/k1-deploy-laptop/src/k1_sim_gazebo/scripts/mujoco_fleet_video.py:267:5: local variable 'dt' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_sim_gazebo/scripts/mujoco_fleet_video.py:270:5: local variable 't_start' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_sim_gazebo/scripts/mujoco_robocup_demo.py:120:5: local variable 'j' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_sim_gazebo/scripts/mujoco_robocup_demo.py:262:5: local variable 'dt' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_sim_gazebo/scripts/mujoco_stereo_capture.py:138:13: local variable 'da' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_sim_gazebo/scripts/mujoco_fleet_policy.py:14:1: 'sys' imported but unused
+libs/k1-deploy-laptop/src/k1_sim_gazebo/scripts/mujoco_fleet_policy.py:256:5: local variable 'dt' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_sim_gazebo/scripts/mujoco_fleet_policy.py:259:5: local variable 't_start' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_sim_gazebo/scripts/mujoco_fleet_policy.py:285:17: local variable 'trunk_adr' is assigned to but never used
+libs/k1-deploy-laptop/src/k1_sim_gazebo/scripts/mujoco_fleet_node.py:21:1: 'rclpy.node.Node' imported but unused
+libs/k1-data/real_robot/query_cameras.py:18:1: 'sys' imported but unused
+libs/k1-data/real_robot/grab_intrinsics.py:51:5: local variable 'd' is assigned to but never used
+libs/k1-rl-mj/scripts/kick_grid_render.py:11:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_strike_checks.py:5:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/export_policy.py:7:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_gaze_static.py:5:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/push_limits.py:11:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_ma_init.py:16:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_record.py:11:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/push_ik_render.py:15:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/base_probe.py:3:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_ma_smoke.py:9:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/jump_smoke.py:4:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/jump_smoke.py:23:1: 'mjlab_k1.tasks_jump.reset_jump_state' imported but unused
+libs/k1-rl-mj/scripts/kick_spread.py:14:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_gaze_sweep.py:8:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/shove_eval.py:7:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_depth_probe.py:9:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/order_check.py:1:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/gait_probe.py:5:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/velocity_grid.py:10:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/skill_eval.py:8:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_strike_init.py:12:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/term_check.py:2:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_yolo_check.py:9:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/jump_probe.py:11:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_dir_record.py:10:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/walk_profile_gif.py:10:1: 'numpy as np' imported but unused
+libs/k1-rl-mj/scripts/walk_profile_gif.py:13:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/wbc_head_check.py:11:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/mlp_check.py:1:1: 'torch' imported but unused
+libs/k1-rl-mj/scripts/mlp_check.py:2:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/task_smoke.py:9:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/jump_motor_test.py:9:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/obs_check.py:2:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/push_ik_probe.py:6:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_ma_goal_video.py:11:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_ma_checks.py:7:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/push_ik_eval.py:8:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_ma_layout.py:3:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/wbc_check.py:10:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_ma_eval.py:8:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/carry_clips.py:14:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/scripts/kick_gaze_debug.py:3:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/src/mjlab_k1/upper_body.py:41:8: local variable 'k' is assigned to but never used
+libs/k1-rl-mj/src/mjlab_k1/cli.py:2:1: 'mjlab_k1' imported but unused
+libs/k1-rl-mj/src/mjlab_k1/tasks_kick.py:18:1: 'mjlab.envs.mdp.dr' imported but unused
+libs/k1-rl-mj/src/mjlab_k1/tasks_carry2.py:27:1: 'mjlab.tasks.velocity.mdp' imported but unused
+libs/k1-deploy-robot/deploy/k1_gamepad_deploy.py:11:1: 'math' imported but unused
+libs/k1-deploy-robot/deploy/k1_gamepad_deploy.py:15:1: 'pathlib.Path' imported but unused
+libs/k1-deploy-robot/deploy/k1_gamepad_deploy.py:18:1: 'torch' imported but unused
+libs/k1-deploy-robot/real_robot/watchdog_k1_stereo.py:34:1: 'os' imported but unused
+libs/k1-deploy-robot/real_robot/watchdog_k1_stereo.py:36:1: 'sys' imported but unused
+libs/k1-deploy-robot/real_robot/watchdog_k1_stereo.py:132:27: f-string is missing placeholders
+libs/k1-rl-isaac/src/k1_velocity/tasks/push/push_things_rewards.py:1: source code string cannot contain null bytes

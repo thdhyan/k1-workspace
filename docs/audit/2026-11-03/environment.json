@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-03",
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "commit": "0536fe4513f947883f76de0a48244d10643e4e94",
+  "submodules": "-9b69378941269aa21e0ee124a438637d1b58dbda libs/k1-common\n-09038854d038aba01bdb60c1f8879fe80bddf0ed libs/k1-data\n-b3ef9a45e2398b5100587c29eaed0a5bf9106ea7 libs/k1-deploy-laptop\n-7d9ba397ce4afd925c421913c6a7c6cff05f5c7a libs/k1-deploy-robot\n-0ee17348797a80a5fa275c16aa3ef5e8cdba6b8f libs/k1-description\n-0cb9a30dbbe8086c2cce60ed487c4459d62ce2a8 libs/k1-mimic\n-cbdcb0610d938b1ee8603d6b6babce892998fbae libs/k1-ops\n-d4cd4e5bfac536246fb4405fed501fbf8ce118da libs/k1-perception\n-65fa0fb7b4cbfd8f1ee4862cc248b83022d213b0 libs/k1-rl-isaac\n-19da5164d02c24bbba6b20e3104dfdc8225355c0 libs/k1-rl-mj\n-3f4c7ffd8d446bd0a667ac96560107c4316d4625 libs/k1-runtime\n-5483fe7b37c4ab603f0f7711fda6d910863d1d03 libs/k1-teleop\n-ed8ed31139264a7d3f364ea2e845cbfa3ce9128a libs/k1-utils\n-96a912c91d65bd44d1026fb2781c57527b68741f libs/k1-vla\n-090fbb7901261888761c3a6151b949162ad93166 libs/k1-web-console\n",
+  "versions": {
+    "pytest": "7.4.4",
+    "numpy": "2.5.4",
+    "torch": "2.14.1+cu130",
+    "mujoco": "3.12.0",
+    "onnxruntime": "1.28.0",
+    "httpx": "0.28.1",
+    "scipy": "1.18.1",
+    "pyflakes": "3.2.0"
+  },
+  "extra_test_environment": {
+    "path": "/tmp/k1-audit-system-venv",
+    "added": [
+      "hatchling==1.33.0",
+      "respx==0.23.1",
+      "websockets==17.4"
+    ]
+  }
+}

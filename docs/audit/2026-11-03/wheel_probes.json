@@ -1,0 +1,23 @@
+[
+  {
+    "name": "fleet_config",
+    "repo": "k1-vla",
+    "code": "from k1_chat import fleet; print(fleet._FILE); fleet.load()",
+    "returncode": 1,
+    "output": "/tmp/k1-audit-wheels/fleet.json\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/tmp/k1-audit-wheels/k1-vla/k1_chat/fleet.py\", line 9, in load\n    return json.loads(path.read_text())\n                      ^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1029, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/tmp/k1-audit-wheels/fleet.json'\n"
+  },
+  {
+    "name": "laptop_ros_import",
+    "repo": "k1-deploy-laptop",
+    "code": "import importlib.util; assert importlib.util.find_spec(\"k1_wbc.wbc_node\") is not None",
+    "returncode": 1,
+    "output": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nAssertionError\n"
+  },
+  {
+    "name": "isaac_kicking_package",
+    "repo": "k1-rl-isaac",
+    "code": "import importlib.util; assert importlib.util.find_spec(\"k1_kicking\") is not None",
+    "returncode": 1,
+    "output": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nAssertionError\n"
+  }
+]

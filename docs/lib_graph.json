@@ -2,13 +2,23 @@
  "edges": [
   {
    "from": "rl_mj",
-   "to": "common",
-   "n": 17
-  },
-  {
-   "from": "rl_mj",
    "to": "runtime",
    "n": 14
+  },
+  {
+   "from": "mimic",
+   "to": "common",
+   "n": 7
+  },
+  {
+   "from": "deploy_laptop",
+   "to": "description",
+   "n": 6
+  },
+  {
+   "from": "rl_isaac",
+   "to": "description",
+   "n": 4
   },
   {
    "from": "deploy_laptop",
@@ -16,9 +26,34 @@
    "n": 4
   },
   {
+   "from": "deploy_laptop",
+   "to": "common",
+   "n": 4
+  },
+  {
+   "from": "runtime",
+   "to": "description",
+   "n": 3
+  },
+  {
+   "from": "rl_mj",
+   "to": "common",
+   "n": 3
+  },
+  {
+   "from": "mimic",
+   "to": "description",
+   "n": 3
+  },
+  {
    "from": "teleop",
    "to": "runtime",
    "n": 3
+  },
+  {
+   "from": "common",
+   "to": "description",
+   "n": 2
   },
   {
    "from": "rl_isaac",
@@ -28,6 +63,26 @@
   {
    "from": "rl_isaac",
    "to": "utils",
+   "n": 2
+  },
+  {
+   "from": "deploy_robot",
+   "to": "runtime",
+   "n": 2
+  },
+  {
+   "from": "utils",
+   "to": "description",
+   "n": 1
+  },
+  {
+   "from": "rl_mj",
+   "to": "description",
+   "n": 1
+  },
+  {
+   "from": "teleop",
+   "to": "common",
    "n": 1
   },
   {
@@ -36,55 +91,62 @@
    "n": 1
   },
   {
+   "from": "teleop",
+   "to": "description",
+   "n": 1
+  },
+  {
    "from": "vla",
    "to": "utils",
    "n": 1
   },
   {
-   "from": "deploy_robot",
-   "to": "runtime",
+   "from": "deploy_laptop",
+   "to": "teleop",
    "n": 1
   }
  ],
  "files": {
   "common": 11,
-  "description": 8,
-  "utils": 8,
-  "runtime": 7,
-  "rl_isaac": 213,
-  "rl_mj": 75,
-  "mimic": 19,
+  "description": 172,
+  "utils": 10,
+  "runtime": 8,
+  "rl_isaac": 215,
+  "rl_mj": 76,
+  "mimic": 20,
   "teleop": 10,
   "perception": 20,
-  "vla": 69,
+  "vla": 70,
   "data": 10,
   "deploy_robot": 14,
-  "deploy_laptop": 55,
+  "deploy_laptop": 757,
   "web_console": 8,
   "ops": 67
  },
  "loc": {
-  "common": 719,
-  "description": 141,
-  "utils": 1030,
-  "runtime": 1352,
-  "rl_isaac": 30838,
-  "rl_mj": 7576,
-  "mimic": 3722,
-  "teleop": 2292,
-  "perception": 1272,
+  "common": 585,
+  "description": 316,
+  "utils": 1293,
+  "runtime": 1466,
+  "rl_isaac": 30824,
+  "rl_mj": 7743,
+  "mimic": 3785,
+  "teleop": 2310,
+  "perception": 1274,
   "vla": 5976,
   "data": 877,
-  "deploy_robot": 1415,
-  "deploy_laptop": 5520,
+  "deploy_robot": 1308,
+  "deploy_laptop": 6909,
   "web_console": 554,
-  "ops": 2479
+  "ops": 2526
  },
  "libs": {
   "common": {
    "repo": "k1-common",
    "layer": "L0",
-   "may": [],
+   "may": [
+    "description"
+   ],
    "purpose": "Robot contract: joints, gains, obs/action layout, wiring, motion-clip schema."
   },
   "description": {
@@ -97,7 +159,8 @@
    "repo": "k1-utils",
    "layer": "L1",
    "may": [
-    "common"
+    "common",
+    "description"
    ],
    "purpose": "Eval gates, checkpoint inspect/migrate, parity checks, Isaac ROS env helper."
   },
@@ -105,7 +168,8 @@
    "repo": "k1-runtime",
    "layer": "L1",
    "may": [
-    "common"
+    "common",
+    "description"
    ],
    "purpose": "Torch/numpy-only policy runtime: WBC, push-IK core, arm IK, DS4 pad, gamepad core."
   },
@@ -115,6 +179,7 @@
    "may": [
     "common",
     "utils",
+    "description",
     "runtime"
    ],
    "purpose": "Isaac Lab tasks (velocity, push, kick, COMPASS) and Isaac sim nodes."
@@ -124,6 +189,7 @@
    "layer": "L2",
    "may": [
     "common",
+    "description",
     "utils",
     "runtime"
    ],
@@ -134,6 +200,7 @@
    "layer": "L2",
    "may": [
     "common",
+    "description",
     "utils"
    ],
    "purpose": "Video/text to K1 motion retargeting (GVHMR, GMR, SOMA, Kimodo) with a Gradio UI."
@@ -143,6 +210,7 @@
    "layer": "L2",
    "may": [
     "common",
+    "description",
     "utils",
     "runtime"
    ],
@@ -180,6 +248,7 @@
    "layer": "L3",
    "may": [
     "common",
+    "description",
     "runtime",
     "perception",
     "data"
@@ -191,6 +260,7 @@
    "layer": "L3",
    "may": [
     "common",
+    "description",
     "runtime",
     "teleop",
     "perception"
@@ -211,19 +281,19 @@
   }
  },
  "seams": {
-  "common": 1,
+  "common": 2,
   "utils": 1,
-  "runtime": 3,
+  "runtime": 2,
   "rl_isaac": 5,
   "mimic": 1,
+  "teleop": 1,
   "perception": 5,
   "vla": 4,
   "deploy_robot": 2,
   "deploy_laptop": 1,
-  "ops": 11,
+  "ops": 9,
   "description": 0,
   "rl_mj": 0,
-  "teleop": 0,
   "data": 0,
   "web_console": 0
  },
@@ -235,21 +305,32 @@
     "pytest"
    ],
    "env": [
-    "mjlab",
     "pxr"
    ],
    "pkgs": [
     "k1_common"
+   ],
+   "envvars": [
+    "K1_JOINT_NAMES",
+    "K1_MODELS_DIR"
    ]
   },
   "description": {
-   "pip": [],
+   "pip": [
+    "pytest"
+   ],
    "env": [
     "ament_index_python",
     "launch",
     "launch_ros"
    ],
-   "pkgs": []
+   "pkgs": [
+    "k1_description"
+   ],
+   "envvars": [
+    "K1_ASSETS_DIR",
+    "K1_JOINT_NAMES"
+   ]
   },
   "utils": {
    "pip": [
@@ -261,12 +342,14 @@
     "torch"
    ],
    "env": [
-    "height_gate",
-    "mujoco_eval",
     "rsl_rl"
    ],
    "pkgs": [
     "k1_utils"
+   ],
+   "envvars": [
+    "K1_BUNDLED_ROS_READY",
+    "K1_TRAIN_SCRIPT"
    ]
   },
   "runtime": {
@@ -282,6 +365,9 @@
    ],
    "pkgs": [
     "k1_runtime"
+   ],
+   "envvars": [
+    "K1_ACTION_SCALE"
    ]
   },
   "rl_isaac": {
@@ -328,6 +414,48 @@
    "pkgs": [
     "compass_k1",
     "k1_velocity"
+   ],
+   "envvars": [
+    "K1_ACTION_SCALE",
+    "K1_ARM_HEAD_JOINTS",
+    "K1_ARM_JOINTS",
+    "K1_ARTICULATION_CFG",
+    "K1_ASSET",
+    "K1_BUNDLED_ROS_READY",
+    "K1_CLONE",
+    "K1_COMPASS_STUDENT",
+    "K1_DBG",
+    "K1_ENABLE_CAMERAS",
+    "K1_ENVS",
+    "K1_FEET",
+    "K1_GPU",
+    "K1_HEAD_JOINTS",
+    "K1_HEAD_LINK",
+    "K1_HOST_LOG",
+    "K1_ITERS",
+    "K1_LEFT_ARM_JOINTS",
+    "K1_LEG_JOINTS",
+    "K1_MAPPO_OBS_CLIP",
+    "K1_MJLAB_ACTION_SCALE",
+    "K1_MJLAB_ARMS_CFG",
+    "K1_MJLAB_ARMS_USD",
+    "K1_MJLAB_CFG",
+    "K1_MJLAB_USD",
+    "K1_P2_",
+    "K1_P2_FOOT_DAMPING",
+    "K1_P2_FOOT_STIFFNESS",
+    "K1_P2_LEG_DAMPING",
+    "K1_P2_LEG_STIFFNESS",
+    "K1_PHYSICS",
+    "K1_PRE_REQUIRE_BASE",
+    "K1_RIGHT_ARM_JOINTS",
+    "K1_SHOVE_BODIES",
+    "K1_SKRL_PATH",
+    "K1_SOLID_USD",
+    "K1_STUB_BODIES",
+    "K1_TEACHER_PRESET",
+    "K1_TRAIN_SCRIPT",
+    "K1_TRUNK_HEIGHT"
    ]
   },
   "rl_mj": {
@@ -347,6 +475,74 @@
    ],
    "pkgs": [
     "mjlab_k1"
+   ],
+   "envvars": [
+    "K1_ACTION_SCALE",
+    "K1_ACTUATORS",
+    "K1_ACT_RATE_W",
+    "K1_AIR_W",
+    "K1_ANG_VEL_W",
+    "K1_ARTICULATION",
+    "K1_BASE_CKPT",
+    "K1_CARRY2_ASSIST_S",
+    "K1_CARRY2_CONE",
+    "K1_CARRY2_IMPRATIO",
+    "K1_CARRY2_MASS",
+    "K1_CARRY2_MU",
+    "K1_CARRY2_SQUEEZE",
+    "K1_CARRY_MASS",
+    "K1_CV_BASE",
+    "K1_CV_MASS_MAX",
+    "K1_CV_MASS_MIN",
+    "K1_CV_RESIDUAL",
+    "K1_CV_VX_MAX",
+    "K1_CV_WZ_MAX",
+    "K1_EVAL_PROG",
+    "K1_FEET_MIN",
+    "K1_FEET_W",
+    "K1_FELL_ANGLE",
+    "K1_FLAT_W",
+    "K1_GETUP_AR_W",
+    "K1_GETUP_STAND_FRAC",
+    "K1_H_STAND",
+    "K1_JOINT_ACC_W",
+    "K1_JUMP_BASE_CKPT",
+    "K1_JUMP_RESIDUAL",
+    "K1_KICK_",
+    "K1_KICK_CMD_ALPHA",
+    "K1_KICK_GATE",
+    "K1_KICK_RESIDUAL",
+    "K1_KMA_BASE",
+    "K1_KMA_CMD_ALPHA",
+    "K1_KS_LEVEL_UP",
+    "K1_KS_SIDE_FRAC",
+    "K1_LAND_W",
+    "K1_LS_ITERS",
+    "K1_MA_BOX_MASS",
+    "K1_MA_HAND_ONLY_W",
+    "K1_PIK_BASE",
+    "K1_PIK_BODY_W",
+    "K1_PIK_BOTH_W",
+    "K1_PIK_FACE_FRAC",
+    "K1_PIK_HALF_Z",
+    "K1_PIK_NEAR_FRAC",
+    "K1_PIK_ONE_HAND",
+    "K1_PUSH_V",
+    "K1_SHOVE_N",
+    "K1_SHOVE_RAMP_ITERS",
+    "K1_SLOPE_MAX",
+    "K1_STAIR_MAX",
+    "K1_STAND_FRAC",
+    "K1_STAND_W",
+    "K1_STEPS_BASE_CKPT",
+    "K1_SWING_H",
+    "K1_SWING_W",
+    "K1_SYM_W",
+    "K1_TERRAIN_FOCUS",
+    "K1_TRACK_W",
+    "K1_VX_MAX",
+    "K1_VY_W",
+    "K1_XML"
    ]
   },
   "mimic": {
@@ -357,6 +553,7 @@
     "mujoco",
     "numpy",
     "pillow",
+    "pytest",
     "scipy",
     "torch"
    ],
@@ -373,6 +570,10 @@
    ],
    "pkgs": [
     "k1m"
+   ],
+   "envvars": [
+    "K1_ASSETS_DIR",
+    "K1_JOINT_NAMES"
    ]
   },
   "teleop": {
@@ -380,16 +581,15 @@
     "imageio",
     "numpy",
     "opencv-python",
+    "pytest",
     "torch"
    ],
    "env": [
-    "booster_assets",
     "cupy",
     "geometry_msgs",
     "isaaclab",
     "isaacteleop",
     "omni",
-    "push_ik_phasespace",
     "pxr",
     "rclpy",
     "sensor_msgs",
@@ -398,6 +598,9 @@
    ],
    "pkgs": [
     "k1_teleop"
+   ],
+   "envvars": [
+    "K1_PUSH_IK_POLICY"
    ]
   },
   "perception": {
@@ -420,7 +623,11 @@
     "tf2_ros",
     "visualization_msgs"
    ],
-   "pkgs": []
+   "pkgs": [],
+   "envvars": [
+    "K1_ASSETS_DIR",
+    "K1_VIZ_DOMAIN"
+   ]
   },
   "vla": {
    "pip": [
@@ -445,6 +652,38 @@
    ],
    "pkgs": [
     "k1_chat"
+   ],
+   "envvars": [
+    "K1_BACKEND",
+    "K1_CALL_NAME",
+    "K1_CHAT",
+    "K1_CHAT_API_KEY",
+    "K1_CHAT_ASR",
+    "K1_CHAT_BASE_URL",
+    "K1_CHAT_HOME",
+    "K1_CHAT_MIC_GAIN",
+    "K1_CHAT_MODEL",
+    "K1_CHAT_START_RMS",
+    "K1_DETECT",
+    "K1_DETECT_CUDA_MEM_LIMIT",
+    "K1_DETECT_HZ",
+    "K1_IP",
+    "K1_KOKORO_CUDA_MEM_LIMIT",
+    "K1_KOKORO_DEVICE",
+    "K1_KOKORO_LANG",
+    "K1_KOKORO_SPEED",
+    "K1_KOKORO_VOICE",
+    "K1_LAPTOP_IP",
+    "K1_NEMOTRON_LANG",
+    "K1_NEMOTRON_URL",
+    "K1_ROBOT_NAME",
+    "K1_VISION",
+    "K1_VISION_",
+    "K1_VISION_BASE_URL",
+    "K1_VISION_MODEL",
+    "K1_WAKE_WINDOW_S",
+    "K1_WAKE_WORDS",
+    "K1_WHISPER_MODEL"
    ]
   },
   "data": {
@@ -460,7 +699,8 @@
     "rosidl_runtime_py",
     "sensor_msgs"
    ],
-   "pkgs": []
+   "pkgs": [],
+   "envvars": []
   },
   "deploy_robot": {
    "pip": [
@@ -476,7 +716,10 @@
     "sensor_msgs",
     "tf2_ros"
    ],
-   "pkgs": []
+   "pkgs": [],
+   "envvars": [
+    "K1_BAG_ROOT"
+   ]
   },
   "deploy_laptop": {
    "pip": [
@@ -494,7 +737,6 @@
     "launch",
     "launch_ros",
     "nav_msgs",
-    "push_ik_phasespace",
     "push_ik_sim",
     "rclpy",
     "sensor_msgs",
@@ -508,6 +750,11 @@
     "k1_fleet_rviz",
     "k1_locomotion",
     "k1_wbc"
+   ],
+   "envvars": [
+    "K1_JOINTS",
+    "K1_LEG_JOINTS",
+    "K1_MODELS_DIR"
    ]
   },
   "web_console": {
@@ -522,12 +769,43 @@
     "sensor_msgs",
     "streamlit"
    ],
-   "pkgs": []
+   "pkgs": [],
+   "envvars": [
+    "K1_JOINT_NAMES"
+   ]
   },
   "ops": {
    "pip": [],
    "env": [],
-   "pkgs": []
+   "pkgs": [],
+   "envvars": [
+    "K1_BASE_CKPT",
+    "K1_CACHE_DIR",
+    "K1_CLONE",
+    "K1_CV_BASE",
+    "K1_ENABLE_CAMERAS",
+    "K1_GIT_BRANCH",
+    "K1_GPU",
+    "K1_IMAGE",
+    "K1_KICK_CMD_ALPHA",
+    "K1_KICK_GATE",
+    "K1_KICK_RESIDUAL",
+    "K1_KMA_BASE",
+    "K1_LAYOUT",
+    "K1_MOUNT_DIR",
+    "K1_PHYSICS",
+    "K1_REPO_URL",
+    "K1_ROS_DOMAIN_ID",
+    "K1_SMOKE_LOG",
+    "K1_SOURCE_ROS",
+    "K1_STEPS_BASE_CKPT",
+    "K1_SYNC_SRC",
+    "K1_TEACHER_PRESET",
+    "K1_TORCH_VENV",
+    "K1_TRAIN_SCRIPT",
+    "K1_USE_MOUNT",
+    "K1_WORKDIR"
+   ]
   }
  }
 }

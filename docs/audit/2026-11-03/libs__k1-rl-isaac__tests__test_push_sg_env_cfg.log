@@ -1,0 +1,98 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_push_sg_env_cfg.xml']
+FFFFFFFFFF                                                               [100%]
+=================================== FAILURES ===================================
+______________________ test_both_sg_tasks_are_registered _______________________
+libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py:64: in test_both_sg_tasks_are_registered
+    src = INIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/__init__.py'
+_______________ test_sg_tasks_point_at_the_sg_cfg_not_the_v3_one _______________
+libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py:71: in test_sg_tasks_point_at_the_sg_cfg_not_the_v3_one
+    src = INIT.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/__init__.py'
+________________ test_every_sg_term_resolves_to_a_real_function ________________
+libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py:84: in test_every_sg_term_resolves_to_a_real_function
+    defined = {n.name for n in ast.walk(ast.parse(SG_MDP.read_text()))
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_rewards_sg.py'
+_______________ test_sign_convention_all_sg_weights_are_positive _______________
+libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py:105: in test_sign_convention_all_sg_weights_are_positive
+    cfgs = _cfg_assignments(SG_CFG)
+libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py:31: in _cfg_assignments
+    for node in ast.walk(ast.parse(path.read_text())):
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_sg_env_cfg.py'
+______________ test_v3_corner_block_is_retired_in_the_sg_push_cfg ______________
+libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py:114: in test_v3_corner_block_is_retired_in_the_sg_push_cfg
+    tree = ast.parse(SG_CFG.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_sg_env_cfg.py'
+_____________________ test_reach_stage_has_no_push_shaping _____________________
+libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py:128: in test_reach_stage_has_no_push_shaping
+    tree = ast.parse(SG_CFG.read_text())
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_sg_env_cfg.py'
+_______________ test_orthogonal_terms_are_inherited_not_re_tuned _______________
+libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py:148: in test_orthogonal_terms_are_inherited_not_re_tuned
+    src = SG_CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_sg_env_cfg.py'
+______________________ test_env_cfgs_subclass_the_v3_ones ______________________
+libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py:167: in test_env_cfgs_subclass_the_v3_ones
+    src = SG_CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_sg_env_cfg.py'
+_______ test_sg_cfg_imports_configclass_the_way_the_working_sibling_does _______
+libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py:187: in test_sg_cfg_imports_configclass_the_way_the_working_sibling_does
+    sg = SG_CFG.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/push_sg_env_cfg.py'
+__________ test_sg_cfg_registers_the_push_family_for_hydra_resolution __________
+libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py:201: in test_sg_cfg_registers_the_push_family_for_hydra_resolution
+    src = init.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks/push/__init__.py'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_push_sg_env_cfg.xml -
+=========================== short test summary info ============================
+FAILED libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py::test_both_sg_tasks_are_registered
+FAILED libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py::test_sg_tasks_point_at_the_sg_cfg_not_the_v3_one
+FAILED libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py::test_every_sg_term_resolves_to_a_real_function
+FAILED libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py::test_sign_convention_all_sg_weights_are_positive
+FAILED libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py::test_v3_corner_block_is_retired_in_the_sg_push_cfg
+FAILED libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py::test_reach_stage_has_no_push_shaping
+FAILED libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py::test_orthogonal_terms_are_inherited_not_re_tuned
+FAILED libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py::test_env_cfgs_subclass_the_v3_ones
+FAILED libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py::test_sg_cfg_imports_configclass_the_way_the_working_sibling_does
+FAILED libs/k1-rl-isaac/tests/test_push_sg_env_cfg.py::test_sg_cfg_registers_the_push_family_for_hydra_resolution
+10 failed in 0.23s

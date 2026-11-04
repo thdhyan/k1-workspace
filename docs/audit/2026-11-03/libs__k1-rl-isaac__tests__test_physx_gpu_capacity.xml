@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="7" skipped="0" tests="8" time="0.062" timestamp="2026-11-03T19:15:35.546827" hostname="dhyan-LOQ"><testcase classname="libs.k1-rl-isaac.tests.test_physx_gpu_capacity" name="test_capacity_clears_the_measured_8192_demand" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py'">libs/k1-rl-isaac/tests/test_physx_gpu_capacity.py:99: in test_capacity_clears_the_measured_8192_demand
+    mod = _load_sim_backend()
+libs/k1-rl-isaac/tests/test_physx_gpu_capacity.py:81: in _load_sim_backend
+    spec.loader.exec_module(mod)
+&lt;frozen importlib._bootstrap_external&gt;:991: in exec_module
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1128: in get_code
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_physx_gpu_capacity" name="test_supplies_the_physx_cfg_rather_than_mutating_a_nonexistent_physx_field" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py'">libs/k1-rl-isaac/tests/test_physx_gpu_capacity.py:116: in test_supplies_the_physx_cfg_rather_than_mutating_a_nonexistent_physx_field
+    mod = _load_sim_backend()
+libs/k1-rl-isaac/tests/test_physx_gpu_capacity.py:81: in _load_sim_backend
+    spec.loader.exec_module(mod)
+&lt;frozen importlib._bootstrap_external&gt;:991: in exec_module
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1128: in get_code
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_physx_gpu_capacity" name="test_capacity_scales_with_env_count_not_a_constant" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py'">libs/k1-rl-isaac/tests/test_physx_gpu_capacity.py:129: in test_capacity_scales_with_env_count_not_a_constant
+    mod = _load_sim_backend()
+libs/k1-rl-isaac/tests/test_physx_gpu_capacity.py:81: in _load_sim_backend
+    spec.loader.exec_module(mod)
+&lt;frozen importlib._bootstrap_external&gt;:991: in exec_module
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1128: in get_code
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_physx_gpu_capacity" name="test_never_shrinks_an_already_larger_buffer" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py'">libs/k1-rl-isaac/tests/test_physx_gpu_capacity.py:141: in test_never_shrinks_an_already_larger_buffer
+    mod = _load_sim_backend()
+libs/k1-rl-isaac/tests/test_physx_gpu_capacity.py:81: in _load_sim_backend
+    spec.loader.exec_module(mod)
+&lt;frozen importlib._bootstrap_external&gt;:991: in exec_module
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1128: in get_code
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_physx_gpu_capacity" name="test_small_run_gets_the_floor_and_not_a_silly_size" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py'">libs/k1-rl-isaac/tests/test_physx_gpu_capacity.py:149: in test_small_run_gets_the_floor_and_not_a_silly_size
+    mod = _load_sim_backend()
+libs/k1-rl-isaac/tests/test_physx_gpu_capacity.py:81: in _load_sim_backend
+    spec.loader.exec_module(mod)
+&lt;frozen importlib._bootstrap_external&gt;:991: in exec_module
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1128: in get_code
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_physx_gpu_capacity" name="test_newton_style_cfg_without_the_knob_is_a_no_op_not_a_crash" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py'">libs/k1-rl-isaac/tests/test_physx_gpu_capacity.py:155: in test_newton_style_cfg_without_the_knob_is_a_no_op_not_a_crash
+    mod = _load_sim_backend()
+libs/k1-rl-isaac/tests/test_physx_gpu_capacity.py:81: in _load_sim_backend
+    spec.loader.exec_module(mod)
+&lt;frozen importlib._bootstrap_external&gt;:991: in exec_module
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1128: in get_code
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1186: in get_data
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py'</failure></testcase><testcase classname="libs.k1-rl-isaac.tests.test_physx_gpu_capacity" name="test_every_env_cfg_family_raises_the_capacity" time="0.000" /><testcase classname="libs.k1-rl-isaac.tests.test_physx_gpu_capacity" name="test_the_mechanism_and_the_field_name_are_documented_where_it_lives" time="0.000"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py'">libs/k1-rl-isaac/tests/test_physx_gpu_capacity.py:209: in test_the_mechanism_and_the_field_name_are_documented_where_it_lives
+    src = SIM_BACKEND.read_text()
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+/usr/lib/python3.12/pathlib.py:1015: in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/sim_backend.py'</failure></testcase></testsuite></testsuites>

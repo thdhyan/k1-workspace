@@ -1,0 +1,12 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', 'libs/k1-rl-isaac/tests/test_env_cfg_wiring.py', '-q', '--tb=short', '-m', 'not robot and not net and not onprem', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_env_cfg_wiring.xml']
+Fs                                                                       [100%]
+=================================== FAILURES ===================================
+_____________________________ test_cfg_files_found _____________________________
+libs/k1-rl-isaac/tests/test_env_cfg_wiring.py:38: in test_cfg_files_found
+    assert files, f"no env config files under {CFG_ROOT}"
+E   AssertionError: no env config files under /home/thakk100/Projects/booster_proj/libs/k1-rl-isaac/isaac_tasks/k1_velocity/source/k1_velocity/tasks
+E   assert []
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/libs__k1-rl-isaac__tests__test_env_cfg_wiring.xml -
+=========================== short test summary info ============================
+FAILED libs/k1-rl-isaac/tests/test_env_cfg_wiring.py::test_cfg_files_found - ...
+1 failed, 1 skipped in 0.02s

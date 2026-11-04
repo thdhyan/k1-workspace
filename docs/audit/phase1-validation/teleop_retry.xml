@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="26.520" timestamp="2026-11-03T21:58:11.951958" hostname="dhyan-LOQ"><testcase classname="libs.k1-teleop.tests.test_push_ik_node" name="test_push_ik_node_e2e" time="26.511" /></testsuite></testsuites>

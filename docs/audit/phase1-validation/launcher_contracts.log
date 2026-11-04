@@ -1,0 +1,18 @@
+FF.                                                                      [100%]
+=================================== FAILURES ===================================
+________________ test_workspace_docker_launcher_default_branch _________________
+tests/test_phase1_launch_contracts.py:45: in test_workspace_docker_launcher_default_branch
+    assert "K1_GIT_BRANCH=main" in args, (
+E   AssertionError: workspace entrypoint defaults to main, but host runner overrides it: ['run', '--gpus', 'all', '--rm', '--name', 'k1-train-1103-215911', '--env-file', '/tmp/pytest-of-thakk100/pytest-58/test_workspace_docker_launcher0/empty.env', '-e', 'K1_GIT_BRANCH=dev/phase-0', '-v', '/tmp/pytest-of-thakk100/pytest-58/test_workspace_docker_launcher0/workspace/libs/k1-ops/logs:/workspace/mounts/logs', '-v', '/tmp/pytest-of-thakk100/pytest-58/test_workspace_docker_launcher0/workspace/libs/k1-ops/models:/workspace/mounts/models', 'thdhyan/k1-isaac-train:3.0.0b2']
+E   assert 'K1_GIT_BRANCH=main' in ['run', '--gpus', 'all', '--rm', '--name', 'k1-train-1103-215911', ...]
+________ test_workspace_docker_source_mount_contains_training_libraries ________
+tests/test_phase1_launch_contracts.py:53: in test_workspace_docker_source_mount_contains_training_libraries
+    assert Path(source) == workspace, (
+E   AssertionError: workspace container receives /tmp/pytest-of-thakk100/pytest-58/test_workspace_docker_source_m0/workspace/libs/k1-ops, which does not contain libs/k1-rl-isaac
+E   assert PosixPath('/tmp/pytest-of-thakk100/pytest-58/test_workspace_docker_source_m0/workspace/libs/k1-ops') == PosixPath('/tmp/pytest-of-thakk100/pytest-58/test_workspace_docker_source_m0/workspace')
+E    +  where PosixPath('/tmp/pytest-of-thakk100/pytest-58/test_workspace_docker_source_m0/workspace/libs/k1-ops') = Path('/tmp/pytest-of-thakk100/pytest-58/test_workspace_docker_source_m0/workspace/libs/k1-ops')
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/phase1-validation/launcher_contracts.xml -
+=========================== short test summary info ============================
+FAILED tests/test_phase1_launch_contracts.py::test_workspace_docker_launcher_default_branch
+FAILED tests/test_phase1_launch_contracts.py::test_workspace_docker_source_mount_contains_training_libraries
+2 failed, 1 passed in 0.34s

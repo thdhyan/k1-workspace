@@ -1,0 +1,17 @@
+COMMAND: ['/usr/bin/python3', '-m', 'pytest', '/tmp/k1-audit-adapted/libs__k1-utils__tests__test_mujoco_eval.py', '-q', '--tb=short', '-p', 'no:cacheprovider', '--junitxml=/home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/diagnostic/libs__k1-utils__tests__test_mujoco_eval.xml']
+F.s.                                                                     [100%]
+=================================== FAILURES ===================================
+________________________ test_zero_policy_harness_runs _________________________
+/tmp/k1-audit-adapted/libs__k1-utils__tests__test_mujoco_eval.py:43: in test_zero_policy_harness_runs
+    rc = M.main(["--walk", "zero", "--stand", "zero", "--meta", str(meta_path), "--grid", "smoke", "--seconds", "3",
+libs/k1-utils/src/k1_utils/mujoco_eval.py:546: in main
+    rep = evaluate(args)
+libs/k1-utils/src/k1_utils/mujoco_eval.py:484: in evaluate
+    sim = K1Sim(meta, args.mjcf, seed=args.seed)
+libs/k1-utils/src/k1_utils/mujoco_eval.py:142: in __init__
+    m = self.model = mujoco.MjModel.from_xml_path(str(mjcf))
+E   ValueError: ParseXML: Error opening file '/home/thakk100/Projects/booster_proj/libs/k1-utils/src/src/k1_description/assets/robots/K1/K1_22dof.xml'
+- generated xml file: /home/thakk100/Projects/booster_proj/docs/audit/2026-11-03/diagnostic/libs__k1-utils__tests__test_mujoco_eval.xml -
+=========================== short test summary info ============================
+FAILED ../../../../tmp/k1-audit-adapted/libs__k1-utils__tests__test_mujoco_eval.py::test_zero_policy_harness_runs
+1 failed, 2 passed, 1 skipped in 0.24s
