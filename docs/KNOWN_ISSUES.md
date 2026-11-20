@@ -14,3 +14,7 @@ Honest list of what the mechanical move did **not** fix.
 10. **Not copied**: model checkpoints, videos, meshes (booster_assets submodule), `.env`, files >500 KB, vendored JS (three.js in `deploy/push_ik_web/vendor` was kept only if <500 KB), git history. Uncommitted work in booster_ws was copied as is; booster_ws was not modified.
 11. **Public-repo hygiene**: no tokens/keys found by regex scan. Private LAN IPs (192.168.x.x), the lab host name `cs-zhang-net-01`, your e-mail in ROS `package.xml` maintainer fields, and `/home/thakk100` paths remain. No LICENSE file was added.
 12. graphify: code only (AST). READMEs/docs were not semantically extracted.
+13. **A2 left elbow pitch (joint 4)**: unheld / drifts under policy (target ~0 rad, actual +0.03…+0.72 rad, mean err 0.57 rad; A1 same joint 0.002 rad). Temperature/lost/mode NOT measured — the checker was written after A2 was powered off. Do not run policy on A2 until triaged.
+14. **A3 CAN bus fault**: `ack error` on CAN ch 6/7/8 (head + both arms), `is_connected=0`, `lost_cnt` increasing, red light, head dead, upper body no torque. `bdb config status` = READY/Active — config is fine; `bdb config apply` skipped (would not fix CAN, risks template-default overwrite). Do not run policy on A3.
+
+Full triage notes: [`docs/A2_A3_FAULT_NOTES_2026-11-21.md`](A2_A3_FAULT_NOTES_2026-11-21.md).
